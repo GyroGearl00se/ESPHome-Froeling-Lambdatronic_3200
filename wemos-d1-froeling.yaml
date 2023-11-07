@@ -276,23 +276,162 @@ sensor:
     filters:
       - multiply: 0.1
   
-  ##### Zirkulations Pumpe #####
-  # - platform: modbus_controller
-  #   modbus_controller_id: ${modbus_controller_id}
-  #   name: "${name}-Ruecklauftemperatur an der Zirkulations Leitung"
-  #   id:  ${name}_Ruecklauftemperatur_an_der_Zirkulations_Leitung
-  #   register_type: holding
-  #   address: 711
-  #   unit_of_measurement: "°C"
-  #   value_type: U_WORD
-  #   filters:
-  #     - multiply: 0.5
+  # #### Zirkulations Pumpe #####
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name}-Ruecklauftemperatur an der Zirkulations Leitung"
+    id:  ${name}_Ruecklauftemperatur_an_der_Zirkulations_Leitung
+    register_type: read
+    address: 711
+    unit_of_measurement: "°C"
+    value_type: U_WORD
+    filters:
+      - multiply: 0.5
 
-  # - platform: modbus_controller
-  #   modbus_controller_id: ${modbus_controller_id}
-  #   name: "${name}-Drehzahl der Zirkulations Pumpe"
-  #   id:  ${name}_Drehzahl_der_Zirkulations_Pumpe
-  #   register_type: holding
-  #   address: 710
-  #   unit_of_measurement: "%"
-  #   value_type: U_WORD
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name}-Strömungsschalter an der Brauchwasser Leitung"
+    id:  ${name}_Stoemungsschalter_an_der_Brauchwasser_Leitung
+    register_type: read
+    address: 600
+    value_type: U_WORD
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name}-Drehzahl der Zirkulations Pumpe"
+    id:  ${name}_Drehzahl_der_Zirkulations_Pumpe
+    register_type: read
+    address: 710
+    unit_of_measurement: "%"
+    value_type: U_WORD
+
+number:
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name}-Bei welcher RL Temperatur an der Zirkulationsleitung soll die Pumpe ausschalten"
+    id:  ${name}_Bei_welcher_RL_Temperatur_an_der_Zirkulationsleitung_soll_die_Pumpe_ausschalten
+    address: 600
+    unit_of_measurement: "°C"
+    value_type: U_WORD
+    multiply: 2
+
+text_sensor:
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name}-Anlagenzustand"
+    id: ${name}_Anlagenzustand
+    register_type: read
+    address: 4000
+    raw_encode: HEXBYTES
+    lambda: |-
+      uint16_t value = modbus_controller::word_from_hex_str(x, 0);
+      switch (value) {
+        case 0: return std::string("Dauerlast");
+        case 1: return std::string("Brauchwasser");
+        case 2: return std::string("Automatik");
+        case 3: return std::string("Scheitholzbetrieb");
+        case 4: return std::string("Reinigen");
+        case 5: return std::string("Ausgeschaltet");
+        case 6: return std::string("Extraheizen");
+        case 7: return std::string("Kaminkehrer");
+        case 8: return std::string("Reinigen");
+        default: return std::string("----");
+      }
+      return x;
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name}-Kesselzustand"
+    id: ${name}_Kesselzustand
+    register_type: read
+    address: 4001
+    raw_encode: HEXBYTES
+    lambda: |-
+      uint16_t value = modbus_controller::word_from_hex_str(x, 0);
+      switch (value) {
+        case 0: return std::string("STÖRUNG");
+        case 1: return std::string("Kessel Aus");
+        case 2: return std::string("Anheizen");
+        case 3: return std::string("Heizen");
+        case 4: return std::string("Feuererhaltung");
+        case 5: return std::string("Feuer Aus");
+        case 6: return std::string("Tür offen");
+        case 7: return std::string("Vorbereitung");
+        case 8: return std::string("Vorwärmen");
+        case 9: return std::string("Zünden");
+        case 10: return std::string("Abstellen Warten");
+        case 11: return std::string("Abstellen Warten1");
+        case 12: return std::string("Abstellen Einschub1");
+        case 13: return std::string("Abstellen Warten2");
+        case 14: return std::string("Abstellen Einschub2");
+        case 15: return std::string("Abreinigen");
+        case 16: return std::string("2h warten");
+        case 17: return std::string("Saugen / Heizen");
+        case 18: return std::string("Fehlzündung");
+        case 19: return std::string("Betriebsbereit");
+        case 20: return std::string("Rost schließen");
+        case 21: return std::string("Stoker leeren");
+        case 22: return std::string("Vorheizen");
+        case 23: return std::string("Saugen");
+        case 24: return std::string("RSE schließen");
+        case 25: return std::string("RSE öffnen");
+        case 26: return std::string("Rost kippen");
+        case 27: return std::string("Vorwärmen-Zünden");
+        case 28: return std::string("Resteinschub");
+        case 29: return std::string("Stoker auffüllen");
+        case 30: return std::string("Lambdasonde aufheizen");
+        case 31: return std::string("Gebläsenachlauf I");
+        case 32: return std::string("Gebläsenachlauf II");
+        case 33: return std::string("Abgestellt");
+        case 34: return std::string("Nachzünden");
+        case 35: return std::string("Zünden Warten");
+        case 36: return std::string("FB: RSE schließen");
+        case 37: return std::string("FB: Kessel belüften");
+        case 38: return std::string("FB: Zünden");
+        case 39: return std::string("FB: min. Einschub");
+        case 40: return std::string("RSE schließen");
+        case 41: return std::string("STÖRUNG: STB/NA");
+        case 42: return std::string("STÖRUNG: Kipprost");
+        case 43: return std::string("STÖRUNG: FR-Überdr.");
+        case 44: return std::string("STÖRUNG: Türkont.");
+        case 45: return std::string("STÖRUNG: Saugzug");
+        case 46: return std::string("STÖRUNG: Umfeld");
+        case 47: return std::string("FEHLER: STB/NA");
+        case 48: return std::string("FEHLER: Kipprost");
+        case 49: return std::string("FEHLER: FR-Überdr.");
+        case 50: return std::string("FEHLER: Türkont.");
+        case 51: return std::string("FEHLER: Saugzug");
+        case 52: return std::string("FEHLER: Umfeld");
+        case 53: return std::string("FEHLER: Stoker");
+        case 54: return std::string("STÖRUNG: Stoker");
+        case 55: return std::string("FB: Stoker leeren");
+        case 56: return std::string("Vorbelüften");
+        case 57: return std::string("STÖRUNG: Hackgut");
+        case 58: return std::string("FEHLER: Hackgut");
+        case 59: return std::string("NB: Tür offen");
+        case 60: return std::string("NB: Anheizen");
+        case 61: return std::string("NB: Heizen");
+        case 62: return std::string("FEHLER: STB/NA");
+        case 63: return std::string("FEHLER: Allgemein");
+        case 64: return std::string("NB: Feuer Aus");
+        case 65: return std::string("Selbsttest aktiv");
+        case 66: return std::string("Fehlerbeh. 20min");
+        case 67: return std::string("FEHLER: Fallschacht");
+        case 68: return std::string("STÖRUNG: Fallschacht");
+        case 69: return std::string("Reinigen möglich");
+        case 70: return std::string("Heizen - Reinigen");
+        case 71: return std::string("SH Anheizen");
+        case 72: return std::string("SH Heizen");
+        case 73: return std::string("SH Heiz/Abstell");
+        case 74: return std::string("STÖRUNG sicher");
+        case 75: return std::string("AGR Nachlauf");
+        case 76: return std::string("AGR reinigen");
+        case 77: return std::string("Zündung AUS");
+        case 78: return std::string("Filter reinigen");
+        case 79: return std::string("Anheizassistent");
+        case 80: return std::string("SH Zünden");
+        case 81: return std::string("SH Störung");
+        case 82: return std::string("Sensorcheck");
+        default: return std::string("----");
+      }
+      return x;
