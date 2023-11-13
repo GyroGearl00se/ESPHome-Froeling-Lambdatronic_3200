@@ -1,0 +1,96 @@
+/* SVG size */
+
+#floorplan  {
+  padding: 10px;
+}
+
+#floorplan > svg {
+  max-width: 700px;
+}
+
+/* SVG elements */
+
+svg * {
+  vector-effect: non-scaling-stroke !important;
+}
+
+/* Hover over */
+
+.floorplan-shape:hover,
+g.floorplan-hover > :not(text):hover,
+g.floorplan-click > :not(text):hover,
+g.floorplan-long-click > :not(text):hover,
+:not(text).floorplan-hover:hover,
+:not(text).floorplan-click:hover, 
+:not(text).floorplan-long-click:hover {
+  stroke: #03A9F4 !important;
+  stroke-width: 1px !important;
+  stroke-opacity: 1 !important;
+}
+
+/* Animation */
+
+.spinning {
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Binary sensors */
+
+.binary-sensor-on {
+  fill: #F9D27C !important;
+}
+
+.binary-sensor-off {
+  fill: #7CB1F9 !important;
+  transition: fill 5s ease;
+}
+
+.binary-sensor-kesselzustand-heizen-an {
+  fill: #ff0000 !important;
+  fill-opacity: 1 !important;
+}
+
+.binary-sensor-kesselzustand-heizen-aus {
+  fill: #9e9e9e !important;
+  transition: fill 5s ease;
+}
+
+.binary-sensor-puffer-1-pufferpumpen-ansteuerung-an {
+  fill: #00c800 !important;
+  fill-opacity: 1 !important;
+}
+
+.binary-sensor-puffer-1-pufferpumpen-ansteuerung-aus {
+  fill: #9e9e9e !important;
+  transition: fill 5s ease;
+}
+
+
+/* Buttons */
+
+.button-on rect {
+  fill: #1ABA92 !important;
+}
+
+.button-off rect {
+  fill: #d32f2f !important;
+}
+
+.button-on tspan,
+.button-off tspan {
+  fill: white !important;
+}

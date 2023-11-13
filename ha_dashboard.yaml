@@ -1,0 +1,46 @@
+type: custom:floorplan-card
+full_height: false
+config:
+  image: /local/froeling/froeling_kessel.svg
+  cache: false
+  stylesheet: /local/froeling/home.css
+  console_log_level: debug
+  defaults:
+    hover_action: hover-info
+    tap_action: more-info
+  rules:
+    - entities:
+        - sensor.froeling_abgastemperatur
+        - sensor.froeling_kesseltemperatur
+        - sensor.froeling_restsauerstoffgehalt
+        - sensor.froeling_puffer_1_pufferpumpen_ansteuerung
+        - sensor.froeling_saugzug_ansteuerung
+        - sensor.froeling_fuellstand_im_pelletsbehaelter
+        - >-
+          sensor.froeling_verbleibende_heizstunden_bis_zur_asche_entleeren_warnung
+      tap_action: false
+      state_action:
+        action: call-service
+        service: floorplan.text_set
+        service_data: ${entity.state}
+    - entities:
+        - binary_sensor.froeling_kesselzustand_heizen
+      tap_action: false
+      state_action:
+        action: call-service
+        service: floorplan.class_set
+        service_data:
+          class: >-
+            ${(entity.state == "on") ? "binary-sensor-kesselzustand-heizen-an" :
+            "binary-sensor-kesselzustand-heizen-aus"}
+    - entities:
+        - binary_sensor.froeling_puffer_1_pufferpumpen_ansteuerung_an_aus
+      tap_action: false
+      state_action:
+        action: call-service
+        service: floorplan.class_set
+        service_data:
+          class: >-
+            ${(entity.state == "on") ?
+            "binary-sensor-puffer-1-pufferpumpen-ansteuerung-an" :
+            "binary-sensor-puffer-1-pufferpumpen-ansteuerung-aus"}
