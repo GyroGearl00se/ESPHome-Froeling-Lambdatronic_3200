@@ -27,7 +27,7 @@
    inkscape:cy="169.13932"
    inkscape:window-width="958"
    inkscape:window-height="1128"
-   inkscape:window-x="953"
+   inkscape:window-x="946"
    inkscape:window-y="0"
    inkscape:window-maximized="0"
    inkscape:current-layer="Ebene_1" />&#10;	<defs
@@ -2589,7 +2589,8 @@
    r="0.8"
    id="circle508" />&#10;		</g>&#10;	</g>&#10;</g>&#10;<g
    id="binary_sensor.froeling_puffer_1_pufferpumpen_ansteuerung_an_aus"
-   class="stPumpInActive"><title
+   class="stPumpInActive"
+   inkscape:label="binary_sensor.froeling_puffer_1_pufferpumpen_ansteuerung_an_aus"><title
    id="title508">Aktueller Status der Pufferpumpe</title>&#10;	<path
    d="M293.6,184.5c0-1.8-1.5-3.3-3.3-3.3c-1.8,0-3.3,1.5-3.3,3.3c0,1.8,1.5,3.3,3.3,3.3   C292.1,187.8,293.6,186.3,293.6,184.5z"
    id="path508" />&#10;	<path
@@ -2605,8 +2606,9 @@
    id="path513" />&#10;	<path
    d="M299.9,184.5c0-5.4-4.3-9.7-9.6-9.7c-5.3,0-9.6,4.3-9.6,9.7c0,5.4,4.3,9.7,9.6,9.7   C295.6,194.2,299.9,189.9,299.9,184.5z M283.1,184.5c0-4,3.2-7.2,7.2-7.2c4,0,7.2,3.2,7.2,7.2c0,4-3.2,7.2-7.2,7.2   C286.3,191.7,283.1,188.5,283.1,184.5z"
    id="path514" />&#10;</g>&#10;<g
-   id="binary_sensor.froeling_kesselzustand_heizen"
-   class="stHeatingOff"><title
+   id="sensor.froeling_kesselzustand"
+   class="stHeatingOff"
+   inkscape:label="sensor.froeling_kesselzustand"><title
    id="title514">Betriebszustand</title>&#10;	<path
    d="M143.6,171.7c0.4,4.9,3.7,11.8,12.3,10c-3.6-1-6.5-4.3-7.7-10.4c0.8,0.2,1.9,0.9,2.3,1.1  c-0.2-0.9,0.1-3.4,1.4-6.4c1.5,7.7,2.6,9,4.1,9.3c-1.4-3.7-1.3-6.9-0.1-9.4c0.6,2.4,1.8,4.2,2.9,5.4c1.8-2.2,2.6-5.1,1.8-11.4  c4,5.3,3.7,8.6,2.4,10.6c1.1-0.3,2.7-1.8,3.8-4.4c1,1.2,0.8,3.4-0.1,5.9c0.6-0.2,1.6-0.6,2.2-1.1c-1,7.3-5.2,8.2-9.2,10.4  c5.7,2.3,15.1-1.1,16.2-8.8c0.3-1.3-0.1-3.2-0.4-4.7c-0.6,1-0.9,2.3-1.8,2.8c-0.2-1.4,0.2-2.6,0.8-3.8c1.1-4.3,0.4-7.9-1.9-10.7  c-0.4,2.1-0.9,3.9-1.9,4.4c-1.1-6.5-3.1-11-5.5-12.2c0.2,1.9,0.1,3.5-0.6,4.9c-2-7.2-5.5-6.7-6.5-13.2c-1,0.7-1.2,2.3-1.4,3.7  c0,2.9,0.2,5.7-1,7.1c-1.1-2.1-2.1-3.8-3.9-4c1.3,2.7,0.8,7.4-1.1,12.5c-0.7-1.3-1.9-3.9-3.6-4.3c0.4,3.4-0.1,7.3-0.9,10.9  c-0.5-0.8-1.5-1.7-2.6-2.3C144.8,166.8,143.1,168.2,143.6,171.7z M159.2,149.8c0.2,2.7,0,5.5-0.8,6.9  C158.3,154.1,158,152.6,159.2,149.8z"
    id="path515" />&#10;</g>&#10;<g
@@ -2635,7 +2637,8 @@
    id="polyline519" />&#10;		</g>&#10;	</g>&#10;</g>&#10;<text
    id="sensor.froeling_verbleibende_heizstunden_bis_zur_asche_entleeren_warnung"
    transform="matrix(1 0 0 1 80 231.4438)"
-   class="st9 st10 st11">17h</text>&#10;<g
+   class="st9 st10 st11"
+   inkscape:label="sensor.froeling_verbleibende_heizstunden_bis_zur_asche_entleeren_warnung">17h</text>&#10;<g
    id="label_fuel-level"><title
    id="title519">Restbestand im Brennstofflagerraum</title>&#10;	<path
    id="frame_1_"
@@ -2660,7 +2663,8 @@
    id="path522" />&#10;		</g>&#10;	</g>&#10;</g>&#10;<text
    id="sensor.froeling_fuellstand_im_pelletsbehaelter"
    transform="matrix(1 0 0 1 80 47.6704)"
-   class="st9 st10 st11">32%</text>&#10;<g
+   class="st9 st10 st11"
+   inkscape:label="sensor.froeling_fuellstand_im_pelletsbehaelter">32%</text>&#10;<g
    id="Saugzug_Ansteuerung"><title
    id="title522">Drehzahl des Saugzuggebläses</title>&#10;	<path
    id="frame_2_"
@@ -2745,7 +2749,8 @@
    id="rect530" />&#10;		</g>&#10;	</g>&#10;</g>&#10;<text
    id="sensor.froeling_abgastemperatur"
    transform="matrix(1 0 0 1 207.5 47.2747)"
-   class="st9 st10 st11">57°C</text>&#10;<g
+   class="st9 st10 st11"
+   inkscape:label="sensor.froeling_abgastemperatur">57°C</text>&#10;<g
    id="label_lambda"><title
    id="title530">Restsauerstoffgehalt</title>&#10;	<path
    id="frame_3_"

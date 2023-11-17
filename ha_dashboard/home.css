@@ -59,25 +59,21 @@ g.floorplan-long-click > :not(text):hover,
   transition: fill 5s ease;
 }
 
-.binary-sensor-kesselzustand-heizen-an {
+.fill-red {
   fill: #ff0000 !important;
   fill-opacity: 1 !important;
 }
 
-.binary-sensor-kesselzustand-heizen-aus {
+.fill-grey {
   fill: #9e9e9e !important;
   transition: fill 5s ease;
 }
 
-.binary-sensor-puffer-1-pufferpumpen-ansteuerung-an {
+.fill-green {
   fill: #00c800 !important;
   fill-opacity: 1 !important;
 }
 
-.binary-sensor-puffer-1-pufferpumpen-ansteuerung-aus {
-  fill: #9e9e9e !important;
-  transition: fill 5s ease;
-}
 
 
 /* Buttons */

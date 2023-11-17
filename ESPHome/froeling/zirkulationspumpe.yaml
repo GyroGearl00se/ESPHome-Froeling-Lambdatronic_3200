@@ -1,0 +1,28 @@
+sensor:  
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Ruecklauftemperatur an der Zirkulations Leitung"
+    id: ${name}_Ruecklauftemperatur_an_der_Zirkulations_Leitung
+    register_type: read
+    address: 711
+    unit_of_measurement: "°C"
+    value_type: U_WORD
+    filters:
+      - multiply: 0.5
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Strömungsschalter an der Brauchwasser Leitung"
+    id: ${name}_Stoemungsschalter_an_der_Brauchwasser_Leitung
+    register_type: read
+    address: 600
+    value_type: U_WORD
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Drehzahl der Zirkulations Pumpe"
+    id: ${name}_Drehzahl_der_Zirkulations_Pumpe
+    register_type: read
+    address: 710
+    unit_of_measurement: "%"
+    value_type: U_WORD

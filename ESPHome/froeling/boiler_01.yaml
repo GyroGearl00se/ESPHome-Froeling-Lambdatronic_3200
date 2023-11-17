@@ -1,0 +1,43 @@
+sensor:
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Boiler 1 Temperatur oben"
+    id: ${name}_Boiler_1_Temperatur_oben
+    register_type: read
+    address: 1630
+    unit_of_measurement: "°C"
+    value_type: U_WORD
+    filters:
+      - multiply: 0.5
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Boiler 1 Pumpe Ansteuerung"
+    id: ${name}_Boiler_1_Pumpe_Ansteuerung
+    register_type: read
+    address: 1632
+    unit_of_measurement: "%"
+    value_type: U_WORD
+
+number:
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Boiler 1 Gewünschte Boilertemperatur"
+    id: ${name}_Boiler_1_Gewuenschte_Boilertemperatur
+    address: 1631
+    unit_of_measurement: "°C"
+    value_type: U_WORD
+    multiply: 2
+    min_value: 10
+    max_value: 100
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Boiler 1 Nachladen, wenn Boilertemperatur unter"
+    id: ${name}_Boiler_1_Nachladen_wenn_Boilertemperatur_unter
+    address: 1632
+    unit_of_measurement: "°C"
+    value_type: U_WORD
+    multiply: 2
+    min_value: 1
+    max_value: 90
