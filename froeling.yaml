@@ -1,5 +1,5 @@
 esphome:
-  name: froeling
+  name: froeling # If you're intending to use the Dashboard provided in this Repo - DO NOT CHANGE THE NAME -> readme.md
 
 esp32:
   board: wemos_d1_mini32
@@ -55,12 +55,11 @@ switch:
     name: "Restart ESP"
 
 packages:
-  austragung: !include froeling/austragung.yaml
-  boiler_01: !include froeling/boiler_01.yaml
-  heizkoerper: !include froeling/heizkoerper.yaml
-  kessel: !include froeling/kessel.yaml
-  puffer_01: !include froeling/puffer_01.yaml
-  zirkulationspumpe: !include froeling/zirkulationspumpe.yaml
+  remote_package:
+    url: https://github.com/GyroGearl00se/ESPHome-Froeling-Lambdatronic_3200
+    ref: remote_package_test
+    files: [austragung.yaml, boiler_01.yaml, heizkoerper.yaml, kessel.yaml, puffer_01.yaml, zirkulationspumpe.yaml]
+    refresh: 1d
     
 number:
   - platform: modbus_controller
