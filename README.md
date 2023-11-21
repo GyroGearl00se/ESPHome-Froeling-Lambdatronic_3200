@@ -27,16 +27,15 @@ Connect a RS232 (DB9) cable between "MAX3232 DB9 RS232 TTL converter" and you bo
 - Boiler > Modbus Protokoll RTU(1)
 - Boiler > use Modbus Protokoll 2014
 
-
-
 #### Home Assistant Dashboard
 ##### prerequisites:
 - https://experiencelovelace.github.io/ha-floorplan/
 - copy all files from /ha_dashboard/* to your Home assistant instance /config/www/froeling/*
 - create a card in your dashboard and add the content of "ha_dashboard.yaml"
 <span style="color:red">!! Currently, only two panels are provided!!</span> I'm working on the rest. An update will follow.
+- The SVG files contains for image and text objects "ID's" which has to match the entity. Therefore I recommend not to change the device name of your ESP32.
 
 #### ESPHome
-For an better overview I've splittet up the yaml file into multiple pieces and included them in the main file as a package.
+For an better overview I split the yaml file into multiple pieces and included them in the main file as a remote package.
 
-Copy all files from ESPHome/* into you ESPHome config directory and just flash the froeling.yaml. - All other files will be included.
+Just use the example from "froeling.yaml" and flash it to your ESP32.
