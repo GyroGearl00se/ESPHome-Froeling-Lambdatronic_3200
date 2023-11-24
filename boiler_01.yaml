@@ -41,3 +41,14 @@ number:
     multiply: 2
     min_value: 1
     max_value: 90
+
+binary_sensor:
+  - platform: template
+    name: "${name} Boiler 1 Pumpe Ansteuerung AN AUS"
+    id: ${name}_Boiler_1_Pumpe_Ansteuerung_AN_AUS
+    lambda: |-
+      if (id(${name}_Boiler_1_Pumpe_Ansteuerung).state > 0) {
+        return true;
+      } else {
+        return false;
+      }

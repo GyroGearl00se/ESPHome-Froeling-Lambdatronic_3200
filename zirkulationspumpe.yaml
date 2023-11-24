@@ -26,3 +26,14 @@ sensor:
     address: 710
     unit_of_measurement: "%"
     value_type: U_WORD
+
+binary_sensor:
+  - platform: template
+    name: "${name} Zirkulationspumpe AN AUS"
+    id: ${name}_Zirkulations_Pumpe_AN_AUS
+    lambda: |-
+      if (id(${name}_Drehzahl_der_Zirkulations_Pumpe).state > 0) {
+        return true;
+      } else {
+        return false;
+      }
