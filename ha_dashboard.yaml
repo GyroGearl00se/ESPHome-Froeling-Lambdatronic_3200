@@ -94,8 +94,6 @@ views:
               image: /local/froeling/froeling_heizkoerper.svg
               cache: false
               stylesheet: /local/froeling/home.css
-              log_level: info
-              console_log_level: debug
               defaults:
                 hover_action: hover-info
                 tap_action: more-info
@@ -154,4 +152,212 @@ views:
           - entity: >-
               number.froeling_hk1_temp_am_puffer_oben_ab_der_der_uberhitzungsschutz_aktiv_wird
             name: Temp. am Puffer oben ab der der Überhitzungsschutz aktiv wird
+        title: Einstellungen
+  - title: Boiler 01
+    path: boiler-01
+    badges: []
+    cards:
+      - type: custom:floorplan-card
+        full_height: false
+        config:
+          image: /local/froeling/froeling_boiler01.svg
+          cache: false
+          stylesheet: /local/froeling/home.css
+          defaults:
+            hover_action: hover-info
+            tap_action: more-info
+          rules:
+            - entities:
+                - sensor.froeling_boiler_1_temperatur_oben
+              tap_action: false
+              state_action:
+                action: call-service
+                service: floorplan.text_set
+                service_data: ${entity.state + "°C"}
+            - entities:
+                - sensor.froeling_boiler_1_pumpe_ansteuerung
+              tap_action: false
+              state_action:
+                action: call-service
+                service: floorplan.text_set
+                service_data: ${entity.state + "%"}
+            - entities:
+                - binary_sensor.froeling_boiler_1_pumpe_ansteuerung_an_aus
+              tap_action: false
+              state_action:
+                action: call-service
+                service: floorplan.class_set
+                service_data:
+                  class: '${(entity.state == "on") ? "fill-green" : "fill-grey"}'
+      - type: entities
+        entities:
+          - entity: sensor.froeling_boiler_1_temperatur_oben
+            name: Temperatur Oben
+          - entity: sensor.froeling_boiler_1_pumpe_ansteuerung
+            name: Pumpe Ansteuerung
+        title: Zustand
+      - type: entities
+        entities:
+          - entity: number.froeling_boiler_1_gewunschte_boilertemperatur
+            name: Gewünschte Boilertemperatur
+          - entity: number.froeling_boiler_1_nachladen_wenn_boilertemperatur_unter
+            name: Nachladen wenn Boilertemperatur unter
+        title: Einstellungen
+  - title: Puffer 01
+    path: puffer-01
+    badges: []
+    cards:
+      - type: custom:floorplan-card
+        full_height: false
+        config:
+          image: /local/froeling/froeling_puffer01.svg
+          cache: false
+          stylesheet: /local/froeling/home.css
+          defaults:
+            hover_action: hover-info
+            tap_action: more-info
+          rules:
+            - entities:
+                - sensor.froeling_kesseltemperatur
+                - sensor.froeling_puffer_1_temperatur_oben
+                - sensor.froeling_puffer_1_temperatur_unten
+              tap_action: false
+              state_action:
+                action: call-service
+                service: floorplan.text_set
+                service_data: ${entity.state + "°C"}
+            - entities:
+                - sensor.froeling_puffer_1_ladezustand
+                - sensor.froeling_puffer_1_pufferpumpen_ansteuerung
+              tap_action: false
+              state_action:
+                action: call-service
+                service: floorplan.text_set
+                service_data: ${entity.state + "%"}
+            - entities:
+                - >-
+                  binary_sensor.froeling_puffer_1_pufferpumpen_ansteuerung_an_aus
+              tap_action: false
+              state_action:
+                action: call-service
+                service: floorplan.class_set
+                service_data:
+                  class: '${(entity.state == "on") ? "fill-green" : "fill-grey"}'
+            - entities:
+                - sensor.froeling_kesselzustand
+              tap_action: false
+              state_action:
+                action: call-service
+                service: floorplan.class_set
+                service_data:
+                  class: '${(entity.state == "Heizen") ? "fill-red" : "fill-grey"}'
+      - type: entities
+        entities:
+          - entity: sensor.froeling_puffer_1_temperatur_oben
+            name: Temperatur Oben
+          - entity: sensor.froeling_puffer_1_temperatur_mitte
+            name: Temperatur Mitte
+          - entity: sensor.froeling_puffer_1_temperatur_unten
+            name: Temperatur Unten
+          - entity: sensor.froeling_puffer_1_ladezustand
+            name: Ladezustand
+          - entity: sensor.froeling_puffer_1_pufferpumpen_ansteuerung
+            name: Pufferpumpen Ansteuerung
+        title: Zustand
+      - type: entities
+        entities: []
+        title: Einstellungen
+  - title: Austragung
+    path: austragung
+    badges: []
+    cards:
+      - type: custom:floorplan-card
+        full_height: false
+        config:
+          image: /local/froeling/froeling_austragung.svg
+          cache: false
+          stylesheet: /local/froeling/home.css
+          defaults:
+            hover_action: hover-info
+            tap_action: more-info
+          rules:
+            - entities:
+                - sensor.froeling_pelletlager_restbestand
+                - sensor.froeling_resetierbarer_t_zaehler
+              tap_action: false
+              state_action:
+                action: call-service
+                service: floorplan.text_set
+                service_data: ${entity.state + "t"}
+            - entities:
+                - sensor.froeling_fuellstand_im_pelletsbehaelter
+              tap_action: false
+              state_action:
+                action: call-service
+                service: floorplan.text_set
+                service_data: ${entity.state + "%"}
+      - type: entities
+        entities:
+          - entity: sensor.froeling_fuellstand_im_pelletsbehaelter
+          - entity: sensor.froeling_resetierbarer_t_zaehler
+          - entity: sensor.froeling_resetierbarer_kg_zaehler
+          - entity: sensor.froeling_pelletlager_restbestand
+          - entity: sensor.froeling_pelletverbrauch_gesamt
+        title: Zustand
+      - type: entities
+        entities: []
+        title: Einstellungen
+  - title: Zirk. Pumpe
+    path: zirk-pumpe
+    badges: []
+    cards:
+      - type: custom:floorplan-card
+        full_height: false
+        config:
+          image: /local/froeling/froeling_zirkulationspumpe.svg
+          cache: false
+          stylesheet: /local/froeling/home.css
+          defaults:
+            hover_action: hover-info
+            tap_action: more-info
+          rules:
+            - entities:
+                - >-
+                  sensor.froeling_ruecklauftemperatur_an_der_zirkulations_leitung
+              tap_action: false
+              state_action:
+                action: call-service
+                service: floorplan.text_set
+                service_data: ${entity.state + "°C"}
+            - entities:
+                - sensor.froeling_drehzahl_der_zirkulations_pumpe
+              tap_action: false
+              state_action:
+                action: call-service
+                service: floorplan.text_set
+                service_data: ${entity.state + "%"}
+            - entities:
+                - binary_sensor.froeling_zirkulationspumpe_an_aus
+              tap_action: false
+              state_action:
+                action: call-service
+                service: floorplan.class_set
+                service_data:
+                  class: '${(entity.state == "on") ? "fill-green" : "fill-grey"}'
+      - type: entities
+        entities:
+          - entity: sensor.froeling_ruecklauftemperatur_an_der_zirkulations_leitung
+            name: Rücklauftemperatur an der Zirkulations Leitung
+          - entity: sensor.froeling_stromungsschalter_an_der_brauchwasser_leitung
+            name: Strömungsschalter an der Brauchwasser Leitung
+          - entity: sensor.froeling_drehzahl_der_zirkulations_pumpe
+            name: Drehzahl der Zirkulations Pumpe
+        title: Zustand
+      - type: entities
+        entities:
+          - entity: >-
+              number.froeling_bei_welcher_rl_temperatur_an_der_zirkulationsleitung_soll_die_pumpe_ausschalten
+            name: >-
+              Bei welcher RL Temperatur an der Zirkulationsleitung soll die
+              Pumpe ausschalten
         title: Einstellungen

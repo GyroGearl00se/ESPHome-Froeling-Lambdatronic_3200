@@ -1,67 +1,138 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Ebene_1" x="0px" y="0px" viewBox="0 0 400 280" style="enable-background:new 0 0 400 280;" xml:space="preserve">
-	<defs>
-       <style>
-           @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i");			
-       </style>
-	</defs> 
-<style type="text/css">
-	.stPumpActive{fill:#87AD27;}
-	.stPumpInActive{fill:#BBBBBB;}
-	.st1{fill:#FA9664;}
-	.st2{fill:#C86464;}
-	.st3{fill:#6E8CA0;}
-	.st4{fill:#787878;}
-	.st5{fill:#323232;}
-	.st6{opacity:0.2;fill:#6E8CA0;}
-	.st7{fill:#FFFFFF;stroke:#C8C8C8;stroke-miterlimit:10;}
-	.st8{fill:#C8C8C8;}
-	.st9{fill:#646464;}	.st10{font-family:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Roboto,Arial,Helvetica,sans-serif;font-specification:'Roboto,Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;}
-	.st11{font-size:14px;}
-	.st12{fill:#FFFFFF;stroke:#CCCCCC;stroke-miterlimit:10;}
-	.st13{fill:#CCCCCC;}
-</style>
-<g id="obj_pump-01" class="stPumpInActive"><title>Status der Zirkulationspumpe</title>
-	<path d="M257.7,66.1c0-1.8,1.5-3.3,3.3-3.3c1.8,0,3.3,1.5,3.3,3.3c0,1.8-1.5,3.3-3.3,3.3   C259.2,69.4,257.7,67.9,257.7,66.1z"/>
-	<path d="M276.3,71.5v-2.3h-5.2c0.3-1,0.5-2.1,0.5-3.2c0-1.1-0.2-2.1-0.4-3h5.2V61c0-0.2,0.2-0.4,0.4-0.4h1.1   c0.2,0,0.4,0.2,0.4,0.4v10.5c0,0.2-0.2,0.4-0.4,0.4h-1.1C276.5,71.9,276.3,71.8,276.3,71.5z"/>
-	<path d="M270,71.7c-0.1,0.7-0.3,1.5-0.5,2.2c-0.1,0.5-0.3,0.8-1,1c-0.8,0.2-1.6,0.4-2.3,0.5   C267.8,74.5,269.1,73.2,270,71.7z"/>
-	<path d="M255.7,75.4c-0.8-0.1-1.5-0.3-2.3-0.5c-0.6-0.2-0.8-0.4-1-1c-0.2-0.8-0.4-1.5-0.5-2.3   C252.9,73.2,254.2,74.5,255.7,75.4z"/>
-	<path d="M246.1,61v2.1h4.7c-0.3,1-0.4,2-0.4,3c0,1.1,0.2,2.2,0.5,3.2h-4.8v2.3c0,0.2-0.2,0.4-0.4,0.4h-1.1   c-0.2,0-0.4-0.2-0.4-0.4V61c0-0.2,0.2-0.4,0.4-0.4h1.1C245.9,60.6,246.1,60.8,246.1,61z"/>
-	<path d="M261,55.4c-3.7,0-7,2-8.9,4.9c0.1-0.5,0.2-1,0.3-1.5c0-0.5,0.4-0.8,0.9-1v-4.8c0-0.2,0.2-0.4,0.4-0.4l14.6,0   c0,0,0.2,0,0.3,0.1c0.1,0.1,0.1,0.2,0.1,0.2l0,4.8c0.5,0.2,0.7,0.4,0.8,0.9c0.1,0.5,0.2,1,0.3,1.5C267.9,57.3,264.7,55.4,261,55.4z   "/>
-	<path d="M261,75.8c5.3,0,9.6-4.3,9.6-9.7c0-5.4-4.3-9.7-9.6-9.7c-5.3,0-9.6,4.3-9.6,9.7   C251.4,71.5,255.7,75.8,261,75.8z M261,73.3c-4,0-7.2-3.2-7.2-7.2c0-4,3.2-7.2,7.2-7.2c4,0,7.2,3.2,7.2,7.2   C268.2,70.1,265,73.3,261,73.3z"/>
-</g>
-<path id="circulation-line-01" class="st1" d="M353.9,35.2l-7.6,16.5h4.6v11.5h-69.8V61c0-0.2-0.2-0.4-0.4-0.4h-1.1  c-0.2,0-0.4,0.2-0.4,0.4v10.5c0,0.2,0.2,0.4,0.4,0.4h1.1c0.2,0,0.4-0.2,0.4-0.4v-2.4h69.8v62.2h-60.8v6h66.8l0-0.6h0v-85h4.6  L353.9,35.2z M315.8,68.4l-4.8-2.2l4.8-2.2V68.4z M320.8,136.4v-4.4l4.8,2.2L320.8,136.4z"/>
-<path id="circulation-line-02" class="st1" d="M242.8,60.6h-1.1c-0.2,0-0.4,0.2-0.4,0.4v2.4h-29.2l0,0.6h0v67.4l6,0V69.4h23.2v2.2  c0,0.2,0.2,0.4,0.4,0.4h1.1c0.2,0,0.4-0.2,0.4-0.4V61C243.2,60.8,243.1,60.6,242.8,60.6z M215,100.4l-2.2-4.8h4.4L215,100.4z"/>
-<path id="hotwater" class="st2" d="M147.2,131.3l0,6h143.7v-6H147.2z M176.1,136.4v-4.4l4.8,2.2L176.1,136.4z M251.2,136.4v-4.4  l4.8,2.2L251.2,136.4z"/>
-<path id="coldwater" class="st3" d="M293.6,210.9v-73.8h-6v73.8H147.2l0,6h209.7v-6H293.6z M217.4,216.1l-4.8-2.2l4.8-2.2V216.1z   M288.4,176.4l2.2-4.8l2.2,4.8H288.4z M325.6,216.1l-4.8-2.2l4.8-2.2V216.1z"/>
-<circle id="line-connection-02" class="st4" cx="215" cy="134.2" r="6.3"/>
-<circle id="line-connection-01" class="st4" cx="290.6" cy="134.2" r="6.3"/>
-<path id="temp-sensor" class="st5" d="M212.1,88.8v-15h-3.8c-0.7,0-1.3,0.5-1.3,1v13c0,0.5,0.6,1,1.3,1H212.1z"/>
-<g id="dhw-tank_1_">
-	<path id="water" class="st6" d="M129.9,114.3c-9.3-2.9-21.7-4.5-35-4.5h-2.1c-13.3,0-25.7,1.6-35,4.5c-8.9,2.8-12.2,6-12.2,7.4   v86.6v5.6v13c0,1.5,3.2,4.6,12.2,7.4c9.3,2.9,21.7,4.5,35,4.5h2.1c13.3,0,25.7-1.6,35-4.5c8.9-2.8,12.2-6,12.2-7.4v-13v-5.6v-86.6   C142.1,120.3,138.8,117.1,129.9,114.3z"/>
-	<path id="tank" class="st4" d="M142.8,234.7c3.3-2.3,4.9-4.9,4.9-7.7v-6.3v-98.9c0-11.4-27.2-17.6-52.8-17.6h-2.1   c-25.6,0-52.8,6.2-52.8,17.6V227c0,2.8,1.7,5.4,4.9,7.7l-6.3,9.9l18.9,0l2.3-3.7c9.3,2.4,20.9,3.7,33,3.7h2.1c12,0,23.7-1.3,33-3.7   l2.3,3.7l18.9,0L142.8,234.7z M77.4,172.3c0.2,1.3,1.3,2.3,2.6,2.5l19,2.9l-19.5,5.9c-1.3,0.4-2.2,1.6-2.2,2.9s0.9,2.5,2.2,2.9   l19.5,5.9l-19,2.9c-1.4,0.2-2.4,1.2-2.6,2.5c-0.2,1.3,0.5,2.6,1.8,3.2l19.5,8.9H43.3v-52.5h55.4l-19.5,8.9   C77.9,169.7,77.2,171,77.4,172.3z M129.4,237l-1.2,0.3c-9.2,2.5-21,3.9-33.3,3.9h-2.1c-12.3,0-24.1-1.4-33.3-3.9l-1.2-0.3l-2.6,4.2   l-11,0l4.8-7.5l-1.5-0.9c-2.2-1.3-4.8-3.4-4.8-5.8v-8.2h69.5c1.5,0,2.7-1,3.1-2.3c0.3-1.4-0.4-2.8-1.7-3.4l-23-10.4l22.2-3.3   c1.4-0.2,2.5-1.4,2.6-2.8c0.1-1.4-0.8-2.7-2.2-3.1L91,186.5l22.7-6.9c1.4-0.4,2.3-1.7,2.2-3.1c-0.1-1.4-1.2-2.5-2.6-2.8l-22.2-3.3   l23-10.4c1.3-0.6,2.1-2.1,1.7-3.4c-0.3-1.4-1.6-2.3-3.1-2.3H43.3v-32.4c0-6.7,20.3-14.2,49.5-14.2h2.1c29.2,0,49.5,7.5,49.5,14.2   v98.9v6.3c0,2.4-2.6,4.5-4.8,5.8l-1.5,0.9l4.8,7.5l-11,0L129.4,237z"/>
-</g>
-<g id="label_circulation-pump-rpm"><title>Ansteuerung der Zirkulationspumpe</title>
-	<path class="st7" d="M319.5,108.1h-71c-1.6,0-3-1.3-3-3V81.6c0-1.7,1.4-3,3-3h71c1.6,0,3,1.3,3,3v23.5   C322.5,106.7,321.2,108.1,319.5,108.1z"/>
-	<g id="symb_pump-rpm">
-		<path class="st8" d="M274.5,108.1h-26c-1.6,0-3-1.3-3-3V81.6c0-1.7,1.4-3,3-3h26c1.6,0,3,1.3,3,3v23.5    C277.5,106.7,276.1,108.1,274.5,108.1z"/>
-		<g>
-			<path class="st9" d="M260.9,84c-7.4,0-13.5,6.1-13.5,13.5V98h3.5v-1h-2.5c0.1-3.1,1.4-5.9,3.3-8l1.8,1.8l0.7-0.7l-1.8-1.8     c2.1-2,4.9-3.2,8-3.3v2.5h1V85c3.1,0.1,5.9,1.3,8,3.3l-1.7,1.7l0.7,0.7l1.7-1.7c2,2.1,3.2,4.9,3.3,8h-2.5v1h3.5v-0.5     C274.4,90,268.3,84,260.9,84z"/>
-			<path class="st9" d="M258.9,99c1.7,1.7,3,0.8,3,0.8l4.2-8l-8,4.2C258.1,96,257.2,97.3,258.9,99z"/>
-		</g>
-	</g>
-</g>
-<text id="txt_circulation-pump-rpm" transform="matrix(1 0 0 1 299 98.9003)" class="st5 st10 st11">0%</text>
-<g id="label_circulation-temp"><title>Rücklauftemperatur an der Zirkulationsleitung</title>
-	<path id="frame" class="st12" d="M200.9,96.1h-53c-1.6,0-3-1.3-3-3V69.6c0-1.7,1.4-3,3-3h53c1.7,0,3,1.3,3,3v23.5   C203.9,94.7,202.5,96.1,200.9,96.1z"/>
-	<g id="symb_circulation-temp">
-		<path class="st13" d="M157.9,96.1h-10c-1.6,0-3-1.3-3-3V69.6c0-1.7,1.4-3,3-3h10c1.7,0,3,1.3,3,3v23.5    C160.9,94.7,159.5,96.1,157.9,96.1z"/>
-		<g>
-			<rect x="148.2" y="77.3" class="st9" width="2.9" height="2"/>
-			<rect x="148.2" y="73.6" class="st9" width="2.9" height="2"/>
-			<path class="st9" d="M155.2,83.7V73.4c0-2.2-3.3-2.2-3.3,0v10.3c-1.4,0.6-2.5,2.1-2.5,3.8c0,2.3,1.8,4.1,4.1,4.1     c2.3,0,4.1-1.8,4.1-4.1C157.6,85.8,156.6,84.3,155.2,83.7z"/>
-			<rect x="148.2" y="80.9" class="st9" width="2.9" height="2"/>
-		</g>
-	</g>
-</g>
-<text id="txt_circulation-temp" transform="matrix(1 0 0 1 182 86.9004)" class="st5 st10 st11">0°C</text>
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   id="Ebene_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 400 280"
+   style="enable-background:new 0 0 400 280;"
+   xml:space="preserve"
+   sodipodi:docname="froeling_zirkulationspumpe.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+   id="namedview15"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:zoom="1.1351589"
+   inkscape:cx="178.38912"
+   inkscape:cy="155.04437"
+   inkscape:window-width="958"
+   inkscape:window-height="1128"
+   inkscape:window-x="946"
+   inkscape:window-y="0"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Ebene_1" />&#10;	<defs
+   id="defs1">&#10;       <style
+   id="style1">&#10;           @import url(&quot;https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&quot;);			&#10;       </style>&#10;	</defs> &#10;<style
+   type="text/css"
+   id="style2">&#10;	.stPumpActive{fill:#87AD27;}&#10;	.stPumpInActive{fill:#BBBBBB;}&#10;	.st1{fill:#FA9664;}&#10;	.st2{fill:#C86464;}&#10;	.st3{fill:#6E8CA0;}&#10;	.st4{fill:#787878;}&#10;	.st5{fill:#323232;}&#10;	.st6{opacity:0.2;fill:#6E8CA0;}&#10;	.st7{fill:#FFFFFF;stroke:#C8C8C8;stroke-miterlimit:10;}&#10;	.st8{fill:#C8C8C8;}&#10;	.st9{fill:#646464;}	.st10{font-family:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Roboto,Arial,Helvetica,sans-serif;font-specification:'Roboto,Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;}&#10;	.st11{font-size:14px;}&#10;	.st12{fill:#FFFFFF;stroke:#CCCCCC;stroke-miterlimit:10;}&#10;	.st13{fill:#CCCCCC;}&#10;</style>&#10;<g
+   id="binary_sensor.froeling_zirkulationspumpe_an_aus"
+   class="stPumpInActive"><title
+   id="title2">Status der Zirkulationspumpe</title>&#10;	<path
+   d="M257.7,66.1c0-1.8,1.5-3.3,3.3-3.3c1.8,0,3.3,1.5,3.3,3.3c0,1.8-1.5,3.3-3.3,3.3   C259.2,69.4,257.7,67.9,257.7,66.1z"
+   id="path2" />&#10;	<path
+   d="M276.3,71.5v-2.3h-5.2c0.3-1,0.5-2.1,0.5-3.2c0-1.1-0.2-2.1-0.4-3h5.2V61c0-0.2,0.2-0.4,0.4-0.4h1.1   c0.2,0,0.4,0.2,0.4,0.4v10.5c0,0.2-0.2,0.4-0.4,0.4h-1.1C276.5,71.9,276.3,71.8,276.3,71.5z"
+   id="path3" />&#10;	<path
+   d="M270,71.7c-0.1,0.7-0.3,1.5-0.5,2.2c-0.1,0.5-0.3,0.8-1,1c-0.8,0.2-1.6,0.4-2.3,0.5   C267.8,74.5,269.1,73.2,270,71.7z"
+   id="path4" />&#10;	<path
+   d="M255.7,75.4c-0.8-0.1-1.5-0.3-2.3-0.5c-0.6-0.2-0.8-0.4-1-1c-0.2-0.8-0.4-1.5-0.5-2.3   C252.9,73.2,254.2,74.5,255.7,75.4z"
+   id="path5" />&#10;	<path
+   d="M246.1,61v2.1h4.7c-0.3,1-0.4,2-0.4,3c0,1.1,0.2,2.2,0.5,3.2h-4.8v2.3c0,0.2-0.2,0.4-0.4,0.4h-1.1   c-0.2,0-0.4-0.2-0.4-0.4V61c0-0.2,0.2-0.4,0.4-0.4h1.1C245.9,60.6,246.1,60.8,246.1,61z"
+   id="path6" />&#10;	<path
+   d="M261,55.4c-3.7,0-7,2-8.9,4.9c0.1-0.5,0.2-1,0.3-1.5c0-0.5,0.4-0.8,0.9-1v-4.8c0-0.2,0.2-0.4,0.4-0.4l14.6,0   c0,0,0.2,0,0.3,0.1c0.1,0.1,0.1,0.2,0.1,0.2l0,4.8c0.5,0.2,0.7,0.4,0.8,0.9c0.1,0.5,0.2,1,0.3,1.5C267.9,57.3,264.7,55.4,261,55.4z   "
+   id="path7" />&#10;	<path
+   d="M261,75.8c5.3,0,9.6-4.3,9.6-9.7c0-5.4-4.3-9.7-9.6-9.7c-5.3,0-9.6,4.3-9.6,9.7   C251.4,71.5,255.7,75.8,261,75.8z M261,73.3c-4,0-7.2-3.2-7.2-7.2c0-4,3.2-7.2,7.2-7.2c4,0,7.2,3.2,7.2,7.2   C268.2,70.1,265,73.3,261,73.3z"
+   id="path8" />&#10;</g>&#10;<path
+   id="circulation-line-01"
+   class="st1"
+   d="M353.9,35.2l-7.6,16.5h4.6v11.5h-69.8V61c0-0.2-0.2-0.4-0.4-0.4h-1.1  c-0.2,0-0.4,0.2-0.4,0.4v10.5c0,0.2,0.2,0.4,0.4,0.4h1.1c0.2,0,0.4-0.2,0.4-0.4v-2.4h69.8v62.2h-60.8v6h66.8l0-0.6h0v-85h4.6  L353.9,35.2z M315.8,68.4l-4.8-2.2l4.8-2.2V68.4z M320.8,136.4v-4.4l4.8,2.2L320.8,136.4z" />&#10;<path
+   id="circulation-line-02"
+   class="st1"
+   d="M242.8,60.6h-1.1c-0.2,0-0.4,0.2-0.4,0.4v2.4h-29.2l0,0.6h0v67.4l6,0V69.4h23.2v2.2  c0,0.2,0.2,0.4,0.4,0.4h1.1c0.2,0,0.4-0.2,0.4-0.4V61C243.2,60.8,243.1,60.6,242.8,60.6z M215,100.4l-2.2-4.8h4.4L215,100.4z" />&#10;<path
+   id="hotwater"
+   class="st2"
+   d="M147.2,131.3l0,6h143.7v-6H147.2z M176.1,136.4v-4.4l4.8,2.2L176.1,136.4z M251.2,136.4v-4.4  l4.8,2.2L251.2,136.4z" />&#10;<path
+   id="coldwater"
+   class="st3"
+   d="M293.6,210.9v-73.8h-6v73.8H147.2l0,6h209.7v-6H293.6z M217.4,216.1l-4.8-2.2l4.8-2.2V216.1z   M288.4,176.4l2.2-4.8l2.2,4.8H288.4z M325.6,216.1l-4.8-2.2l4.8-2.2V216.1z" />&#10;<circle
+   id="line-connection-02"
+   class="st4"
+   cx="215"
+   cy="134.2"
+   r="6.3" />&#10;<circle
+   id="line-connection-01"
+   class="st4"
+   cx="290.6"
+   cy="134.2"
+   r="6.3" />&#10;<path
+   id="temp-sensor"
+   class="st5"
+   d="M212.1,88.8v-15h-3.8c-0.7,0-1.3,0.5-1.3,1v13c0,0.5,0.6,1,1.3,1H212.1z" />&#10;<g
+   id="dhw-tank_1_">&#10;	<path
+   id="water"
+   class="st6"
+   d="M129.9,114.3c-9.3-2.9-21.7-4.5-35-4.5h-2.1c-13.3,0-25.7,1.6-35,4.5c-8.9,2.8-12.2,6-12.2,7.4   v86.6v5.6v13c0,1.5,3.2,4.6,12.2,7.4c9.3,2.9,21.7,4.5,35,4.5h2.1c13.3,0,25.7-1.6,35-4.5c8.9-2.8,12.2-6,12.2-7.4v-13v-5.6v-86.6   C142.1,120.3,138.8,117.1,129.9,114.3z" />&#10;	<path
+   id="tank"
+   class="st4"
+   d="M142.8,234.7c3.3-2.3,4.9-4.9,4.9-7.7v-6.3v-98.9c0-11.4-27.2-17.6-52.8-17.6h-2.1   c-25.6,0-52.8,6.2-52.8,17.6V227c0,2.8,1.7,5.4,4.9,7.7l-6.3,9.9l18.9,0l2.3-3.7c9.3,2.4,20.9,3.7,33,3.7h2.1c12,0,23.7-1.3,33-3.7   l2.3,3.7l18.9,0L142.8,234.7z M77.4,172.3c0.2,1.3,1.3,2.3,2.6,2.5l19,2.9l-19.5,5.9c-1.3,0.4-2.2,1.6-2.2,2.9s0.9,2.5,2.2,2.9   l19.5,5.9l-19,2.9c-1.4,0.2-2.4,1.2-2.6,2.5c-0.2,1.3,0.5,2.6,1.8,3.2l19.5,8.9H43.3v-52.5h55.4l-19.5,8.9   C77.9,169.7,77.2,171,77.4,172.3z M129.4,237l-1.2,0.3c-9.2,2.5-21,3.9-33.3,3.9h-2.1c-12.3,0-24.1-1.4-33.3-3.9l-1.2-0.3l-2.6,4.2   l-11,0l4.8-7.5l-1.5-0.9c-2.2-1.3-4.8-3.4-4.8-5.8v-8.2h69.5c1.5,0,2.7-1,3.1-2.3c0.3-1.4-0.4-2.8-1.7-3.4l-23-10.4l22.2-3.3   c1.4-0.2,2.5-1.4,2.6-2.8c0.1-1.4-0.8-2.7-2.2-3.1L91,186.5l22.7-6.9c1.4-0.4,2.3-1.7,2.2-3.1c-0.1-1.4-1.2-2.5-2.6-2.8l-22.2-3.3   l23-10.4c1.3-0.6,2.1-2.1,1.7-3.4c-0.3-1.4-1.6-2.3-3.1-2.3H43.3v-32.4c0-6.7,20.3-14.2,49.5-14.2h2.1c29.2,0,49.5,7.5,49.5,14.2   v98.9v6.3c0,2.4-2.6,4.5-4.8,5.8l-1.5,0.9l4.8,7.5l-11,0L129.4,237z" />&#10;</g>&#10;<g
+   id="label_circulation-pump-rpm"><title
+   id="title8">Ansteuerung der Zirkulationspumpe</title>&#10;	<path
+   class="st7"
+   d="M319.5,108.1h-71c-1.6,0-3-1.3-3-3V81.6c0-1.7,1.4-3,3-3h71c1.6,0,3,1.3,3,3v23.5   C322.5,106.7,321.2,108.1,319.5,108.1z"
+   id="path9" />&#10;	<g
+   id="symb_pump-rpm">&#10;		<path
+   class="st8"
+   d="M274.5,108.1h-26c-1.6,0-3-1.3-3-3V81.6c0-1.7,1.4-3,3-3h26c1.6,0,3,1.3,3,3v23.5    C277.5,106.7,276.1,108.1,274.5,108.1z"
+   id="path10" />&#10;		<g
+   id="g12">&#10;			<path
+   class="st9"
+   d="M260.9,84c-7.4,0-13.5,6.1-13.5,13.5V98h3.5v-1h-2.5c0.1-3.1,1.4-5.9,3.3-8l1.8,1.8l0.7-0.7l-1.8-1.8     c2.1-2,4.9-3.2,8-3.3v2.5h1V85c3.1,0.1,5.9,1.3,8,3.3l-1.7,1.7l0.7,0.7l1.7-1.7c2,2.1,3.2,4.9,3.3,8h-2.5v1h3.5v-0.5     C274.4,90,268.3,84,260.9,84z"
+   id="path11" />&#10;			<path
+   class="st9"
+   d="M258.9,99c1.7,1.7,3,0.8,3,0.8l4.2-8l-8,4.2C258.1,96,257.2,97.3,258.9,99z"
+   id="path12" />&#10;		</g>&#10;	</g>&#10;</g>&#10;<text
+   id="sensor.froeling_drehzahl_der_zirkulations_pumpe"
+   transform="matrix(1 0 0 1 299 98.9003)"
+   class="st5 st10 st11">0%</text>&#10;<g
+   id="label_circulation-temp"><title
+   id="title12">Rücklauftemperatur an der Zirkulationsleitung</title>&#10;	<path
+   id="frame"
+   class="st12"
+   d="M200.9,96.1h-53c-1.6,0-3-1.3-3-3V69.6c0-1.7,1.4-3,3-3h53c1.7,0,3,1.3,3,3v23.5   C203.9,94.7,202.5,96.1,200.9,96.1z" />&#10;	<g
+   id="symb_circulation-temp">&#10;		<path
+   class="st13"
+   d="M157.9,96.1h-10c-1.6,0-3-1.3-3-3V69.6c0-1.7,1.4-3,3-3h10c1.7,0,3,1.3,3,3v23.5    C160.9,94.7,159.5,96.1,157.9,96.1z"
+   id="path13" />&#10;		<g
+   id="g15">&#10;			<rect
+   x="148.2"
+   y="77.3"
+   class="st9"
+   width="2.9"
+   height="2"
+   id="rect13" />&#10;			<rect
+   x="148.2"
+   y="73.6"
+   class="st9"
+   width="2.9"
+   height="2"
+   id="rect14" />&#10;			<path
+   class="st9"
+   d="M155.2,83.7V73.4c0-2.2-3.3-2.2-3.3,0v10.3c-1.4,0.6-2.5,2.1-2.5,3.8c0,2.3,1.8,4.1,4.1,4.1     c2.3,0,4.1-1.8,4.1-4.1C157.6,85.8,156.6,84.3,155.2,83.7z"
+   id="path14" />&#10;			<rect
+   x="148.2"
+   y="80.9"
+   class="st9"
+   width="2.9"
+   height="2"
+   id="rect15" />&#10;		</g>&#10;	</g>&#10;</g>&#10;<text
+   id="sensor.froeling_ruecklauftemperatur_an_der_zirkulations_leitung"
+   transform="matrix(1 0 0 1 182 86.9004)"
+   class="st5 st10 st11">0°C</text>&#10;</svg>
