@@ -10,7 +10,7 @@
 ## ESHome RS232 to TTL - ESP32 - Read data from Froeling / Lambdatronic 3200
 
 I'm testing this with my Fröling SP Dual 20 (V 50.04 B 05.19). But I assume it could also work for other models that have the Lambdatronic 3200 control unit. Feedback appreciated.
-So far the latest docs I've found are for V 50.04 B 05.17 - Might be a reason as well why I struggle to find right away the correct values. According to some research the (some) modbus addresses changed with the version.
+I requested and received from Fröling support the ModBus communication protocl for V 50.04 B 05.19 (see pdf file).
 
 ### Parts
   
