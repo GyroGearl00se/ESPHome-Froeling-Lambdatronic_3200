@@ -28,7 +28,7 @@ sensor:
     register_type: read
     address: 1000
     unit_of_measurement: "°C"
-    value_type: U_WORD
+    value_type: S_WORD
     filters:
       - multiply: 0.5
 
