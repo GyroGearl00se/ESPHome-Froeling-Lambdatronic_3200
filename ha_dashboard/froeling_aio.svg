@@ -1,0 +1,4464 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="740"
+   height="540"
+   version="1.1"
+   viewBox="0 0 740 540"
+   xml:space="preserve"
+   id="svg646"
+   sodipodi:docname="froeling_visualisierung.svg"
+   inkscape:version="1.3.1 (91b66b0783, 2023-11-16)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"><sodipodi:namedview
+   id="namedview1"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:zoom="1.1074821"
+   inkscape:cx="388.26813"
+   inkscape:cy="345.37804"
+   inkscape:window-width="1920"
+   inkscape:window-height="1147"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg646"
+   showgrid="true"><inkscape:grid
+     id="grid1"
+     units="px"
+     originx="0"
+     originy="0"
+     spacingx="1"
+     spacingy="1"
+     empcolor="#3f3fff"
+     empopacity="0.25098039"
+     color="#3f3fff"
+     opacity="0.12549"
+     empspacing="5"
+     dotted="false"
+     gridanglex="30"
+     gridanglez="30"
+     visible="true" /></sodipodi:namedview><metadata
+   id="metadata1"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata>
+	<defs
+   id="defs4"><pattern
+   id="pattern777"
+   patternTransform="rotate(7 468.93 -196.28)"
+   preserveAspectRatio="xMidYMid"
+   xlink:href="#halftones" /><pattern
+   id="halftones"
+   width="10"
+   height="10"
+   fill="#bfbfbf"
+   patternUnits="userSpaceOnUse"
+   preserveAspectRatio="xMidYMid"><g
+     id="fullPattern"
+     transform="scale(.1)"><circle
+       cx="50"
+       cy="50"
+       r="25"
+       stop-color="#000000"
+       style="paint-order:markers fill stroke"
+       id="circle1" /><path
+       d="m25 0a25 25 0 0 1-25 25 25 25 0 0 1-25-25 25 25 0 0 1 25-25 25 25 0 0 1 25 25z"
+       style="paint-order:markers fill stroke"
+       id="path1" /><path
+       d="m125 0a25 25 0 0 1-25 25 25 25 0 0 1-25-25 25 25 0 0 1 25-25 25 25 0 0 1 25 25z"
+       style="paint-order:markers fill stroke"
+       id="path2" /><path
+       d="m25 100a25 25 0 0 1-25 25 25 25 0 0 1-25-25 25 25 0 0 1 25-25 25 25 0 0 1 25 25z"
+       style="paint-order:markers fill stroke"
+       id="path3" /><path
+       d="m125 100a25 25 0 0 1-25 25 25 25 0 0 1-25-25 25 25 0 0 1 25-25 25 25 0 0 1 25 25z"
+       style="paint-order:markers fill stroke"
+       id="path4" /></g></pattern><style
+   id="style4">
+            @import url(&quot;https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&quot;);			
+        </style>
+	
+	
+
+</defs> 
+<style
+   type="text/css"
+   id="style5">
+	.stPumpActive{fill:#87AD27;}
+	.stPumpInActive{fill:#BBBBBB;}
+	.stHeatingOn{fill-rule:evenodd;clip-rule:evenodd;fill:#FF3232;}
+	.stHeatingOff{fill-rule:evenodd;clip-rule:evenodd;fill:#BBBBBB;}
+	.st0{fill:#6E8CA0;}
+	.st1{fill:#C86464;}
+	.st2{fill:#646464;}
+	.st3{clip-path:url(#SVGID_2_);}
+	.st4{fill:#87AD27;}
+	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#FF3232;}
+	.st6{fill:#FFFFFF;stroke:#C8C8C8;stroke-width:1.0555;stroke-miterlimit:10;}
+	.st7{fill:#C8C8C8;}
+	.st8{fill-rule:evenodd;clip-rule:evenodd;fill:#646464;}
+	.st9{fill:#323232;}
+	.st10{font-family:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Roboto,Arial,Helvetica,sans-serif;font-specification:'Roboto,Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;}
+	.st11{font-size:14px;}
+	.st12{fill:#FFFFFF;stroke:#C8C8C8;stroke-width:0.9237;stroke-miterlimit:10;}
+</style>
+<rect
+   x="22.348"
+   y="288.97"
+   width="119.38"
+   height="160"
+   ry="16"
+   fill="url(#pattern777)"
+   stroke="#646464"
+   stroke-linejoin="round"
+   stroke-miterlimit="1"
+   stroke-width="5"
+   id="rect5" /><g
+   id="label_aussen-temperatur"
+   transform="translate(-220.91458,-1.9154444)"><title
+     id="title648">Aussentemperatur</title><path
+     class="st12"
+     d="m 716.75,61.264 h -62.42 c -1.6701,0 -3.1314,-1.2363 -3.1314,-2.853 V 35.016 c 0,-1.5216 1.4613,-2.853 3.1314,-2.853 h 62.42 c 1.6701,0 3.1314,1.3314 3.1314,2.853 v 23.3 c 0,1.6167 -1.357,2.9481 -3.1314,2.9481 z"
+     fill="#fff"
+     stroke="#c8c8c8"
+     stroke-miterlimit="10"
+     stroke-width=".9237"
+     id="path5" /><path
+     class="st7"
+     d="m 672.92,61.264 h -16.932 c -2.5558,0 -4.7921,-1.2363 -4.7921,-2.853 V 35.016 c 0,-1.5216 2.2363,-2.853 4.7921,-2.853 h 16.932 c 2.5558,0 4.7921,1.3314 4.7921,2.853 v 23.3 c 0,1.6167 -2.2363,2.9481 -4.7921,2.9481 z"
+     fill="#c8c8c8"
+     stroke-width="1.2325"
+     id="path6" /><g
+     transform="translate(522.9,-10.347)"
+     fill="#323232"
+     id="g13"
+     style="fill:#646464;fill-opacity:1"><rect
+       class="st9"
+       x="148"
+       y="52.5"
+       width="2"
+       height="1.3"
+       id="rect6"
+       style="fill:#646464;fill-opacity:1" /><rect
+       class="st9"
+       x="148"
+       y="50.099998"
+       width="2"
+       height="1.3"
+       id="rect7"
+       style="fill:#646464;fill-opacity:1" /><path
+       class="st9"
+       d="M 152.6,56.8 V 50 c 0,-1.5 -2.2,-1.5 -2.2,0 v 6.8 c -1,0.4 -1.6,1.4 -1.6,2.5 0,1.5 1.2,2.7 2.7,2.7 1.5,0 2.7,-1.2 2.7,-2.7 0,-1.1 -0.7,-2.1 -1.6,-2.5 z"
+       id="path7"
+       style="fill:#646464;fill-opacity:1" /><rect
+       class="st9"
+       x="148"
+       y="54.900002"
+       width="2"
+       height="1.3"
+       id="rect8"
+       style="fill:#646464;fill-opacity:1" /><rect
+       class="st9"
+       transform="matrix(0.7071,-0.7071,0.7071,0.7071,-4.4364,110.82)"
+       x="130.39999"
+       y="60"
+       width="2.2"
+       height="1.5"
+       id="rect9"
+       style="fill:#646464;fill-opacity:1" /><rect
+       class="st9"
+       transform="matrix(0.7071,-0.7071,0.7071,0.7071,4.5484,114.54)"
+       x="139.39999"
+       y="51"
+       width="2.2"
+       height="1.5"
+       id="rect10"
+       style="fill:#646464;fill-opacity:1" /><rect
+       class="st9"
+       x="135.3"
+       y="48.799999"
+       width="1.5"
+       height="2.2"
+       id="rect11"
+       style="fill:#646464;fill-opacity:1" /><path
+       class="st9"
+       d="m 142.6,55.9 h -0.5 v 1.8 h 0.9 c 3.1,0.6 3,5.5 0.1,5.9 H 134 c -1,0 -1,-0.1 -1.6,-0.8 l -1.3,1.2 c 0,0 0.2,0.3 0.7,0.7 0.5,0.5 1.5,0.7 2.3,0.7 h 9.2 c 0,0 0.3,0 0.7,-0.1 4.7,-1.5 3.7,-9.5 -1.4,-9.4 z"
+       id="path11"
+       style="fill:#646464;fill-opacity:1" /><rect
+       class="st9"
+       transform="matrix(0.7071,-0.7071,0.7071,0.7071,1.9176,108.19)"
+       x="130.8"
+       y="50.700001"
+       width="1.5"
+       height="2.2"
+       id="rect12"
+       style="fill:#646464;fill-opacity:1" /><rect
+       class="st9"
+       x="128.60001"
+       y="55.5"
+       width="2.2"
+       height="1.5"
+       id="rect13"
+       style="fill:#646464;fill-opacity:1" /><path
+       class="st9"
+       d="m 136.1,51.5 c -2.7,0 -4.8,2.2 -4.8,4.8 0,2.6 2.2,4.8 4.8,4.8 2.7,0 4.8,-2.2 4.8,-4.8 0,-2.6 -2.2,-4.8 -4.8,-4.8 z m 0,7.9 c -1.7,0 -3.1,-1.4 -3.1,-3.1 0,-1.7 1.4,-3.1 3.1,-3.1 1.7,0 3.1,1.4 3.1,3.1 -0.1,1.7 -1.4,3.1 -3.1,3.1 z"
+       id="path13"
+       style="fill:#646464;fill-opacity:1" /></g></g><path
+   class="st0"
+   d="m 410.65,440.9 h -1.1 c -0.2,0 -0.4,0.2 -0.4,0.4 v 2.2 h -65.2 v 6 h 65.2 v 2.4 c 0,0.2 0.2,0.4 0.4,0.4 h 1.1 c 0.2,0 0.4,-0.2 0.4,-0.4 v -10.5 c 0,-0.3 -0.2,-0.5 -0.4,-0.5 z m -30.9,7.8 -4.8,-2.2 4.8,-2.2 z"
+   fill="#6e8ca0"
+   id="path14" />
+<path
+   class="st0"
+   d="m 448.95,443.7 v -2.4 c 0,-0.2 -0.19969,-0.4 -0.39938,-0.4 h -1.0983 c -0.1997,0 -0.39939,0.2 -0.39939,0.4 v 10.6 c 0,0.2 0.19969,0.4 0.39939,0.4 h 1.0983 c 0.19969,0 0.39938,-0.2 0.39938,-0.4 v -2.2 h 65.002 v -6 z m 32.95,5 -4.7927,-2.2 4.7927,-2.2 z"
+   fill="#6e8ca0"
+   stroke-width="0.99925"
+   id="path15" />
+<path
+   id="boiler-flow"
+   class="st1"
+   d="m 343.74,370.71 v 6 h 169.9 v -6 z m 30.863,5.2 v -4.4 l 4.7944,2.2 z m 102.08,0 v -4.4 l 4.7944,2.2 z"
+   fill="#c86464"
+   stroke-width="0.99939" />
+<g
+   id="boiler"
+   transform="translate(138.95,261.9)"><g
+   fill="#646464"
+   id="g19">
+	<path
+   class="st2"
+   d="m 239.4,26 v 51.9 h -33.6 v -8.6 c 0,-1.1 -1,-2.1 -2.1,-2.1 h -91.2 c -1.1,0 -2.1,1 -2.1,2.1 v 99 H 75 l 20.3,-26.1 0.1,-0.2 c 1.3,-2.3 2,-4.9 2,-7.5 V 82.3 C 97.4,74 90.6,67.2 82.3,67.2 H 49.1 C 40.8,67.2 34,74 34,82.3 v 52.2 c 0,2.6 0.7,5.2 2,7.5 l 20.4,26.3 v 12.4 h 53.9 v 18.1 c 0,0.2 0,0.3 0.1,0.5 0,0.2 -0.1,0.3 -0.1,0.5 v 54.3 c 0,1.1 1,2.1 2.1,2.1 h 91.2 c 1.1,0 2.1,-1 2.1,-2.1 v -54.3 c 0,-0.2 0,-0.3 -0.1,-0.5 0,-0.2 0.1,-0.3 0.1,-0.5 V 90.5 h 41 c 2.9,0 5.2,-2.3 5.2,-5.2 V 26 Z M 39.1,140.2 c -1,-1.7 -1.5,-3.7 -1.5,-5.7 V 82.3 c 0,-6.4 5.2,-11.5 11.5,-11.5 h 33.2 c 6.4,0 11.5,5.2 11.5,11.5 v 52.2 c 0,2 -0.5,3.9 -1.5,5.7 l -19.1,24.6 h -15 z m 163.4,112.7 h -88.9 v -52 h 88.9 z m 0,-55.3 H 113.6 V 70.5 h 88.9 z"
+   id="path16" />
+	<path
+   class="st2"
+   d="m 139,183.3 h 38.6 c 3,0 5.5,-2.5 5.5,-5.5 v -38.6 c 0,-3 -2.5,-5.5 -5.5,-5.5 H 139 c -3,0 -5.5,2.5 -5.5,5.5 v 38.6 c 0,3 2.4,5.5 5.5,5.5 z m -4.5,-44.1 c 0,-2.5 2,-4.5 4.5,-4.5 h 38.6 c 2.5,0 4.5,2 4.5,4.5 v 38.6 c 0,2.5 -2,4.5 -4.5,4.5 H 139 c -2.5,0 -4.5,-2 -4.5,-4.5 z"
+   id="path17" />
+	<path
+   class="st2"
+   d="m 142.5,248.6 h 31.2 V 216 h 4.8 v -4.7 h -17.6 v -6.4 h -5.7 v 6.4 h -17.6 v 4.7 h 4.8 v 32.6 z m 2.9,-31.9 h 24.9 v 29.2 h -24.9 z"
+   id="path18" />
+	<path
+   class="st2"
+   d="m 163.1,222.9 c -3.9,-2.8 -6.9,-2.8 -11.1,0 -1.4,1 -1.6,1 -4.7,0 v 21.4 h 21.2 v -21.4 c -2.9,1.7 -4.2,1.7 -5.4,0 z"
+   id="path19" />
+	</g><g
+   id="pellet">
+		<defs
+   id="defs19"><path
+     id="SVGID_1_"
+     d="M 85.7,108.7 C 82.3,108.8 81.8,108 79,106.2 77.1,105 70.3,103 66.3,105 c -8.3,4.1 -6.9,2.2 -13.7,0.4 -7.4,-2 -7,0.6 -12.2,-0.5 h -0.1 v 28.6 c 0,2.1 0.6,4.2 1.6,6 l 17.2,22.2 h 13.1 l 17.1,-22.1 0.1,-0.2 c 1.1,-1.8 1.6,-3.9 1.6,-6 v -26.9 c -0.6,0.1 -3,2.2 -5.3,2.2 z" /></defs>
+		<clipPath
+   id="SVGID_2_">
+			<use
+   width="100%"
+   height="100%"
+   xlink:href="#SVGID_1_"
+   id="use19" />
+		</clipPath>
+		<g
+   class="st3"
+   clip-path="url(#SVGID_2_)"
+   fill="#646464"
+   id="g522">
+			<circle
+   class="st2"
+   cx="38.599998"
+   cy="102.8"
+   r="0.80000001"
+   id="circle19" />
+			<circle
+   class="st2"
+   cx="38.599998"
+   cy="106.2"
+   r="0.80000001"
+   id="circle20" />
+			<circle
+   class="st2"
+   cx="38.599998"
+   cy="109.6"
+   r="0.80000001"
+   id="circle21" />
+			<circle
+   class="st2"
+   cx="38.599998"
+   cy="113"
+   r="0.80000001"
+   id="circle22" />
+			<circle
+   class="st2"
+   cx="38.599998"
+   cy="116.4"
+   r="0.80000001"
+   id="circle23" />
+			<circle
+   class="st2"
+   cx="38.599998"
+   cy="119.9"
+   r="0.80000001"
+   id="circle24" />
+			<circle
+   class="st2"
+   cx="38.599998"
+   cy="123.3"
+   r="0.80000001"
+   id="circle25" />
+			<circle
+   class="st2"
+   cx="38.599998"
+   cy="126.7"
+   r="0.80000001"
+   id="circle26" />
+			<circle
+   class="st2"
+   cx="38.599998"
+   cy="130.10001"
+   r="0.80000001"
+   id="circle27" />
+			<circle
+   class="st2"
+   cx="38.599998"
+   cy="133.60001"
+   r="0.80000001"
+   id="circle28" />
+			<circle
+   class="st2"
+   cx="38.599998"
+   cy="137"
+   r="0.80000001"
+   id="circle29" />
+			<circle
+   class="st2"
+   cx="38.599998"
+   cy="140.39999"
+   r="0.80000001"
+   id="circle30" />
+			<circle
+   class="st2"
+   cx="38.599998"
+   cy="143.8"
+   r="0.80000001"
+   id="circle31" />
+			<circle
+   class="st2"
+   cx="38.599998"
+   cy="147.2"
+   r="0.80000001"
+   id="circle32" />
+			<circle
+   class="st2"
+   cx="38.599998"
+   cy="150.7"
+   r="0.80000001"
+   id="circle33" />
+			<circle
+   class="st2"
+   cx="38.599998"
+   cy="154.10001"
+   r="0.80000001"
+   id="circle34" />
+			<circle
+   class="st2"
+   cx="41.400002"
+   cy="102.8"
+   r="0.80000001"
+   id="circle35" />
+			<circle
+   class="st2"
+   cx="41.400002"
+   cy="106.2"
+   r="0.80000001"
+   id="circle36" />
+			<circle
+   class="st2"
+   cx="41.400002"
+   cy="109.6"
+   r="0.80000001"
+   id="circle37" />
+			<circle
+   class="st2"
+   cx="41.400002"
+   cy="113"
+   r="0.80000001"
+   id="circle38" />
+			<circle
+   class="st2"
+   cx="41.400002"
+   cy="116.4"
+   r="0.80000001"
+   id="circle39" />
+			<circle
+   class="st2"
+   cx="41.400002"
+   cy="119.9"
+   r="0.80000001"
+   id="circle40" />
+			<circle
+   class="st2"
+   cx="41.400002"
+   cy="123.3"
+   r="0.80000001"
+   id="circle41" />
+			<circle
+   class="st2"
+   cx="41.400002"
+   cy="126.7"
+   r="0.80000001"
+   id="circle42" />
+			<circle
+   class="st2"
+   cx="41.400002"
+   cy="130.10001"
+   r="0.80000001"
+   id="circle43" />
+			<circle
+   class="st2"
+   cx="41.400002"
+   cy="133.60001"
+   r="0.80000001"
+   id="circle44" />
+			<circle
+   class="st2"
+   cx="41.400002"
+   cy="137"
+   r="0.80000001"
+   id="circle45" />
+			<circle
+   class="st2"
+   cx="41.400002"
+   cy="140.39999"
+   r="0.80000001"
+   id="circle46" />
+			<circle
+   class="st2"
+   cx="41.400002"
+   cy="143.8"
+   r="0.80000001"
+   id="circle47" />
+			<circle
+   class="st2"
+   cx="41.400002"
+   cy="147.2"
+   r="0.80000001"
+   id="circle48" />
+			<circle
+   class="st2"
+   cx="41.400002"
+   cy="150.7"
+   r="0.80000001"
+   id="circle49" />
+			<circle
+   class="st2"
+   cx="41.400002"
+   cy="154.10001"
+   r="0.80000001"
+   id="circle50" />
+			<circle
+   class="st2"
+   cx="44.299999"
+   cy="102.8"
+   r="0.80000001"
+   id="circle51" />
+			<circle
+   class="st2"
+   cx="44.299999"
+   cy="106.2"
+   r="0.80000001"
+   id="circle52" />
+			<circle
+   class="st2"
+   cx="44.299999"
+   cy="109.6"
+   r="0.80000001"
+   id="circle53" />
+			<circle
+   class="st2"
+   cx="44.299999"
+   cy="113"
+   r="0.80000001"
+   id="circle54" />
+			<circle
+   class="st2"
+   cx="44.299999"
+   cy="116.4"
+   r="0.80000001"
+   id="circle55" />
+			<circle
+   class="st2"
+   cx="44.299999"
+   cy="119.9"
+   r="0.80000001"
+   id="circle56" />
+			<circle
+   class="st2"
+   cx="44.299999"
+   cy="123.3"
+   r="0.80000001"
+   id="circle57" />
+			<circle
+   class="st2"
+   cx="44.299999"
+   cy="126.7"
+   r="0.80000001"
+   id="circle58" />
+			<circle
+   class="st2"
+   cx="44.299999"
+   cy="130.10001"
+   r="0.80000001"
+   id="circle59" />
+			<circle
+   class="st2"
+   cx="44.299999"
+   cy="133.60001"
+   r="0.80000001"
+   id="circle60" />
+			<circle
+   class="st2"
+   cx="44.299999"
+   cy="137"
+   r="0.80000001"
+   id="circle61" />
+			<circle
+   class="st2"
+   cx="44.299999"
+   cy="140.39999"
+   r="0.80000001"
+   id="circle62" />
+			<circle
+   class="st2"
+   cx="44.299999"
+   cy="143.8"
+   r="0.80000001"
+   id="circle63" />
+			<circle
+   class="st2"
+   cx="44.299999"
+   cy="147.2"
+   r="0.80000001"
+   id="circle64" />
+			<circle
+   class="st2"
+   cx="44.299999"
+   cy="150.7"
+   r="0.80000001"
+   id="circle65" />
+			<circle
+   class="st2"
+   cx="44.299999"
+   cy="154.10001"
+   r="0.80000001"
+   id="circle66" />
+			<circle
+   class="st2"
+   cx="47.099998"
+   cy="102.8"
+   r="0.80000001"
+   id="circle67" />
+			<circle
+   class="st2"
+   cx="47.099998"
+   cy="106.2"
+   r="0.80000001"
+   id="circle68" />
+			<circle
+   class="st2"
+   cx="47.099998"
+   cy="109.6"
+   r="0.80000001"
+   id="circle69" />
+			<circle
+   class="st2"
+   cx="47.099998"
+   cy="113"
+   r="0.80000001"
+   id="circle70" />
+			<circle
+   class="st2"
+   cx="47.099998"
+   cy="116.4"
+   r="0.80000001"
+   id="circle71" />
+			<circle
+   class="st2"
+   cx="47.099998"
+   cy="119.9"
+   r="0.80000001"
+   id="circle72" />
+			<circle
+   class="st2"
+   cx="47.099998"
+   cy="123.3"
+   r="0.80000001"
+   id="circle73" />
+			<circle
+   class="st2"
+   cx="47.099998"
+   cy="126.7"
+   r="0.80000001"
+   id="circle74" />
+			<circle
+   class="st2"
+   cx="47.099998"
+   cy="130.10001"
+   r="0.80000001"
+   id="circle75" />
+			<circle
+   class="st2"
+   cx="47.099998"
+   cy="133.60001"
+   r="0.80000001"
+   id="circle76" />
+			<circle
+   class="st2"
+   cx="47.099998"
+   cy="137"
+   r="0.80000001"
+   id="circle77" />
+			<circle
+   class="st2"
+   cx="47.099998"
+   cy="140.39999"
+   r="0.80000001"
+   id="circle78" />
+			<circle
+   class="st2"
+   cx="47.099998"
+   cy="143.8"
+   r="0.80000001"
+   id="circle79" />
+			<circle
+   class="st2"
+   cx="47.099998"
+   cy="147.2"
+   r="0.80000001"
+   id="circle80" />
+			<circle
+   class="st2"
+   cx="47.099998"
+   cy="150.7"
+   r="0.80000001"
+   id="circle81" />
+			<circle
+   class="st2"
+   cx="47.099998"
+   cy="154.10001"
+   r="0.80000001"
+   id="circle82" />
+			<circle
+   class="st2"
+   cx="50"
+   cy="102.8"
+   r="0.80000001"
+   id="circle83" />
+			<circle
+   class="st2"
+   cx="50"
+   cy="106.2"
+   r="0.80000001"
+   id="circle84" />
+			<circle
+   class="st2"
+   cx="50"
+   cy="109.6"
+   r="0.80000001"
+   id="circle85" />
+			<circle
+   class="st2"
+   cx="50"
+   cy="113"
+   r="0.80000001"
+   id="circle86" />
+			<circle
+   class="st2"
+   cx="50"
+   cy="116.4"
+   r="0.80000001"
+   id="circle87" />
+			<circle
+   class="st2"
+   cx="50"
+   cy="119.9"
+   r="0.80000001"
+   id="circle88" />
+			<circle
+   class="st2"
+   cx="50"
+   cy="123.3"
+   r="0.80000001"
+   id="circle89" />
+			<circle
+   class="st2"
+   cx="50"
+   cy="126.7"
+   r="0.80000001"
+   id="circle90" />
+			<circle
+   class="st2"
+   cx="50"
+   cy="130.10001"
+   r="0.80000001"
+   id="circle91" />
+			<circle
+   class="st2"
+   cx="50"
+   cy="133.60001"
+   r="0.80000001"
+   id="circle92" />
+			<circle
+   class="st2"
+   cx="50"
+   cy="137"
+   r="0.80000001"
+   id="circle93" />
+			<circle
+   class="st2"
+   cx="50"
+   cy="140.39999"
+   r="0.80000001"
+   id="circle94" />
+			<circle
+   class="st2"
+   cx="50"
+   cy="143.8"
+   r="0.80000001"
+   id="circle95" />
+			<circle
+   class="st2"
+   cx="50"
+   cy="147.2"
+   r="0.80000001"
+   id="circle96" />
+			<circle
+   class="st2"
+   cx="50"
+   cy="150.7"
+   r="0.80000001"
+   id="circle97" />
+			<circle
+   class="st2"
+   cx="50"
+   cy="154.10001"
+   r="0.80000001"
+   id="circle98" />
+			<circle
+   class="st2"
+   cx="52.799999"
+   cy="102.8"
+   r="0.80000001"
+   id="circle99" />
+			<circle
+   class="st2"
+   cx="52.799999"
+   cy="106.2"
+   r="0.80000001"
+   id="circle100" />
+			<circle
+   class="st2"
+   cx="52.799999"
+   cy="109.6"
+   r="0.80000001"
+   id="circle101" />
+			<circle
+   class="st2"
+   cx="52.799999"
+   cy="113"
+   r="0.80000001"
+   id="circle102" />
+			<circle
+   class="st2"
+   cx="52.799999"
+   cy="116.4"
+   r="0.80000001"
+   id="circle103" />
+			<circle
+   class="st2"
+   cx="52.799999"
+   cy="119.9"
+   r="0.80000001"
+   id="circle104" />
+			<circle
+   class="st2"
+   cx="52.799999"
+   cy="123.3"
+   r="0.80000001"
+   id="circle105" />
+			<circle
+   class="st2"
+   cx="52.799999"
+   cy="126.7"
+   r="0.80000001"
+   id="circle106" />
+			<circle
+   class="st2"
+   cx="52.799999"
+   cy="130.10001"
+   r="0.80000001"
+   id="circle107" />
+			<circle
+   class="st2"
+   cx="52.799999"
+   cy="133.60001"
+   r="0.80000001"
+   id="circle108" />
+			<circle
+   class="st2"
+   cx="52.799999"
+   cy="137"
+   r="0.80000001"
+   id="circle109" />
+			<circle
+   class="st2"
+   cx="52.799999"
+   cy="140.39999"
+   r="0.80000001"
+   id="circle110" />
+			<circle
+   class="st2"
+   cx="52.799999"
+   cy="143.8"
+   r="0.80000001"
+   id="circle111" />
+			<circle
+   class="st2"
+   cx="52.799999"
+   cy="147.2"
+   r="0.80000001"
+   id="circle112" />
+			<circle
+   class="st2"
+   cx="52.799999"
+   cy="150.7"
+   r="0.80000001"
+   id="circle113" />
+			<circle
+   class="st2"
+   cx="52.799999"
+   cy="154.10001"
+   r="0.80000001"
+   id="circle114" />
+			<circle
+   class="st2"
+   cx="55.700001"
+   cy="102.8"
+   r="0.80000001"
+   id="circle115" />
+			<circle
+   class="st2"
+   cx="55.700001"
+   cy="106.2"
+   r="0.80000001"
+   id="circle116" />
+			<circle
+   class="st2"
+   cx="55.700001"
+   cy="109.6"
+   r="0.80000001"
+   id="circle117" />
+			<circle
+   class="st2"
+   cx="55.700001"
+   cy="113"
+   r="0.80000001"
+   id="circle118" />
+			<circle
+   class="st2"
+   cx="55.700001"
+   cy="116.4"
+   r="0.80000001"
+   id="circle119" />
+			<circle
+   class="st2"
+   cx="55.700001"
+   cy="119.9"
+   r="0.80000001"
+   id="circle120" />
+			<circle
+   class="st2"
+   cx="55.700001"
+   cy="123.3"
+   r="0.80000001"
+   id="circle121" />
+			<circle
+   class="st2"
+   cx="55.700001"
+   cy="126.7"
+   r="0.80000001"
+   id="circle122" />
+			<circle
+   class="st2"
+   cx="55.700001"
+   cy="130.10001"
+   r="0.80000001"
+   id="circle123" />
+			<circle
+   class="st2"
+   cx="55.700001"
+   cy="133.60001"
+   r="0.80000001"
+   id="circle124" />
+			<circle
+   class="st2"
+   cx="55.700001"
+   cy="137"
+   r="0.80000001"
+   id="circle125" />
+			<circle
+   class="st2"
+   cx="55.700001"
+   cy="140.39999"
+   r="0.80000001"
+   id="circle126" />
+			<circle
+   class="st2"
+   cx="55.700001"
+   cy="143.8"
+   r="0.80000001"
+   id="circle127" />
+			<circle
+   class="st2"
+   cx="55.700001"
+   cy="147.2"
+   r="0.80000001"
+   id="circle128" />
+			<circle
+   class="st2"
+   cx="55.700001"
+   cy="150.7"
+   r="0.80000001"
+   id="circle129" />
+			<circle
+   class="st2"
+   cx="55.700001"
+   cy="154.10001"
+   r="0.80000001"
+   id="circle130" />
+			<circle
+   class="st2"
+   cx="58.5"
+   cy="102.8"
+   r="0.80000001"
+   id="circle131" />
+			<circle
+   class="st2"
+   cx="58.5"
+   cy="106.2"
+   r="0.80000001"
+   id="circle132" />
+			<circle
+   class="st2"
+   cx="58.5"
+   cy="109.6"
+   r="0.80000001"
+   id="circle133" />
+			<circle
+   class="st2"
+   cx="58.5"
+   cy="113"
+   r="0.80000001"
+   id="circle134" />
+			<circle
+   class="st2"
+   cx="58.5"
+   cy="116.4"
+   r="0.80000001"
+   id="circle135" />
+			<circle
+   class="st2"
+   cx="58.5"
+   cy="119.9"
+   r="0.80000001"
+   id="circle136" />
+			<circle
+   class="st2"
+   cx="58.5"
+   cy="123.3"
+   r="0.80000001"
+   id="circle137" />
+			<circle
+   class="st2"
+   cx="58.5"
+   cy="126.7"
+   r="0.80000001"
+   id="circle138" />
+			<circle
+   class="st2"
+   cx="58.5"
+   cy="130.10001"
+   r="0.80000001"
+   id="circle139" />
+			<circle
+   class="st2"
+   cx="58.5"
+   cy="133.60001"
+   r="0.80000001"
+   id="circle140" />
+			<circle
+   class="st2"
+   cx="58.5"
+   cy="137"
+   r="0.80000001"
+   id="circle141" />
+			<circle
+   class="st2"
+   cx="58.5"
+   cy="140.39999"
+   r="0.80000001"
+   id="circle142" />
+			<circle
+   class="st2"
+   cx="58.5"
+   cy="143.8"
+   r="0.80000001"
+   id="circle143" />
+			<circle
+   class="st2"
+   cx="58.5"
+   cy="147.2"
+   r="0.80000001"
+   id="circle144" />
+			<circle
+   class="st2"
+   cx="58.5"
+   cy="150.7"
+   r="0.80000001"
+   id="circle145" />
+			<circle
+   class="st2"
+   cx="58.5"
+   cy="154.10001"
+   r="0.80000001"
+   id="circle146" />
+			<circle
+   class="st2"
+   cx="61.400002"
+   cy="102.8"
+   r="0.80000001"
+   id="circle147" />
+			<circle
+   class="st2"
+   cx="61.400002"
+   cy="106.2"
+   r="0.80000001"
+   id="circle148" />
+			<circle
+   class="st2"
+   cx="61.400002"
+   cy="109.6"
+   r="0.80000001"
+   id="circle149" />
+			<circle
+   class="st2"
+   cx="61.400002"
+   cy="113"
+   r="0.80000001"
+   id="circle150" />
+			<circle
+   class="st2"
+   cx="61.400002"
+   cy="116.4"
+   r="0.80000001"
+   id="circle151" />
+			<circle
+   class="st2"
+   cx="61.400002"
+   cy="119.9"
+   r="0.80000001"
+   id="circle152" />
+			<circle
+   class="st2"
+   cx="61.400002"
+   cy="123.3"
+   r="0.80000001"
+   id="circle153" />
+			<circle
+   class="st2"
+   cx="61.400002"
+   cy="126.7"
+   r="0.80000001"
+   id="circle154" />
+			<circle
+   class="st2"
+   cx="61.400002"
+   cy="130.10001"
+   r="0.80000001"
+   id="circle155" />
+			<circle
+   class="st2"
+   cx="61.400002"
+   cy="133.60001"
+   r="0.80000001"
+   id="circle156" />
+			<circle
+   class="st2"
+   cx="61.400002"
+   cy="137"
+   r="0.80000001"
+   id="circle157" />
+			<circle
+   class="st2"
+   cx="61.400002"
+   cy="140.39999"
+   r="0.80000001"
+   id="circle158" />
+			<circle
+   class="st2"
+   cx="61.400002"
+   cy="143.8"
+   r="0.80000001"
+   id="circle159" />
+			<circle
+   class="st2"
+   cx="61.400002"
+   cy="147.2"
+   r="0.80000001"
+   id="circle160" />
+			<circle
+   class="st2"
+   cx="61.400002"
+   cy="150.7"
+   r="0.80000001"
+   id="circle161" />
+			<circle
+   class="st2"
+   cx="61.400002"
+   cy="154.10001"
+   r="0.80000001"
+   id="circle162" />
+			<circle
+   class="st2"
+   cx="64.199997"
+   cy="102.8"
+   r="0.80000001"
+   id="circle163" />
+			<circle
+   class="st2"
+   cx="64.199997"
+   cy="106.2"
+   r="0.80000001"
+   id="circle164" />
+			<circle
+   class="st2"
+   cx="64.199997"
+   cy="109.6"
+   r="0.80000001"
+   id="circle165" />
+			<circle
+   class="st2"
+   cx="64.199997"
+   cy="113"
+   r="0.80000001"
+   id="circle166" />
+			<circle
+   class="st2"
+   cx="64.199997"
+   cy="116.4"
+   r="0.80000001"
+   id="circle167" />
+			<circle
+   class="st2"
+   cx="64.199997"
+   cy="119.9"
+   r="0.80000001"
+   id="circle168" />
+			<circle
+   class="st2"
+   cx="64.199997"
+   cy="123.3"
+   r="0.80000001"
+   id="circle169" />
+			<circle
+   class="st2"
+   cx="64.199997"
+   cy="126.7"
+   r="0.80000001"
+   id="circle170" />
+			<circle
+   class="st2"
+   cx="64.199997"
+   cy="130.10001"
+   r="0.80000001"
+   id="circle171" />
+			<circle
+   class="st2"
+   cx="64.199997"
+   cy="133.60001"
+   r="0.80000001"
+   id="circle172" />
+			<circle
+   class="st2"
+   cx="64.199997"
+   cy="137"
+   r="0.80000001"
+   id="circle173" />
+			<circle
+   class="st2"
+   cx="64.199997"
+   cy="140.39999"
+   r="0.80000001"
+   id="circle174" />
+			<circle
+   class="st2"
+   cx="64.199997"
+   cy="143.8"
+   r="0.80000001"
+   id="circle175" />
+			<circle
+   class="st2"
+   cx="64.199997"
+   cy="147.2"
+   r="0.80000001"
+   id="circle176" />
+			<circle
+   class="st2"
+   cx="64.199997"
+   cy="150.7"
+   r="0.80000001"
+   id="circle177" />
+			<circle
+   class="st2"
+   cx="64.199997"
+   cy="154.10001"
+   r="0.80000001"
+   id="circle178" />
+			<circle
+   class="st2"
+   cx="67"
+   cy="102.8"
+   r="0.80000001"
+   id="circle179" />
+			<circle
+   class="st2"
+   cx="67"
+   cy="106.2"
+   r="0.80000001"
+   id="circle180" />
+			<circle
+   class="st2"
+   cx="67"
+   cy="109.6"
+   r="0.80000001"
+   id="circle181" />
+			<circle
+   class="st2"
+   cx="67"
+   cy="113"
+   r="0.80000001"
+   id="circle182" />
+			<circle
+   class="st2"
+   cx="67"
+   cy="116.4"
+   r="0.80000001"
+   id="circle183" />
+			<circle
+   class="st2"
+   cx="67"
+   cy="119.9"
+   r="0.80000001"
+   id="circle184" />
+			<circle
+   class="st2"
+   cx="67"
+   cy="123.3"
+   r="0.80000001"
+   id="circle185" />
+			<circle
+   class="st2"
+   cx="67"
+   cy="126.7"
+   r="0.80000001"
+   id="circle186" />
+			<circle
+   class="st2"
+   cx="67"
+   cy="130.10001"
+   r="0.80000001"
+   id="circle187" />
+			<circle
+   class="st2"
+   cx="67"
+   cy="133.60001"
+   r="0.80000001"
+   id="circle188" />
+			<circle
+   class="st2"
+   cx="67"
+   cy="137"
+   r="0.80000001"
+   id="circle189" />
+			<circle
+   class="st2"
+   cx="67"
+   cy="140.39999"
+   r="0.80000001"
+   id="circle190" />
+			<circle
+   class="st2"
+   cx="67"
+   cy="143.8"
+   r="0.80000001"
+   id="circle191" />
+			<circle
+   class="st2"
+   cx="67"
+   cy="147.2"
+   r="0.80000001"
+   id="circle192" />
+			<circle
+   class="st2"
+   cx="67"
+   cy="150.7"
+   r="0.80000001"
+   id="circle193" />
+			<circle
+   class="st2"
+   cx="67"
+   cy="154.10001"
+   r="0.80000001"
+   id="circle194" />
+			<circle
+   class="st2"
+   cx="69.900002"
+   cy="102.8"
+   r="0.80000001"
+   id="circle195" />
+			<circle
+   class="st2"
+   cx="69.900002"
+   cy="106.2"
+   r="0.80000001"
+   id="circle196" />
+			<circle
+   class="st2"
+   cx="69.900002"
+   cy="109.6"
+   r="0.80000001"
+   id="circle197" />
+			<circle
+   class="st2"
+   cx="69.900002"
+   cy="113"
+   r="0.80000001"
+   id="circle198" />
+			<circle
+   class="st2"
+   cx="69.900002"
+   cy="116.4"
+   r="0.80000001"
+   id="circle199" />
+			<circle
+   class="st2"
+   cx="69.900002"
+   cy="119.9"
+   r="0.80000001"
+   id="circle200" />
+			<circle
+   class="st2"
+   cx="69.900002"
+   cy="123.3"
+   r="0.80000001"
+   id="circle201" />
+			<circle
+   class="st2"
+   cx="69.900002"
+   cy="126.7"
+   r="0.80000001"
+   id="circle202" />
+			<circle
+   class="st2"
+   cx="69.900002"
+   cy="130.10001"
+   r="0.80000001"
+   id="circle203" />
+			<circle
+   class="st2"
+   cx="69.900002"
+   cy="133.60001"
+   r="0.80000001"
+   id="circle204" />
+			<circle
+   class="st2"
+   cx="69.900002"
+   cy="137"
+   r="0.80000001"
+   id="circle205" />
+			<circle
+   class="st2"
+   cx="69.900002"
+   cy="140.39999"
+   r="0.80000001"
+   id="circle206" />
+			<circle
+   class="st2"
+   cx="69.900002"
+   cy="143.8"
+   r="0.80000001"
+   id="circle207" />
+			<circle
+   class="st2"
+   cx="69.900002"
+   cy="147.2"
+   r="0.80000001"
+   id="circle208" />
+			<circle
+   class="st2"
+   cx="69.900002"
+   cy="150.7"
+   r="0.80000001"
+   id="circle209" />
+			<circle
+   class="st2"
+   cx="69.900002"
+   cy="154.10001"
+   r="0.80000001"
+   id="circle210" />
+			<circle
+   class="st2"
+   cx="72.699997"
+   cy="102.8"
+   r="0.80000001"
+   id="circle211" />
+			<circle
+   class="st2"
+   cx="72.699997"
+   cy="106.2"
+   r="0.80000001"
+   id="circle212" />
+			<circle
+   class="st2"
+   cx="72.699997"
+   cy="109.6"
+   r="0.80000001"
+   id="circle213" />
+			<circle
+   class="st2"
+   cx="72.699997"
+   cy="113"
+   r="0.80000001"
+   id="circle214" />
+			<circle
+   class="st2"
+   cx="72.699997"
+   cy="116.4"
+   r="0.80000001"
+   id="circle215" />
+			<circle
+   class="st2"
+   cx="72.699997"
+   cy="119.9"
+   r="0.80000001"
+   id="circle216" />
+			<circle
+   class="st2"
+   cx="72.699997"
+   cy="123.3"
+   r="0.80000001"
+   id="circle217" />
+			<circle
+   class="st2"
+   cx="72.699997"
+   cy="126.7"
+   r="0.80000001"
+   id="circle218" />
+			<circle
+   class="st2"
+   cx="72.699997"
+   cy="130.10001"
+   r="0.80000001"
+   id="circle219" />
+			<circle
+   class="st2"
+   cx="72.699997"
+   cy="133.60001"
+   r="0.80000001"
+   id="circle220" />
+			<circle
+   class="st2"
+   cx="72.699997"
+   cy="137"
+   r="0.80000001"
+   id="circle221" />
+			<circle
+   class="st2"
+   cx="72.699997"
+   cy="140.39999"
+   r="0.80000001"
+   id="circle222" />
+			<circle
+   class="st2"
+   cx="72.699997"
+   cy="143.8"
+   r="0.80000001"
+   id="circle223" />
+			<circle
+   class="st2"
+   cx="72.699997"
+   cy="147.2"
+   r="0.80000001"
+   id="circle224" />
+			<circle
+   class="st2"
+   cx="72.699997"
+   cy="150.7"
+   r="0.80000001"
+   id="circle225" />
+			<circle
+   class="st2"
+   cx="72.699997"
+   cy="154.10001"
+   r="0.80000001"
+   id="circle226" />
+			<circle
+   class="st2"
+   cx="75.599998"
+   cy="102.8"
+   r="0.80000001"
+   id="circle227" />
+			<circle
+   class="st2"
+   cx="75.599998"
+   cy="106.2"
+   r="0.80000001"
+   id="circle228" />
+			<circle
+   class="st2"
+   cx="75.599998"
+   cy="109.6"
+   r="0.80000001"
+   id="circle229" />
+			<circle
+   class="st2"
+   cx="75.599998"
+   cy="113"
+   r="0.80000001"
+   id="circle230" />
+			<circle
+   class="st2"
+   cx="75.599998"
+   cy="116.4"
+   r="0.80000001"
+   id="circle231" />
+			<circle
+   class="st2"
+   cx="75.599998"
+   cy="119.9"
+   r="0.80000001"
+   id="circle232" />
+			<circle
+   class="st2"
+   cx="75.599998"
+   cy="123.3"
+   r="0.80000001"
+   id="circle233" />
+			<circle
+   class="st2"
+   cx="75.599998"
+   cy="126.7"
+   r="0.80000001"
+   id="circle234" />
+			<circle
+   class="st2"
+   cx="75.599998"
+   cy="130.10001"
+   r="0.80000001"
+   id="circle235" />
+			<circle
+   class="st2"
+   cx="75.599998"
+   cy="133.60001"
+   r="0.80000001"
+   id="circle236" />
+			<circle
+   class="st2"
+   cx="75.599998"
+   cy="137"
+   r="0.80000001"
+   id="circle237" />
+			<circle
+   class="st2"
+   cx="75.599998"
+   cy="140.39999"
+   r="0.80000001"
+   id="circle238" />
+			<circle
+   class="st2"
+   cx="75.599998"
+   cy="143.8"
+   r="0.80000001"
+   id="circle239" />
+			<circle
+   class="st2"
+   cx="75.599998"
+   cy="147.2"
+   r="0.80000001"
+   id="circle240" />
+			<circle
+   class="st2"
+   cx="75.599998"
+   cy="150.7"
+   r="0.80000001"
+   id="circle241" />
+			<circle
+   class="st2"
+   cx="75.599998"
+   cy="154.10001"
+   r="0.80000001"
+   id="circle242" />
+			<circle
+   class="st2"
+   cx="78.400002"
+   cy="102.8"
+   r="0.80000001"
+   id="circle243" />
+			<circle
+   class="st2"
+   cx="78.400002"
+   cy="106.2"
+   r="0.80000001"
+   id="circle244" />
+			<circle
+   class="st2"
+   cx="78.400002"
+   cy="109.6"
+   r="0.80000001"
+   id="circle245" />
+			<circle
+   class="st2"
+   cx="78.400002"
+   cy="113"
+   r="0.80000001"
+   id="circle246" />
+			<circle
+   class="st2"
+   cx="78.400002"
+   cy="116.4"
+   r="0.80000001"
+   id="circle247" />
+			<circle
+   class="st2"
+   cx="78.400002"
+   cy="119.9"
+   r="0.80000001"
+   id="circle248" />
+			<circle
+   class="st2"
+   cx="78.400002"
+   cy="123.3"
+   r="0.80000001"
+   id="circle249" />
+			<circle
+   class="st2"
+   cx="78.400002"
+   cy="126.7"
+   r="0.80000001"
+   id="circle250" />
+			<circle
+   class="st2"
+   cx="78.400002"
+   cy="130.10001"
+   r="0.80000001"
+   id="circle251" />
+			<circle
+   class="st2"
+   cx="78.400002"
+   cy="133.60001"
+   r="0.80000001"
+   id="circle252" />
+			<circle
+   class="st2"
+   cx="78.400002"
+   cy="137"
+   r="0.80000001"
+   id="circle253" />
+			<circle
+   class="st2"
+   cx="78.400002"
+   cy="140.39999"
+   r="0.80000001"
+   id="circle254" />
+			<circle
+   class="st2"
+   cx="78.400002"
+   cy="143.8"
+   r="0.80000001"
+   id="circle255" />
+			<circle
+   class="st2"
+   cx="78.400002"
+   cy="147.2"
+   r="0.80000001"
+   id="circle256" />
+			<circle
+   class="st2"
+   cx="78.400002"
+   cy="150.7"
+   r="0.80000001"
+   id="circle257" />
+			<circle
+   class="st2"
+   cx="78.400002"
+   cy="154.10001"
+   r="0.80000001"
+   id="circle258" />
+			<circle
+   class="st2"
+   cx="81.300003"
+   cy="102.8"
+   r="0.80000001"
+   id="circle259" />
+			<circle
+   class="st2"
+   cx="81.300003"
+   cy="106.2"
+   r="0.80000001"
+   id="circle260" />
+			<circle
+   class="st2"
+   cx="81.300003"
+   cy="109.6"
+   r="0.80000001"
+   id="circle261" />
+			<circle
+   class="st2"
+   cx="81.300003"
+   cy="113"
+   r="0.80000001"
+   id="circle262" />
+			<circle
+   class="st2"
+   cx="81.300003"
+   cy="116.4"
+   r="0.80000001"
+   id="circle263" />
+			<circle
+   class="st2"
+   cx="81.300003"
+   cy="119.9"
+   r="0.80000001"
+   id="circle264" />
+			<circle
+   class="st2"
+   cx="81.300003"
+   cy="123.3"
+   r="0.80000001"
+   id="circle265" />
+			<circle
+   class="st2"
+   cx="81.300003"
+   cy="126.7"
+   r="0.80000001"
+   id="circle266" />
+			<circle
+   class="st2"
+   cx="81.300003"
+   cy="130.10001"
+   r="0.80000001"
+   id="circle267" />
+			<circle
+   class="st2"
+   cx="81.300003"
+   cy="133.60001"
+   r="0.80000001"
+   id="circle268" />
+			<circle
+   class="st2"
+   cx="81.300003"
+   cy="137"
+   r="0.80000001"
+   id="circle269" />
+			<circle
+   class="st2"
+   cx="81.300003"
+   cy="140.39999"
+   r="0.80000001"
+   id="circle270" />
+			<circle
+   class="st2"
+   cx="81.300003"
+   cy="143.8"
+   r="0.80000001"
+   id="circle271" />
+			<circle
+   class="st2"
+   cx="81.300003"
+   cy="147.2"
+   r="0.80000001"
+   id="circle272" />
+			<circle
+   class="st2"
+   cx="81.300003"
+   cy="150.7"
+   r="0.80000001"
+   id="circle273" />
+			<circle
+   class="st2"
+   cx="81.300003"
+   cy="154.10001"
+   r="0.80000001"
+   id="circle274" />
+			<circle
+   class="st2"
+   cx="84.099998"
+   cy="102.8"
+   r="0.80000001"
+   id="circle275" />
+			<circle
+   class="st2"
+   cx="84.099998"
+   cy="106.2"
+   r="0.80000001"
+   id="circle276" />
+			<circle
+   class="st2"
+   cx="84.099998"
+   cy="109.6"
+   r="0.80000001"
+   id="circle277" />
+			<circle
+   class="st2"
+   cx="84.099998"
+   cy="113"
+   r="0.80000001"
+   id="circle278" />
+			<circle
+   class="st2"
+   cx="84.099998"
+   cy="116.4"
+   r="0.80000001"
+   id="circle279" />
+			<circle
+   class="st2"
+   cx="84.099998"
+   cy="119.9"
+   r="0.80000001"
+   id="circle280" />
+			<circle
+   class="st2"
+   cx="84.099998"
+   cy="123.3"
+   r="0.80000001"
+   id="circle281" />
+			<circle
+   class="st2"
+   cx="84.099998"
+   cy="126.7"
+   r="0.80000001"
+   id="circle282" />
+			<circle
+   class="st2"
+   cx="84.099998"
+   cy="130.10001"
+   r="0.80000001"
+   id="circle283" />
+			<circle
+   class="st2"
+   cx="84.099998"
+   cy="133.60001"
+   r="0.80000001"
+   id="circle284" />
+			<circle
+   class="st2"
+   cx="84.099998"
+   cy="137"
+   r="0.80000001"
+   id="circle285" />
+			<circle
+   class="st2"
+   cx="84.099998"
+   cy="140.39999"
+   r="0.80000001"
+   id="circle286" />
+			<circle
+   class="st2"
+   cx="84.099998"
+   cy="143.8"
+   r="0.80000001"
+   id="circle287" />
+			<circle
+   class="st2"
+   cx="84.099998"
+   cy="147.2"
+   r="0.80000001"
+   id="circle288" />
+			<circle
+   class="st2"
+   cx="84.099998"
+   cy="150.7"
+   r="0.80000001"
+   id="circle289" />
+			<circle
+   class="st2"
+   cx="84.099998"
+   cy="154.10001"
+   r="0.80000001"
+   id="circle290" />
+			<circle
+   class="st2"
+   cx="87"
+   cy="102.8"
+   r="0.80000001"
+   id="circle291" />
+			<circle
+   class="st2"
+   cx="87"
+   cy="106.2"
+   r="0.80000001"
+   id="circle292" />
+			<circle
+   class="st2"
+   cx="87"
+   cy="109.6"
+   r="0.80000001"
+   id="circle293" />
+			<circle
+   class="st2"
+   cx="87"
+   cy="113"
+   r="0.80000001"
+   id="circle294" />
+			<circle
+   class="st2"
+   cx="87"
+   cy="116.4"
+   r="0.80000001"
+   id="circle295" />
+			<circle
+   class="st2"
+   cx="87"
+   cy="119.9"
+   r="0.80000001"
+   id="circle296" />
+			<circle
+   class="st2"
+   cx="87"
+   cy="123.3"
+   r="0.80000001"
+   id="circle297" />
+			<circle
+   class="st2"
+   cx="87"
+   cy="126.7"
+   r="0.80000001"
+   id="circle298" />
+			<circle
+   class="st2"
+   cx="87"
+   cy="130.10001"
+   r="0.80000001"
+   id="circle299" />
+			<circle
+   class="st2"
+   cx="87"
+   cy="133.60001"
+   r="0.80000001"
+   id="circle300" />
+			<circle
+   class="st2"
+   cx="87"
+   cy="137"
+   r="0.80000001"
+   id="circle301" />
+			<circle
+   class="st2"
+   cx="87"
+   cy="140.39999"
+   r="0.80000001"
+   id="circle302" />
+			<circle
+   class="st2"
+   cx="87"
+   cy="143.8"
+   r="0.80000001"
+   id="circle303" />
+			<circle
+   class="st2"
+   cx="87"
+   cy="147.2"
+   r="0.80000001"
+   id="circle304" />
+			<circle
+   class="st2"
+   cx="87"
+   cy="150.7"
+   r="0.80000001"
+   id="circle305" />
+			<circle
+   class="st2"
+   cx="87"
+   cy="154.10001"
+   r="0.80000001"
+   id="circle306" />
+			<circle
+   class="st2"
+   cx="89.800003"
+   cy="102.8"
+   r="0.80000001"
+   id="circle307" />
+			<circle
+   class="st2"
+   cx="89.800003"
+   cy="106.2"
+   r="0.80000001"
+   id="circle308" />
+			<circle
+   class="st2"
+   cx="89.800003"
+   cy="109.6"
+   r="0.80000001"
+   id="circle309" />
+			<circle
+   class="st2"
+   cx="89.800003"
+   cy="113"
+   r="0.80000001"
+   id="circle310" />
+			<circle
+   class="st2"
+   cx="89.800003"
+   cy="116.4"
+   r="0.80000001"
+   id="circle311" />
+			<circle
+   class="st2"
+   cx="89.800003"
+   cy="119.9"
+   r="0.80000001"
+   id="circle312" />
+			<circle
+   class="st2"
+   cx="89.800003"
+   cy="123.3"
+   r="0.80000001"
+   id="circle313" />
+			<circle
+   class="st2"
+   cx="89.800003"
+   cy="126.7"
+   r="0.80000001"
+   id="circle314" />
+			<circle
+   class="st2"
+   cx="89.800003"
+   cy="130.10001"
+   r="0.80000001"
+   id="circle315" />
+			<circle
+   class="st2"
+   cx="89.800003"
+   cy="133.60001"
+   r="0.80000001"
+   id="circle316" />
+			<circle
+   class="st2"
+   cx="89.800003"
+   cy="137"
+   r="0.80000001"
+   id="circle317" />
+			<circle
+   class="st2"
+   cx="89.800003"
+   cy="140.39999"
+   r="0.80000001"
+   id="circle318" />
+			<circle
+   class="st2"
+   cx="89.800003"
+   cy="143.8"
+   r="0.80000001"
+   id="circle319" />
+			<circle
+   class="st2"
+   cx="89.800003"
+   cy="147.2"
+   r="0.80000001"
+   id="circle320" />
+			<circle
+   class="st2"
+   cx="89.800003"
+   cy="150.7"
+   r="0.80000001"
+   id="circle321" />
+			<circle
+   class="st2"
+   cx="89.800003"
+   cy="154.10001"
+   r="0.80000001"
+   id="circle322" />
+			<circle
+   class="st2"
+   cx="92.699997"
+   cy="102.8"
+   r="0.80000001"
+   id="circle323" />
+			<circle
+   class="st2"
+   cx="92.699997"
+   cy="106.2"
+   r="0.80000001"
+   id="circle324" />
+			<circle
+   class="st2"
+   cx="92.699997"
+   cy="109.6"
+   r="0.80000001"
+   id="circle325" />
+			<circle
+   class="st2"
+   cx="92.699997"
+   cy="113"
+   r="0.80000001"
+   id="circle326" />
+			<circle
+   class="st2"
+   cx="92.699997"
+   cy="116.4"
+   r="0.80000001"
+   id="circle327" />
+			<circle
+   class="st2"
+   cx="92.699997"
+   cy="119.9"
+   r="0.80000001"
+   id="circle328" />
+			<circle
+   class="st2"
+   cx="92.699997"
+   cy="123.3"
+   r="0.80000001"
+   id="circle329" />
+			<circle
+   class="st2"
+   cx="92.699997"
+   cy="126.7"
+   r="0.80000001"
+   id="circle330" />
+			<circle
+   class="st2"
+   cx="92.699997"
+   cy="130.10001"
+   r="0.80000001"
+   id="circle331" />
+			<circle
+   class="st2"
+   cx="92.699997"
+   cy="133.60001"
+   r="0.80000001"
+   id="circle332" />
+			<circle
+   class="st2"
+   cx="92.699997"
+   cy="137"
+   r="0.80000001"
+   id="circle333" />
+			<circle
+   class="st2"
+   cx="92.699997"
+   cy="140.39999"
+   r="0.80000001"
+   id="circle334" />
+			<circle
+   class="st2"
+   cx="92.699997"
+   cy="143.8"
+   r="0.80000001"
+   id="circle335" />
+			<circle
+   class="st2"
+   cx="92.699997"
+   cy="147.2"
+   r="0.80000001"
+   id="circle336" />
+			<circle
+   class="st2"
+   cx="92.699997"
+   cy="150.7"
+   r="0.80000001"
+   id="circle337" />
+			<circle
+   class="st2"
+   cx="92.699997"
+   cy="154.10001"
+   r="0.80000001"
+   id="circle338" />
+			<circle
+   class="st2"
+   cx="95.5"
+   cy="102.8"
+   r="0.80000001"
+   id="circle339" />
+			<circle
+   class="st2"
+   cx="95.5"
+   cy="106.2"
+   r="0.80000001"
+   id="circle340" />
+			<circle
+   class="st2"
+   cx="95.5"
+   cy="109.6"
+   r="0.80000001"
+   id="circle341" />
+			<circle
+   class="st2"
+   cx="95.5"
+   cy="113"
+   r="0.80000001"
+   id="circle342" />
+			<circle
+   class="st2"
+   cx="95.5"
+   cy="116.4"
+   r="0.80000001"
+   id="circle343" />
+			<circle
+   class="st2"
+   cx="95.5"
+   cy="119.9"
+   r="0.80000001"
+   id="circle344" />
+			<circle
+   class="st2"
+   cx="95.5"
+   cy="123.3"
+   r="0.80000001"
+   id="circle345" />
+			<circle
+   class="st2"
+   cx="38.599998"
+   cy="82.199997"
+   r="0.80000001"
+   id="circle346" />
+			<circle
+   class="st2"
+   cx="38.599998"
+   cy="85.699997"
+   r="0.80000001"
+   id="circle347" />
+			<circle
+   class="st2"
+   cx="38.599998"
+   cy="89.099998"
+   r="0.80000001"
+   id="circle348" />
+			<circle
+   class="st2"
+   cx="38.599998"
+   cy="92.5"
+   r="0.80000001"
+   id="circle349" />
+			<circle
+   class="st2"
+   cx="38.599998"
+   cy="95.900002"
+   r="0.80000001"
+   id="circle350" />
+			<circle
+   class="st2"
+   cx="38.599998"
+   cy="99.300003"
+   r="0.80000001"
+   id="circle351" />
+			<circle
+   class="st2"
+   cx="41.400002"
+   cy="82.199997"
+   r="0.80000001"
+   id="circle352" />
+			<circle
+   class="st2"
+   cx="41.400002"
+   cy="85.699997"
+   r="0.80000001"
+   id="circle353" />
+			<circle
+   class="st2"
+   cx="41.400002"
+   cy="89.099998"
+   r="0.80000001"
+   id="circle354" />
+			<circle
+   class="st2"
+   cx="41.400002"
+   cy="92.5"
+   r="0.80000001"
+   id="circle355" />
+			<circle
+   class="st2"
+   cx="41.400002"
+   cy="95.900002"
+   r="0.80000001"
+   id="circle356" />
+			<circle
+   class="st2"
+   cx="41.400002"
+   cy="99.300003"
+   r="0.80000001"
+   id="circle357" />
+			<circle
+   class="st2"
+   cx="44.299999"
+   cy="82.199997"
+   r="0.80000001"
+   id="circle358" />
+			<circle
+   class="st2"
+   cx="44.299999"
+   cy="85.699997"
+   r="0.80000001"
+   id="circle359" />
+			<circle
+   class="st2"
+   cx="44.299999"
+   cy="89.099998"
+   r="0.80000001"
+   id="circle360" />
+			<circle
+   class="st2"
+   cx="44.299999"
+   cy="92.5"
+   r="0.80000001"
+   id="circle361" />
+			<circle
+   class="st2"
+   cx="44.299999"
+   cy="95.900002"
+   r="0.80000001"
+   id="circle362" />
+			<circle
+   class="st2"
+   cx="44.299999"
+   cy="99.300003"
+   r="0.80000001"
+   id="circle363" />
+			<circle
+   class="st2"
+   cx="47.099998"
+   cy="82.199997"
+   r="0.80000001"
+   id="circle364" />
+			<circle
+   class="st2"
+   cx="47.099998"
+   cy="85.699997"
+   r="0.80000001"
+   id="circle365" />
+			<circle
+   class="st2"
+   cx="47.099998"
+   cy="89.099998"
+   r="0.80000001"
+   id="circle366" />
+			<circle
+   class="st2"
+   cx="47.099998"
+   cy="92.5"
+   r="0.80000001"
+   id="circle367" />
+			<circle
+   class="st2"
+   cx="47.099998"
+   cy="95.900002"
+   r="0.80000001"
+   id="circle368" />
+			<circle
+   class="st2"
+   cx="47.099998"
+   cy="99.300003"
+   r="0.80000001"
+   id="circle369" />
+			<circle
+   class="st2"
+   cx="50"
+   cy="82.199997"
+   r="0.80000001"
+   id="circle370" />
+			<circle
+   class="st2"
+   cx="50"
+   cy="85.699997"
+   r="0.80000001"
+   id="circle371" />
+			<circle
+   class="st2"
+   cx="50"
+   cy="89.099998"
+   r="0.80000001"
+   id="circle372" />
+			<circle
+   class="st2"
+   cx="50"
+   cy="92.5"
+   r="0.80000001"
+   id="circle373" />
+			<circle
+   class="st2"
+   cx="50"
+   cy="95.900002"
+   r="0.80000001"
+   id="circle374" />
+			<circle
+   class="st2"
+   cx="50"
+   cy="99.300003"
+   r="0.80000001"
+   id="circle375" />
+			<circle
+   class="st2"
+   cx="52.799999"
+   cy="82.199997"
+   r="0.80000001"
+   id="circle376" />
+			<circle
+   class="st2"
+   cx="52.799999"
+   cy="85.699997"
+   r="0.80000001"
+   id="circle377" />
+			<circle
+   class="st2"
+   cx="52.799999"
+   cy="89.099998"
+   r="0.80000001"
+   id="circle378" />
+			<circle
+   class="st2"
+   cx="52.799999"
+   cy="92.5"
+   r="0.80000001"
+   id="circle379" />
+			<circle
+   class="st2"
+   cx="52.799999"
+   cy="95.900002"
+   r="0.80000001"
+   id="circle380" />
+			<circle
+   class="st2"
+   cx="52.799999"
+   cy="99.300003"
+   r="0.80000001"
+   id="circle381" />
+			<circle
+   class="st2"
+   cx="55.700001"
+   cy="82.199997"
+   r="0.80000001"
+   id="circle382" />
+			<circle
+   class="st2"
+   cx="55.700001"
+   cy="85.699997"
+   r="0.80000001"
+   id="circle383" />
+			<circle
+   class="st2"
+   cx="55.700001"
+   cy="89.099998"
+   r="0.80000001"
+   id="circle384" />
+			<circle
+   class="st2"
+   cx="55.700001"
+   cy="92.5"
+   r="0.80000001"
+   id="circle385" />
+			<circle
+   class="st2"
+   cx="55.700001"
+   cy="95.900002"
+   r="0.80000001"
+   id="circle386" />
+			<circle
+   class="st2"
+   cx="55.700001"
+   cy="99.300003"
+   r="0.80000001"
+   id="circle387" />
+			<circle
+   class="st2"
+   cx="58.5"
+   cy="82.199997"
+   r="0.80000001"
+   id="circle388" />
+			<circle
+   class="st2"
+   cx="58.5"
+   cy="85.699997"
+   r="0.80000001"
+   id="circle389" />
+			<circle
+   class="st2"
+   cx="58.5"
+   cy="89.099998"
+   r="0.80000001"
+   id="circle390" />
+			<circle
+   class="st2"
+   cx="58.5"
+   cy="92.5"
+   r="0.80000001"
+   id="circle391" />
+			<circle
+   class="st2"
+   cx="58.5"
+   cy="95.900002"
+   r="0.80000001"
+   id="circle392" />
+			<circle
+   class="st2"
+   cx="58.5"
+   cy="99.300003"
+   r="0.80000001"
+   id="circle393" />
+			<circle
+   class="st2"
+   cx="61.400002"
+   cy="82.199997"
+   r="0.80000001"
+   id="circle394" />
+			<circle
+   class="st2"
+   cx="61.400002"
+   cy="85.699997"
+   r="0.80000001"
+   id="circle395" />
+			<circle
+   class="st2"
+   cx="61.400002"
+   cy="89.099998"
+   r="0.80000001"
+   id="circle396" />
+			<circle
+   class="st2"
+   cx="61.400002"
+   cy="92.5"
+   r="0.80000001"
+   id="circle397" />
+			<circle
+   class="st2"
+   cx="61.400002"
+   cy="95.900002"
+   r="0.80000001"
+   id="circle398" />
+			<circle
+   class="st2"
+   cx="61.400002"
+   cy="99.300003"
+   r="0.80000001"
+   id="circle399" />
+			<circle
+   class="st2"
+   cx="64.199997"
+   cy="82.199997"
+   r="0.80000001"
+   id="circle400" />
+			<circle
+   class="st2"
+   cx="64.199997"
+   cy="85.699997"
+   r="0.80000001"
+   id="circle401" />
+			<circle
+   class="st2"
+   cx="64.199997"
+   cy="89.099998"
+   r="0.80000001"
+   id="circle402" />
+			<circle
+   class="st2"
+   cx="64.199997"
+   cy="92.5"
+   r="0.80000001"
+   id="circle403" />
+			<circle
+   class="st2"
+   cx="64.199997"
+   cy="95.900002"
+   r="0.80000001"
+   id="circle404" />
+			<circle
+   class="st2"
+   cx="64.199997"
+   cy="99.300003"
+   r="0.80000001"
+   id="circle405" />
+			<circle
+   class="st2"
+   cx="67"
+   cy="82.199997"
+   r="0.80000001"
+   id="circle406" />
+			<circle
+   class="st2"
+   cx="67"
+   cy="85.699997"
+   r="0.80000001"
+   id="circle407" />
+			<circle
+   class="st2"
+   cx="67"
+   cy="89.099998"
+   r="0.80000001"
+   id="circle408" />
+			<circle
+   class="st2"
+   cx="67"
+   cy="92.5"
+   r="0.80000001"
+   id="circle409" />
+			<circle
+   class="st2"
+   cx="67"
+   cy="95.900002"
+   r="0.80000001"
+   id="circle410" />
+			<circle
+   class="st2"
+   cx="67"
+   cy="99.300003"
+   r="0.80000001"
+   id="circle411" />
+			<circle
+   class="st2"
+   cx="69.900002"
+   cy="82.199997"
+   r="0.80000001"
+   id="circle412" />
+			<circle
+   class="st2"
+   cx="69.900002"
+   cy="85.699997"
+   r="0.80000001"
+   id="circle413" />
+			<circle
+   class="st2"
+   cx="69.900002"
+   cy="89.099998"
+   r="0.80000001"
+   id="circle414" />
+			<circle
+   class="st2"
+   cx="69.900002"
+   cy="92.5"
+   r="0.80000001"
+   id="circle415" />
+			<circle
+   class="st2"
+   cx="69.900002"
+   cy="95.900002"
+   r="0.80000001"
+   id="circle416" />
+			<circle
+   class="st2"
+   cx="69.900002"
+   cy="99.300003"
+   r="0.80000001"
+   id="circle417" />
+			<circle
+   class="st2"
+   cx="72.699997"
+   cy="82.199997"
+   r="0.80000001"
+   id="circle418" />
+			<circle
+   class="st2"
+   cx="72.699997"
+   cy="85.699997"
+   r="0.80000001"
+   id="circle419" />
+			<circle
+   class="st2"
+   cx="72.699997"
+   cy="89.099998"
+   r="0.80000001"
+   id="circle420" />
+			<circle
+   class="st2"
+   cx="72.699997"
+   cy="92.5"
+   r="0.80000001"
+   id="circle421" />
+			<circle
+   class="st2"
+   cx="72.699997"
+   cy="95.900002"
+   r="0.80000001"
+   id="circle422" />
+			<circle
+   class="st2"
+   cx="72.699997"
+   cy="99.300003"
+   r="0.80000001"
+   id="circle423" />
+			<circle
+   class="st2"
+   cx="75.599998"
+   cy="82.199997"
+   r="0.80000001"
+   id="circle424" />
+			<circle
+   class="st2"
+   cx="75.599998"
+   cy="85.699997"
+   r="0.80000001"
+   id="circle425" />
+			<circle
+   class="st2"
+   cx="75.599998"
+   cy="89.099998"
+   r="0.80000001"
+   id="circle426" />
+			<circle
+   class="st2"
+   cx="75.599998"
+   cy="92.5"
+   r="0.80000001"
+   id="circle427" />
+			<circle
+   class="st2"
+   cx="75.599998"
+   cy="95.900002"
+   r="0.80000001"
+   id="circle428" />
+			<circle
+   class="st2"
+   cx="75.599998"
+   cy="99.300003"
+   r="0.80000001"
+   id="circle429" />
+			<circle
+   class="st2"
+   cx="78.400002"
+   cy="82.199997"
+   r="0.80000001"
+   id="circle430" />
+			<circle
+   class="st2"
+   cx="78.400002"
+   cy="85.699997"
+   r="0.80000001"
+   id="circle431" />
+			<circle
+   class="st2"
+   cx="78.400002"
+   cy="89.099998"
+   r="0.80000001"
+   id="circle432" />
+			<circle
+   class="st2"
+   cx="78.400002"
+   cy="92.5"
+   r="0.80000001"
+   id="circle433" />
+			<circle
+   class="st2"
+   cx="78.400002"
+   cy="95.900002"
+   r="0.80000001"
+   id="circle434" />
+			<circle
+   class="st2"
+   cx="78.400002"
+   cy="99.300003"
+   r="0.80000001"
+   id="circle435" />
+			<circle
+   class="st2"
+   cx="81.300003"
+   cy="82.199997"
+   r="0.80000001"
+   id="circle436" />
+			<circle
+   class="st2"
+   cx="81.300003"
+   cy="85.699997"
+   r="0.80000001"
+   id="circle437" />
+			<circle
+   class="st2"
+   cx="81.300003"
+   cy="89.099998"
+   r="0.80000001"
+   id="circle438" />
+			<circle
+   class="st2"
+   cx="81.300003"
+   cy="92.5"
+   r="0.80000001"
+   id="circle439" />
+			<circle
+   class="st2"
+   cx="81.300003"
+   cy="95.900002"
+   r="0.80000001"
+   id="circle440" />
+			<circle
+   class="st2"
+   cx="81.300003"
+   cy="99.300003"
+   r="0.80000001"
+   id="circle441" />
+			<circle
+   class="st2"
+   cx="84.099998"
+   cy="82.199997"
+   r="0.80000001"
+   id="circle442" />
+			<circle
+   class="st2"
+   cx="84.099998"
+   cy="85.699997"
+   r="0.80000001"
+   id="circle443" />
+			<circle
+   class="st2"
+   cx="84.099998"
+   cy="89.099998"
+   r="0.80000001"
+   id="circle444" />
+			<circle
+   class="st2"
+   cx="84.099998"
+   cy="92.5"
+   r="0.80000001"
+   id="circle445" />
+			<circle
+   class="st2"
+   cx="84.099998"
+   cy="95.900002"
+   r="0.80000001"
+   id="circle446" />
+			<circle
+   class="st2"
+   cx="84.099998"
+   cy="99.300003"
+   r="0.80000001"
+   id="circle447" />
+			<circle
+   class="st2"
+   cx="87"
+   cy="82.199997"
+   r="0.80000001"
+   id="circle448" />
+			<circle
+   class="st2"
+   cx="87"
+   cy="85.699997"
+   r="0.80000001"
+   id="circle449" />
+			<circle
+   class="st2"
+   cx="87"
+   cy="89.099998"
+   r="0.80000001"
+   id="circle450" />
+			<circle
+   class="st2"
+   cx="87"
+   cy="92.5"
+   r="0.80000001"
+   id="circle451" />
+			<circle
+   class="st2"
+   cx="87"
+   cy="95.900002"
+   r="0.80000001"
+   id="circle452" />
+			<circle
+   class="st2"
+   cx="87"
+   cy="99.300003"
+   r="0.80000001"
+   id="circle453" />
+			<circle
+   class="st2"
+   cx="89.800003"
+   cy="82.199997"
+   r="0.80000001"
+   id="circle454" />
+			<circle
+   class="st2"
+   cx="89.800003"
+   cy="85.699997"
+   r="0.80000001"
+   id="circle455" />
+			<circle
+   class="st2"
+   cx="89.800003"
+   cy="89.099998"
+   r="0.80000001"
+   id="circle456" />
+			<circle
+   class="st2"
+   cx="89.800003"
+   cy="92.5"
+   r="0.80000001"
+   id="circle457" />
+			<circle
+   class="st2"
+   cx="89.800003"
+   cy="95.900002"
+   r="0.80000001"
+   id="circle458" />
+			<circle
+   class="st2"
+   cx="89.800003"
+   cy="99.300003"
+   r="0.80000001"
+   id="circle459" />
+			<circle
+   class="st2"
+   cx="92.699997"
+   cy="82.199997"
+   r="0.80000001"
+   id="circle460" />
+			<circle
+   class="st2"
+   cx="92.699997"
+   cy="85.699997"
+   r="0.80000001"
+   id="circle461" />
+			<circle
+   class="st2"
+   cx="92.699997"
+   cy="89.099998"
+   r="0.80000001"
+   id="circle462" />
+			<circle
+   class="st2"
+   cx="92.699997"
+   cy="92.5"
+   r="0.80000001"
+   id="circle463" />
+			<circle
+   class="st2"
+   cx="92.699997"
+   cy="95.900002"
+   r="0.80000001"
+   id="circle464" />
+			<circle
+   class="st2"
+   cx="92.699997"
+   cy="99.300003"
+   r="0.80000001"
+   id="circle465" />
+			<circle
+   class="st2"
+   cx="95.5"
+   cy="82.199997"
+   r="0.80000001"
+   id="circle466" />
+			<circle
+   class="st2"
+   cx="95.5"
+   cy="85.699997"
+   r="0.80000001"
+   id="circle467" />
+			<circle
+   class="st2"
+   cx="95.5"
+   cy="89.099998"
+   r="0.80000001"
+   id="circle468" />
+			<circle
+   class="st2"
+   cx="95.5"
+   cy="92.5"
+   r="0.80000001"
+   id="circle469" />
+			<circle
+   class="st2"
+   cx="95.5"
+   cy="95.900002"
+   r="0.80000001"
+   id="circle470" />
+			<circle
+   class="st2"
+   cx="95.5"
+   cy="99.300003"
+   r="0.80000001"
+   id="circle471" />
+			<circle
+   class="st2"
+   cx="95.5"
+   cy="126.7"
+   r="0.80000001"
+   id="circle472" />
+			<circle
+   class="st2"
+   cx="95.5"
+   cy="130.10001"
+   r="0.80000001"
+   id="circle473" />
+			<circle
+   class="st2"
+   cx="95.5"
+   cy="133.60001"
+   r="0.80000001"
+   id="circle474" />
+			<circle
+   class="st2"
+   cx="95.5"
+   cy="137"
+   r="0.80000001"
+   id="circle475" />
+			<circle
+   class="st2"
+   cx="95.5"
+   cy="140.39999"
+   r="0.80000001"
+   id="circle476" />
+			<circle
+   class="st2"
+   cx="95.5"
+   cy="143.8"
+   r="0.80000001"
+   id="circle477" />
+			<circle
+   class="st2"
+   cx="95.5"
+   cy="147.2"
+   r="0.80000001"
+   id="circle478" />
+			<circle
+   class="st2"
+   cx="95.5"
+   cy="150.7"
+   r="0.80000001"
+   id="circle479" />
+			<circle
+   class="st2"
+   cx="95.5"
+   cy="154.10001"
+   r="0.80000001"
+   id="circle480" />
+			<circle
+   class="st2"
+   cx="38.599998"
+   cy="157.5"
+   r="0.80000001"
+   id="circle481" />
+			<circle
+   class="st2"
+   cx="38.599998"
+   cy="160.89999"
+   r="0.80000001"
+   id="circle482" />
+			<circle
+   class="st2"
+   cx="41.400002"
+   cy="157.5"
+   r="0.80000001"
+   id="circle483" />
+			<circle
+   class="st2"
+   cx="41.400002"
+   cy="160.89999"
+   r="0.80000001"
+   id="circle484" />
+			<circle
+   class="st2"
+   cx="44.299999"
+   cy="157.5"
+   r="0.80000001"
+   id="circle485" />
+			<circle
+   class="st2"
+   cx="44.299999"
+   cy="160.89999"
+   r="0.80000001"
+   id="circle486" />
+			<circle
+   class="st2"
+   cx="47.099998"
+   cy="157.5"
+   r="0.80000001"
+   id="circle487" />
+			<circle
+   class="st2"
+   cx="47.099998"
+   cy="160.89999"
+   r="0.80000001"
+   id="circle488" />
+			<circle
+   class="st2"
+   cx="50"
+   cy="157.5"
+   r="0.80000001"
+   id="circle489" />
+			<circle
+   class="st2"
+   cx="50"
+   cy="160.89999"
+   r="0.80000001"
+   id="circle490" />
+			<circle
+   class="st2"
+   cx="52.799999"
+   cy="157.5"
+   r="0.80000001"
+   id="circle491" />
+			<circle
+   class="st2"
+   cx="52.799999"
+   cy="160.89999"
+   r="0.80000001"
+   id="circle492" />
+			<circle
+   class="st2"
+   cx="55.700001"
+   cy="157.5"
+   r="0.80000001"
+   id="circle493" />
+			<circle
+   class="st2"
+   cx="55.700001"
+   cy="160.89999"
+   r="0.80000001"
+   id="circle494" />
+			<circle
+   class="st2"
+   cx="58.5"
+   cy="157.5"
+   r="0.80000001"
+   id="circle495" />
+			<circle
+   class="st2"
+   cx="58.5"
+   cy="160.89999"
+   r="0.80000001"
+   id="circle496" />
+			<circle
+   class="st2"
+   cx="61.400002"
+   cy="157.5"
+   r="0.80000001"
+   id="circle497" />
+			<circle
+   class="st2"
+   cx="61.400002"
+   cy="160.89999"
+   r="0.80000001"
+   id="circle498" />
+			<circle
+   class="st2"
+   cx="64.199997"
+   cy="157.5"
+   r="0.80000001"
+   id="circle499" />
+			<circle
+   class="st2"
+   cx="64.199997"
+   cy="160.89999"
+   r="0.80000001"
+   id="circle500" />
+			<circle
+   class="st2"
+   cx="67"
+   cy="157.5"
+   r="0.80000001"
+   id="circle501" />
+			<circle
+   class="st2"
+   cx="67"
+   cy="160.89999"
+   r="0.80000001"
+   id="circle502" />
+			<circle
+   class="st2"
+   cx="69.900002"
+   cy="157.5"
+   r="0.80000001"
+   id="circle503" />
+			<circle
+   class="st2"
+   cx="69.900002"
+   cy="160.89999"
+   r="0.80000001"
+   id="circle504" />
+			<circle
+   class="st2"
+   cx="72.699997"
+   cy="157.5"
+   r="0.80000001"
+   id="circle505" />
+			<circle
+   class="st2"
+   cx="72.699997"
+   cy="160.89999"
+   r="0.80000001"
+   id="circle506" />
+			<circle
+   class="st2"
+   cx="75.599998"
+   cy="157.5"
+   r="0.80000001"
+   id="circle507" />
+			<circle
+   class="st2"
+   cx="75.599998"
+   cy="160.89999"
+   r="0.80000001"
+   id="circle508" />
+			<circle
+   class="st2"
+   cx="78.400002"
+   cy="157.5"
+   r="0.80000001"
+   id="circle509" />
+			<circle
+   class="st2"
+   cx="78.400002"
+   cy="160.89999"
+   r="0.80000001"
+   id="circle510" />
+			<circle
+   class="st2"
+   cx="81.300003"
+   cy="157.5"
+   r="0.80000001"
+   id="circle511" />
+			<circle
+   class="st2"
+   cx="81.300003"
+   cy="160.89999"
+   r="0.80000001"
+   id="circle512" />
+			<circle
+   class="st2"
+   cx="84.099998"
+   cy="157.5"
+   r="0.80000001"
+   id="circle513" />
+			<circle
+   class="st2"
+   cx="84.099998"
+   cy="160.89999"
+   r="0.80000001"
+   id="circle514" />
+			<circle
+   class="st2"
+   cx="87"
+   cy="157.5"
+   r="0.80000001"
+   id="circle515" />
+			<circle
+   class="st2"
+   cx="87"
+   cy="160.89999"
+   r="0.80000001"
+   id="circle516" />
+			<circle
+   class="st2"
+   cx="89.800003"
+   cy="157.5"
+   r="0.80000001"
+   id="circle517" />
+			<circle
+   class="st2"
+   cx="89.800003"
+   cy="160.89999"
+   r="0.80000001"
+   id="circle518" />
+			<circle
+   class="st2"
+   cx="92.699997"
+   cy="157.5"
+   r="0.80000001"
+   id="circle519" />
+			<circle
+   class="st2"
+   cx="92.699997"
+   cy="160.89999"
+   r="0.80000001"
+   id="circle520" />
+			<circle
+   class="st2"
+   cx="95.5"
+   cy="157.5"
+   r="0.80000001"
+   id="circle521" />
+			<circle
+   class="st2"
+   cx="95.5"
+   cy="160.89999"
+   r="0.80000001"
+   id="circle522" />
+		</g>
+	</g>
+</g>
+<g
+   id="binary_sensor.froeling_puffer_1_pufferpumpen_ansteuerung_an_aus"
+   class="stPumpInActive"
+   transform="translate(138.95,261.9)"
+   fill="#87ad27"><title
+     id="title522">Pufferpumpe</title><g
+     fill="#87ad27"
+     id="g528">
+	<path
+   d="m 293.6,184.5 c 0,-1.8 -1.5,-3.3 -3.3,-3.3 -1.8,0 -3.3,1.5 -3.3,3.3 0,1.8 1.5,3.3 3.3,3.3 1.8,0 3.3,-1.5 3.3,-3.3 z"
+   id="path522" />
+	<path
+   d="m 275,190 v -2.3 h 5.2 c -0.3,-1 -0.5,-2.1 -0.5,-3.2 0,-1.1 0.2,-2.1 0.4,-3 H 275 v -2.1 c 0,-0.2 -0.2,-0.4 -0.4,-0.4 h -1.1 c -0.2,0 -0.4,0.2 -0.4,0.4 V 190 c 0,0.2 0.2,0.4 0.4,0.4 h 1.1 c 0.2,-0.1 0.4,-0.2 0.4,-0.4 z"
+   id="path523" />
+	<path
+   d="m 281.3,190.1 c 0.1,0.7 0.3,1.5 0.5,2.2 0.1,0.5 0.3,0.8 1,1 0.8,0.2 1.6,0.4 2.3,0.5 -1.6,-0.9 -2.9,-2.2 -3.8,-3.7 z"
+   id="path524" />
+	<path
+   d="m 295.5,193.8 c 0.8,-0.1 1.5,-0.3 2.3,-0.5 0.6,-0.2 0.8,-0.4 1,-1 0.2,-0.8 0.4,-1.5 0.5,-2.3 -0.9,1.6 -2.2,2.9 -3.8,3.8 z"
+   id="path525" />
+	<path
+   d="m 305.1,179.4 v 2.1 h -4.7 c 0.3,1 0.4,2 0.4,3 0,1.1 -0.2,2.2 -0.5,3.2 h 4.8 v 2.3 c 0,0.2 0.2,0.4 0.4,0.4 h 1.1 c 0.2,0 0.4,-0.2 0.4,-0.4 v -10.5 c 0,-0.2 -0.2,-0.4 -0.4,-0.4 h -1.1 c -0.2,-0.1 -0.4,0.1 -0.4,0.3 z"
+   id="path526" />
+	<path
+   d="m 290.3,173.8 c 3.7,0 7,2 8.9,4.9 l -0.3,-1.5 c 0,-0.5 -0.4,-0.8 -0.9,-1 v -4.8 c 0,-0.2 -0.2,-0.4 -0.4,-0.4 H 283 c 0,0 -0.2,0 -0.3,0.1 -0.1,0.1 -0.1,0.2 -0.1,0.2 v 4.8 c -0.5,0.2 -0.7,0.4 -0.8,0.9 l -0.3,1.5 c 1.8,-2.8 5.1,-4.7 8.8,-4.7 z"
+   id="path527" />
+	<path
+   d="m 299.9,184.5 c 0,-5.4 -4.3,-9.7 -9.6,-9.7 -5.3,0 -9.6,4.3 -9.6,9.7 0,5.4 4.3,9.7 9.6,9.7 5.3,0 9.6,-4.3 9.6,-9.7 z m -16.8,0 c 0,-4 3.2,-7.2 7.2,-7.2 4,0 7.2,3.2 7.2,7.2 0,4 -3.2,7.2 -7.2,7.2 -4,0 -7.2,-3.2 -7.2,-7.2 z"
+   id="path528" />
+</g></g>
+<g
+   id="sensor.froeling_kesselzustand"
+   class="stHeatingOff"
+   transform="translate(137.47,262.18)"
+   clip-rule="evenodd"
+   fill="#bbb"
+   fill-rule="evenodd"><title
+   id="title528">Betriebszustand</title>
+	<path
+   d="m 143.6,171.7 c 0.4,4.9 3.7,11.8 12.3,10 -3.6,-1 -6.5,-4.3 -7.7,-10.4 0.8,0.2 1.9,0.9 2.3,1.1 -0.2,-0.9 0.1,-3.4 1.4,-6.4 1.5,7.7 2.6,9 4.1,9.3 -1.4,-3.7 -1.3,-6.9 -0.1,-9.4 0.6,2.4 1.8,4.2 2.9,5.4 1.8,-2.2 2.6,-5.1 1.8,-11.4 4,5.3 3.7,8.6 2.4,10.6 1.1,-0.3 2.7,-1.8 3.8,-4.4 1,1.2 0.8,3.4 -0.1,5.9 0.6,-0.2 1.6,-0.6 2.2,-1.1 -1,7.3 -5.2,8.2 -9.2,10.4 5.7,2.3 15.1,-1.1 16.2,-8.8 0.3,-1.3 -0.1,-3.2 -0.4,-4.7 -0.6,1 -0.9,2.3 -1.8,2.8 -0.2,-1.4 0.2,-2.6 0.8,-3.8 1.1,-4.3 0.4,-7.9 -1.9,-10.7 -0.4,2.1 -0.9,3.9 -1.9,4.4 -1.1,-6.5 -3.1,-11 -5.5,-12.2 0.2,1.9 0.1,3.5 -0.6,4.9 -2,-7.2 -5.5,-6.7 -6.5,-13.2 -1,0.7 -1.2,2.3 -1.4,3.7 0,2.9 0.2,5.7 -1,7.1 -1.1,-2.1 -2.1,-3.8 -3.9,-4 1.3,2.7 0.8,7.4 -1.1,12.5 -0.7,-1.3 -1.9,-3.9 -3.6,-4.3 0.4,3.4 -0.1,7.3 -0.9,10.9 -0.5,-0.8 -1.5,-1.7 -2.6,-2.3 1.2,3.2 -0.5,4.6 0,8.1 z m 15.6,-21.9 c 0.2,2.7 0,5.5 -0.8,6.9 -0.1,-2.6 -0.4,-4.1 0.8,-6.9 z"
+   id="path529"><title
+     id="title529">Betriebszustand</title></path>
+</g>
+
+<g
+   id="label_ash-counter"
+   transform="matrix(0.93434,0,0,0.98325,141.08,264.11)"><title
+   id="title530">Verbleibende Heizstunden bis zur Entleerung des Aschebehälters</title>
+	<path
+   class="st6"
+   d="M 100.1,240.9 H 29 c -1.7,0 -3,-1.4 -3,-3 v -23.5 c 0,-1.7 1.3,-3 3,-3 h 71 c 1.7,0 3,1.3 3,3 v 23.5 c 0.1,1.7 -1.3,3 -2.9,3 z"
+   fill="#fff"
+   stroke="#c8c8c8"
+   stroke-miterlimit="10"
+   stroke-width="1.0555"
+   id="path530" />
+	<g
+   id="symb_ash">
+		<path
+   class="st7"
+   d="M 55,240.9 H 29 c -1.7,0 -3,-1.4 -3,-3 v -23.5 c 0,-1.7 1.3,-3 3,-3 h 26 c 1.7,0 3,1.3 3,3 v 23.5 c 0,1.7 -1.3,3 -3,3 z"
+   fill="#c8c8c8"
+   id="path531" />
+		
+			
+				<path
+   class="st2"
+   d="m 37.3,226.9 h 1 v 10.8 c 0,0.3 0.2,0.5 0.5,0.5 h 10.6 c 0.3,0 0.5,-0.2 0.5,-0.5 v -10.8 h 1 v -1.3 H 37.3 Z m 9.3,0.8 h 1.3 v 9.2 h -1.3 z m -3.1,0 h 1.3 v 9.2 h -1.3 z m -3.1,0 h 1.3 v 9.2 h -1.3 z"
+   fill="#646464"
+   id="path532" />
+			<g
+   fill="#646464"
+   id="g533">
+			<polygon
+   class="st2"
+   points="49.5,222.3 50,221.7 45,216.8 44.5,217.4 42.1,215.1 41.2,215.9 51,225.5 51.8,224.6 "
+   id="polygon532" />
+			<path
+   class="st8"
+   d="m 32.2,220.4 9,3.8 c 0.8,3.3 5,3.6 1.5,-1 -1.3,-1.9 -3.7,-1.4 -8.7,-6.9 z"
+   clip-rule="evenodd"
+   fill-rule="evenodd"
+   id="path533" />
+			<polyline
+   class="st8"
+   points="31.9 220.5 33.9 215.7 42.2 219.1 42.9 219.5 43.1 219.5 43.3 219.1 33.7 215.1 31.3 220.8 40.8 224.9 41.1 224.4 40.9 224.3"
+   clip-rule="evenodd"
+   fill-rule="evenodd"
+   id="polyline533" />
+		</g>
+	</g>
+</g><text
+   id="sensor.froeling_verbleibende_heizstunden_bis_zur_asche_entleeren_warnung"
+   class="st9 st10 st11"
+   transform="scale(1.0091011,0.99098101)"
+   x="217.46301"
+   y="495.43051"
+   style="stroke-width:0.999999"><tspan
+     id="tspan533"
+     style="stroke-width:0.999999">0h</tspan></text>
+
+
+<g
+   id="label_fuel-level"
+   transform="matrix(1.0001,0,0,0.98311,139.12,260.25)"><title
+   id="title533">Füllstand im Pelletsvorratsbehälter</title>
+	<path
+   id="frame_1_"
+   class="st6"
+   d="M 100.1,56.2 H 29 c -1.7,0 -3,-1.3 -3,-3 V 29.7 c 0,-1.6 1.3,-3 3,-3 h 71 c 1.7,0 3,1.4 3,3 v 23.5 c 0.1,1.6 -1.3,3 -2.9,3 z"
+   fill="#fff"
+   stroke="#c8c8c8"
+   stroke-miterlimit="10"
+   stroke-width="1.0555" />
+	<g
+   id="symb_fuel-level">
+		<path
+   class="st7"
+   d="M 55,56.2 H 29 c -1.7,0 -3,-1.3 -3,-3 V 29.7 c 0,-1.6 1.3,-3 3,-3 h 26 c 1.7,0 3,1.4 3,3 v 23.5 c 0,1.6 -1.3,3 -3,3 z"
+   fill="#c8c8c8"
+   id="path534" />
+		<g
+   fill="#646464"
+   id="g537">
+			<path
+   class="st2"
+   d="m 54.6,40.3 c -1.3,-3.2 -3.7,-5.7 -6.7,-7.2 l -1.4,3.1 c 2.3,1.1 4.1,3 5,5.4 z m -7.1,-7.4 c -1.7,-0.7 -3.5,-1.1 -5.4,-1.1 -1.6,0 -3.1,0.3 -4.5,0.8 l 1.2,3.2 c 1,-0.4 2.1,-0.5 3.3,-0.5 1.4,0 2.8,0.3 4,0.8 z M 37.1,32.7 c -2.1,0.8 -3.9,2.1 -5.4,3.8 l 2.6,2.2 c 1.1,-1.2 2.4,-2.2 3.9,-2.8 z m -5.6,4.2 c -0.8,1 -1.5,2.2 -2,3.5 l 3.1,1.3 c 0.4,-0.9 0.9,-1.8 1.5,-2.6 z"
+   id="path535" /><g
+   clip-rule="evenodd"
+   fill-rule="evenodd"
+   id="g536">
+			<polygon
+   class="st8"
+   points="29.4,43 32.1,43 32.1,43.7 30.2,43.7 30.2,44.5 32,44.5 32,45.1 30.2,45.1 30.2,46.1 32.2,46.1 32.2,46.7 29.4,46.7 "
+   id="polygon535" />
+			<polygon
+   class="st8"
+   points="54.4,45.1 52.9,45.1 52.9,46.7 52.1,46.7 52.1,43 54.6,43 54.6,43.7 52.9,43.7 52.9,44.5 54.4,44.5 "
+   id="polygon536" />
+			<path
+   class="st8"
+   d="m 48.6,38 -1.1,0.8 -4.9,7.9 c -0.2,0 -0.4,-0.1 -0.5,-0.1 -1.1,0 -2,0.9 -2,2 0,1.1 0.9,2 2,2 1.1,0 2,-0.9 2,-2 0,-0.5 -0.2,-0.9 -0.4,-1.2 l 4.7,-8.1 z"
+   id="path536" />
+		</g></g>
+	</g>
+</g><text
+   id="sensor.froeling_fuellstand_im_pelletsbehaelter"
+   class="st9 st10 st11"
+   transform="scale(1.0086,0.99147)"
+   x="217.50626"
+   y="308.66428"><tspan
+     id="tspan537">0%</tspan></text>
+
+
+<g
+   id="Saugzug_Ansteuerung"
+   transform="translate(139.4,-58.544)"><title
+     id="title537">Drehzahl des Saugzuggebläses</title><path
+     id="frame_2_"
+     class="st6"
+     d="m 334.56,374.52 h -71.007 c -1.6002,0 -3.0003,-1.2806 -3.0003,-2.9552 v -23.149 c 0,-1.5761 1.4002,-2.9552 3.0003,-2.9552 h 71.007 c 1.6002,0 3.0003,1.3791 3.0003,2.9552 v 23.149 c 0,1.6746 -1.3001,2.9552 -3.0003,2.9552 z"
+     fill="#fff"
+     stroke="#c8c8c8"
+     stroke-miterlimit="10"
+     stroke-width="1.0555" /><g
+     id="symb_fan-rpm"
+     transform="matrix(1.0001,0,0,0.98507,1.7297,319.85)">
+		<path
+   class="st7"
+   d="m 287.8,55.5 h -26 c -1.6,0 -3,-1.3 -3,-3 V 29 c 0,-1.6 1.4,-3 3,-3 h 26 c 1.7,0 3,1.4 3,3 v 23.5 c 0,1.7 -1.4,3 -3,3 z"
+   fill="#c8c8c8"
+   id="path537" />
+		<path
+   class="st2"
+   d="M 286.1,42.1 V 39 c 0,0 0,-0.2 -0.2,-0.3 -0.2,-0.1 -0.4,-0.1 -0.4,-0.1 h -6.2 c 0,0 -0.3,0 -0.3,0.2 -0.1,0.2 0,0.3 0,0.3 v 0.6 l -1.4,0.1 -0.6,-1.1 0.6,-1.1 0.8,0.4 c 0,0 0.2,0.1 0.3,-0.1 0.1,-0.1 3.2,-5.6 3.2,-5.6 0,0 0.2,-0.2 0,-0.4 -0.1,-0.2 -0.3,-0.3 -0.3,-0.3 l -2.7,-1.5 c 0,0 -0.1,-0.1 -0.3,0 -0.2,0.1 -0.3,0.3 -0.3,0.3 l -3.1,5.3 c 0,0 -0.1,0.3 0,0.4 l 0.2,0.2 0.5,0.3 -0.7,1.2 h -1.3 l -0.7,-1.1 0.7,-0.5 c 0,0 0.2,-0.1 0.1,-0.3 -0.1,-0.1 -3.2,-5.6 -3.2,-5.6 0,0 -0.1,-0.2 -0.4,-0.2 -0.3,0 -0.4,0.1 -0.4,0.1 l -2.7,1.6 c 0,0 -0.1,0.1 -0.2,0.3 0,0.2 0.1,0.4 0.1,0.4 l 3.1,5.3 c 0,0 0.2,0.2 0.4,0.2 0.2,0 0.3,-0.1 0.3,-0.1 l 0.5,-0.3 0.7,1.2 -0.6,1.1 h -1.3 V 39 c 0,0 0,-0.2 -0.3,-0.2 h -6.4 c 0,0 -0.3,0 -0.4,0.2 -0.1,0.2 -0.1,0.4 -0.1,0.4 v 3.1 c 0,0 0,0.2 0.2,0.3 0.2,0.1 0.4,0.1 0.4,0.1 h 6.2 c 0,0 0.3,0 0.3,-0.2 0.1,-0.2 0,-0.3 0,-0.3 v -0.6 l 1.4,-0.1 0.6,1.1 -0.6,1.1 -0.8,-0.4 c 0,0 -0.2,-0.1 -0.3,0.1 -0.1,0.1 -3.2,5.6 -3.2,5.6 0,0 -0.2,0.2 0,0.4 0.1,0.2 0.3,0.3 0.3,0.3 l 2.7,1.5 c 0,0 0.1,0.1 0.3,0 0.2,-0.1 0.3,-0.3 0.3,-0.3 l 3.1,-5.3 c 0,0 0.1,-0.3 0,-0.4 l -0.2,-0.2 -0.5,-0.3 0.7,-1.2 h 1.3 l 0.7,1.1 -0.7,0.5 c 0,0 -0.2,0.1 -0.1,0.3 0.1,0.1 3.2,5.6 3.2,5.6 0,0 0.1,0.2 0.4,0.2 0.3,0 0.4,-0.1 0.4,-0.1 l 2.7,-1.6 c 0,0 0.1,-0.1 0.2,-0.3 0,-0.2 -0.1,-0.4 -0.1,-0.4 l -3.1,-5.3 c 0,0 -0.2,-0.2 -0.4,-0.2 -0.2,0 -0.3,0.1 -0.3,0.1 l -0.5,0.3 -0.7,-1.2 0.6,-1.1 h 1.3 v 0.9 c 0,0 0,0.2 0.3,0.2 h 6.4 c 0,0 0.3,0 0.4,-0.2 0.2,-0.2 0.1,-0.4 0.1,-0.4 z M 274.8,42 c -0.7,0 -1.2,-0.5 -1.2,-1.2 0,-0.7 0.5,-1.2 1.2,-1.2 0.7,0 1.2,0.5 1.2,1.2 0,0.6 -0.6,1.2 -1.2,1.2 z"
+   fill="#646464"
+   id="path538" />
+	</g></g><text
+   id="sensor.froeling_saugzug_ansteuerung"
+   class="st9 st10 st11"
+   transform="scale(1.0076,0.99246)"
+   x="451.86111"
+   y="308.6582">0%</text>
+
+
+<g
+   id="label_boiler-temp"
+   transform="matrix(1.0004,0,0,0.95072,138.9,265.44)"><title
+   id="title538">Kesseltemperatur</title>
+	<path
+   id="frame_4_"
+   class="st12"
+   d="m 185.6,116.7 h -55.1 c -1.6,0 -3,-1.3 -3,-3 V 89.2 c 0,-1.6 1.3,-3 3,-3 h 55.1 c 1.7,0 3,1.4 3,3 v 24.5 c 0,1.7 -1.3,3 -3,3 z"
+   fill="#fff"
+   stroke="#c8c8c8"
+   stroke-miterlimit="10"
+   stroke-width=".9237" />
+	<g
+   id="symb_thermometer_2_">
+		<path
+   class="st7"
+   d="m 141.1,116.7 h -10.6 c -1.6,0 -3,-1.3 -3,-3 V 89.2 c 0,-1.6 1.3,-3 3,-3 h 10.6 c 1.6,0 3,1.4 3,3 v 24.5 c 0,1.7 -1.3,3 -3,3 z"
+   fill="#c8c8c8"
+   id="path539" />
+		<g
+   fill="#646464"
+   id="g541">
+			<rect
+   class="st2"
+   x="131.10001"
+   y="97.300003"
+   width="3"
+   height="2.0999999"
+   id="rect539" />
+			<rect
+   class="st2"
+   x="131.10001"
+   y="93.5"
+   width="3"
+   height="2.0999999"
+   id="rect540" />
+			<path
+   class="st2"
+   d="M 138.2,103.9 V 93.3 c 0,-2.3 -3.4,-2.3 -3.4,0 v 10.6 c -1.5,0.7 -2.5,2.2 -2.5,3.9 0,2.3 1.9,4.2 4.2,4.2 2.3,0 4.2,-1.9 4.2,-4.2 0.1,-1.7 -1,-3.2 -2.5,-3.9 z"
+   id="path540" />
+			<rect
+   class="st2"
+   x="131.10001"
+   y="101"
+   width="3"
+   height="2.0999999"
+   id="rect541" />
+		</g>
+	</g>
+</g>
+<text
+   id="sensor.froeling_kesseltemperatur"
+   class="st9 st10 st11"
+   x="305.66058"
+   y="367.24158"><tspan
+     id="tspan541">0°C</tspan></text>
+
+
+<g
+   id="label_flue-gas"
+   transform="matrix(1.0003,0,0,0.95101,136.36,261.96)"><title
+   id="title541">Abgastemperatur</title>
+	<path
+   id="frame"
+   class="st12"
+   d="m 229.9,56.8 h -59.8 c -1.6,0 -3,-1.3 -3,-3 V 29.2 c 0,-1.6 1.4,-3 3,-3 h 59.8 c 1.6,0 3,1.4 3,3 v 24.5 c 0,1.7 -1.3,3.1 -3,3.1 z"
+   fill="#fff"
+   stroke="#c8c8c8"
+   stroke-miterlimit="10"
+   stroke-width=".9237" />
+	<g
+   id="symb_thermometer">
+		<path
+   class="st7"
+   d="m 180.7,56.8 h -10.6 c -1.6,0 -3,-1.3 -3,-3 V 29.2 c 0,-1.6 1.4,-3 3,-3 h 10.6 c 1.6,0 3,1.4 3,3 v 24.5 c 0,1.7 -1.4,3.1 -3,3.1 z"
+   fill="#c8c8c8"
+   id="path541" />
+		<g
+   id="_x3C_Zusammengesetzter_Pfad_x3E_"
+   fill="#646464">
+			<rect
+   class="st2"
+   x="170.60001"
+   y="37.299999"
+   width="3"
+   height="2.0999999"
+   id="rect542" />
+			<rect
+   class="st2"
+   x="170.60001"
+   y="33.5"
+   width="3"
+   height="2.0999999"
+   id="rect543" />
+			<path
+   class="st2"
+   d="M 177.8,44 V 33.3 c 0,-2.3 -3.4,-2.3 -3.4,0 V 44 c -1.5,0.7 -2.5,2.2 -2.5,3.9 0,2.3 1.9,4.2 4.2,4.2 2.3,0 4.2,-1.9 4.2,-4.2 0,-1.8 -1,-3.3 -2.5,-3.9 z"
+   id="path543" />
+			<rect
+   class="st2"
+   x="170.60001"
+   y="41"
+   width="3"
+   height="2.0999999"
+   id="rect544" />
+		</g>
+	</g>
+</g><text
+   id="sensor.froeling_abgastemperatur"
+   class="st9 st10 st11"
+   transform="scale(1.0256,0.97503)"
+   x="336.2627"
+   y="313.9808"><tspan
+     id="tspan544">0°C</tspan></text>
+
+
+<g
+   id="label_lambda"
+   transform="matrix(1.0001,0,0,0.98208,141.18,262.31)"><title
+   id="title544">Restsauerstoffgehalt</title>
+	<path
+   id="frame_3_"
+   class="st6"
+   d="m 332.8,90.3 h -71 c -1.6,0 -3,-1.4 -3,-3 V 63.8 c 0,-1.7 1.4,-3 3,-3 h 71 c 1.6,0 3,1.3 3,3 v 23.5 c 0,1.6 -1.3,3 -3,3 z"
+   fill="#fff"
+   stroke="#c8c8c8"
+   stroke-miterlimit="10"
+   stroke-width="1.0555" />
+	<g
+   id="symb_lambda">
+		<path
+   class="st7"
+   d="m 287.8,90.3 h -26 c -1.6,0 -3,-1.4 -3,-3 V 63.8 c 0,-1.7 1.4,-3 3,-3 h 26 c 1.7,0 3,1.3 3,3 v 23.5 c 0,1.6 -1.4,3 -3,3 z"
+   fill="#c8c8c8"
+   id="path544" />
+		<g
+   fill="#646464"
+   id="g546">
+			<path
+   class="st2"
+   d="m 285.2,70.2 c 1.2,-1.2 1.2,-3.2 0,-4.4 -1.2,-1.2 -3.2,-1.2 -4.4,0 l -1.1,1.1 4.4,4.4 z M 281.6,67 c -0.2,0.2 -0.5,0.2 -0.7,0 -0.2,-0.2 -0.2,-0.5 0,-0.7 0.2,-0.2 0.5,-0.2 0.7,0 0.2,0.2 0.2,0.5 0,0.7 z m 1.5,1.5 c -0.2,0.2 -0.5,0.2 -0.7,0 -0.2,-0.2 -0.2,-0.5 0,-0.7 0.2,-0.2 0.5,-0.2 0.7,0 0.2,0.2 0.2,0.5 0,0.7 z m 0.9,0.9 c 0.2,-0.2 0.5,-0.2 0.7,0 0.2,0.2 0.2,0.5 0,0.7 -0.2,0.2 -0.5,0.2 -0.7,0 -0.2,-0.2 -0.2,-0.5 0,-0.7 z"
+   id="path545" />
+			<path
+   class="st2"
+   d="m 280,74.7 -4.5,-4.5 -6.4,6.4 c -0.1,0.1 -0.2,0.3 -0.3,0.4 -0.7,1.1 -0.2,2.1 0.7,3.1 l 0.1,0.1 -1,1 c -0.9,0.9 -1.1,1.7 -1.2,2.3 -0.1,0.3 -0.1,0.5 -0.2,0.7 -0.3,0.5 -1.5,0.8 -2.2,0.8 -0.5,0 -0.8,0.4 -0.8,0.9 0,0.2 0.1,0.4 0.2,0.5 0.2,0.2 0.4,0.3 0.7,0.2 0.3,0 2.7,-0.2 3.5,-1.7 0.3,-0.4 0.3,-0.9 0.4,-1.2 0.1,-0.5 0.2,-0.9 0.7,-1.4 l 1,-1 c 0.7,0.6 1.4,1.1 2.1,1 h 0.5 c 0.1,0 0.1,-0.1 0.2,-0.1 0.1,0 0.2,-0.1 0.3,-0.2 0.1,-0.1 0.3,-0.2 0.4,-0.3 l 6.4,-6.4 z"
+   id="path546" />
+			<polygon
+   class="st2"
+   points="275.5,69.3 276.5,70.3 280.7,74.5 280.8,74.6 281.7,75.5 283.2,77 286,74.1 284.6,72.7 283.6,71.7 279.3,67.4 279.2,67.3 278.3,66.4 276.9,65 274,67.8 "
+   id="polygon546" />
+		</g>
+	</g>
+</g><text
+   id="sensor.froeling_restsauerstoffgehalt"
+   class="st9 st10 st11"
+   transform="scale(1.0091,0.99098)"
+   x="450.22449"
+   y="344.56323"><tspan
+     id="tspan546">0.0%</tspan></text>
+
+
+<g
+   id="label_pump-01-rpm"
+   transform="matrix(1.0022,0,0,0.97887,85.176,276.25)"><title
+   id="title546">Pufferpumpen Ansteuerung</title>
+	<path
+   class="st6"
+   d="m 378.3,229.7 h -71 c -1.6,0 -3,-1.4 -3,-3 v -23.5 c 0,-1.7 1.4,-3 3,-3 h 71 c 1.6,0 3,1.3 3,3 v 23.5 c 0,1.7 -1.4,3 -3,3 z"
+   fill="#fff"
+   stroke="#c8c8c8"
+   stroke-miterlimit="10"
+   stroke-width="1.0555"
+   id="path547" />
+	<g
+   id="symb_rpm">
+		<path
+   class="st7"
+   d="m 333.2,229.7 h -26 c -1.6,0 -3,-1.4 -3,-3 v -23.5 c 0,-1.7 1.4,-3 3,-3 h 26 c 1.6,0 3,1.3 3,3 v 23.5 c 0,1.7 -1.3,3 -3,3 z"
+   fill="#c8c8c8"
+   id="path548" />
+		<g
+   fill="#646464"
+   id="g550">
+			<path
+   class="st2"
+   d="m 319.6,205.6 c -7.4,0 -13.5,6.1 -13.5,13.5 v 0.5 h 3.5 v -1 h -2.5 c 0.1,-3.1 1.4,-5.9 3.3,-8 l 1.8,1.8 0.7,-0.7 -1.8,-1.8 c 2.1,-2 4.9,-3.2 8,-3.3 v 2.5 h 1 v -2.5 c 3.1,0.1 5.9,1.3 8,3.3 l -1.7,1.7 0.7,0.7 1.7,-1.7 c 2,2.1 3.2,4.9 3.3,8 h -2.5 v 1 h 3.5 v -0.5 c 0,-7.4 -6,-13.5 -13.5,-13.5 z"
+   id="path549" />
+			<path
+   class="st2"
+   d="m 317.6,220.7 c 1.7,1.7 3,0.8 3,0.8 l 4.2,-8 -8,4.2 c 0,0 -0.9,1.3 0.8,3 z"
+   id="path550" />
+		</g>
+	</g>
+</g><text
+   id="sensor.froeling_puffer_1_pufferpumpen_ansteuerung"
+   class="st9 st10 st11"
+   transform="scale(1.0119,0.98824)"
+   x="440.04974"
+   y="497.09424">0%</text><path
+   class="st1"
+   d="m 659.39,443.32 0.13194,5.9652 -26.735,0.0968 -0.13194,-5.9652 z m -4.7418,5.1874 -0.0956,-4.3745 -0.70588,2.1899 z m -16.063,0.0581 -0.0958,-4.3746 -0.70585,2.1899 z"
+   fill="#6e8ca0"
+   id="path551"
+   style="fill:#6e8ca0;fill-opacity:1;stroke-width:0" /><path
+   class="st1"
+   d="m 531.91,311.24 -5.9652,0.25713 -0.0968,-52.104 5.9652,-0.25713 z m -5.1874,-9.2412 4.3745,-0.18629 -2.1899,-1.3757 z m -0.0581,-31.306 4.3746,-0.18673 -2.1899,-1.3756 z"
+   fill="#c86464"
+   id="path552"
+   style="stroke-width:0" /><path
+   id="buffer-tank"
+   class="st11"
+   d="m 633.2,328.19 c 0,-17.5 -30.902,-26.9 -59.952,-26.9 h -2.3714 c -29.05,0 -59.952,9.4 -59.952,26.9 v 161.3 c 0,4.3 1.8526,8.2 5.6321,11.8 l -7.1883,15.1 h 21.491 l 2.5937,-5.6 c 10.523,3.7 23.788,5.7 37.424,5.7 h 2.3714 c 13.71,0 26.9,-2 37.424,-5.7 l 2.5937,5.6 h 21.491 l -7.1883,-15.1 c 3.7053,-3.6 5.6321,-7.5 5.6321,-11.8 z m -3.7794,161.3 c 0,3.7 -2.9642,6.9 -5.4097,8.9 l -1.6303,1.4 5.4838,11.6 h -12.45 l -2.9642,-6.4 -1.3339,0.5 c -10.449,3.8 -23.862,6 -37.794,6 h -2.3714 c -13.932,0 -27.419,-2.1 -37.794,-6 l -1.3339,-0.5 -2.9642,6.4 h -12.45 l 5.4838,-11.6 -1.6303,-1.4 c -2.4455,-2 -5.4097,-5.2 -5.4097,-8.9 v -161.3 c 0,-10.3 23.047,-21.8 56.172,-21.8 h 2.3714 c 33.125,0 56.172,11.5 56.172,21.8 v 161.3 z"
+   fill="#646464"
+   style="stroke-width:0" /><g
+   transform="matrix(0.70691,0,0,0.8555,201.54,-5.3425)"
+   fill="#c86464"
+   id="g554"><path
+     class="stHotWater"
+     d="m 598.42,415.59 v -28.5 c 0,-2.2 -5,-7.1 -18.6,-11.4 -14.2,-4.4 -33.3,-6.9 -53.6,-6.9 h -3.2 c -20.3,0 -39.4,2.4 -53.6,6.9 -13.7,4.3 -18.6,9.1 -18.6,11.4 v 28.5 z"
+     id="path553" /><rect
+     class="stHotWater"
+     x="450.72"
+     y="419.19"
+     width="147.7"
+     height="46.799999"
+     id="rect553" /><rect
+     class="stHotWater"
+     x="450.72"
+     y="469.48999"
+     width="147.7"
+     height="46.799999"
+     id="rect554" /></g><path
+   class="stColdWater"
+   d="m 520.16,441.5 v 40.533 c 0,3.1288 3.5369,10.098 13.157,16.213 10.045,6.2577 23.556,9.8132 37.916,9.8132 h 2.2636 c 14.36,0 27.871,-3.4133 37.916,-9.8132 9.6912,-6.1155 13.157,-12.942 13.157,-16.213 V 441.5 Z"
+   fill="#6e8ca0"
+   stroke-width="1.003"
+   id="path554" /><polyline
+   id="room"
+   class="st0"
+   transform="matrix(-1.0015,0,0,0.90199,836.7,-5.9887)"
+   points="149.9 122.6 265.6 36.5 381.3 122.6 381.3 247.9"
+   fill="none"
+   stroke="#c8c8c8"
+   stroke-width="10"
+   style="fill:none" /><path
+   class="st2"
+   d="m 594.6,173.38 h 29.494 v -1.9914 c 0,-0.18962 0.0427,-0.3793 0.0853,-0.3793 h 0.23479 c 0.0427,0 0.0853,0.18968 0.0853,0.3793 v 10.241 c 0,0.18962 -0.0427,0.3793 -0.0853,0.3793 h -0.23479 c -0.0427,0 -0.0853,-0.18968 -0.0853,-0.3793 v -2.181 H 594.6 Z m 15.643,5.0259 v -4.1724 l -1.0244,2.0862 z"
+   fill="#c86464"
+   stroke-width="0.44987"
+   id="path555"
+   style="fill:#c86464;fill-opacity:1" /><g
+   transform="matrix(0.6623,0,0,1,193.64,-58.458)"
+   id="g556"
+   style="fill:#c86464;fill-opacity:1"><path
+     class="st2"
+     d="m 703.79,229.39 h 1.1 c 0.2,0 0.4,0.18968 0.4,0.3793 v 2.181 h 41.2 v 6.069 h -41.2 v 1.9914 c 0,0.18962 -0.2,0.3793 -0.4,0.3793 h -1.1 c -0.2,0 -0.4,-0.18968 -0.4,-0.3793 v -10.241 c 0,-0.18962 0.2,-0.3793 0.4,-0.3793 z m 25,7.3966 v -4.1724 l -4.8,2.0862 z"
+     fill="#c86464"
+     stroke-width="0.97379"
+     id="path556"
+     style="fill:#c86464;fill-opacity:1" /></g><path
+   id="return-line"
+   class="st3"
+   transform="translate(105.54,39.234)"
+   d="M 219.3,199.8 H 0 v 6.4 h 219.3 z m -196.4,5.4 -4.8,-2.2 4.8,-2.2 z m 128.3,0 -4.8,-2.2 4.8,-2.2 z"
+   clip-path="url(#SVGID_2_)" /><path
+   class="st1"
+   d="m 594.51,206.2 0.006,-5.4589 65.557,0.59211 -0.006,5.4589 z m 11.913,-4.6235 -0.005,4.0032 1.8516,-1.9848 z m 39.389,0.35577 -0.006,4.0032 1.8516,-1.9848 z"
+   fill="#6e8ca0"
+   stroke-width="0"
+   id="path557"
+   style="fill:#6e8ca0;fill-opacity:1" /><g
+   transform="matrix(-1,0,0,1,1127.3,-53.742)"
+   clip-rule="evenodd"
+   fill="#646464"
+   fill-rule="evenodd"
+   id="g561"><polygon
+     transform="translate(292.25,17.716)"
+     points="240.7,236.3 240.1,242.7 230.5,242.7 230.5,236.3 "
+     id="polygon557" /><polygon
+     transform="translate(292.25,17.716)"
+     points="243.1,209.3 242.4,215.7 230.5,215.7 230.5,209.3 "
+     id="polygon558" /><path
+     d="m 580.65,226.82 -3.4,35.2 c -0.5,5.3 -8.8,4.6 -8.3,-0.7 l 3.4,-35.2 c 0.5,-5.4 8.8,-4.6 8.3,0.7 z"
+     id="path558" /><path
+     d="m 568.85,226.82 -3.4,35.2 c -0.5,5.3 -8.8,4.6 -8.3,-0.7 l 3.4,-35.2 c 0.5,-5.4 8.8,-4.6 8.3,0.7 z"
+     id="path559" /><path
+     d="m 556.95,226.82 -3.4,35.2 c -0.5,5.3 -8.8,4.6 -8.3,-0.7 l 3.4,-35.2 c 0.5,-5.4 8.9,-4.6 8.3,0.7 z"
+     id="path560" /><path
+     d="m 545.15,226.82 -3.4,35.2 c -0.5,5.3 -8.8,4.6 -8.3,-0.7 l 3.4,-35.2 c 0.5,-5.4 8.8,-4.6 8.3,0.7 z"
+     id="path561" /></g><g
+   id="binary_sensor.froeling_hk1_pumpe_an_aus"
+   transform="matrix(-1,0,0,1,1009,-53.742)"><title
+     id="title561">Heizkreispumpe</title><g
+     fill="#87ad27"
+     id="g568"><path
+       d="m 363.35,230.12 c 0,-1.9 1.5,-3.4 3.4,-3.4 1.9,0 3.4,1.5 3.4,3.4 0,1.9 -1.5,3.4 -3.4,3.4 -1.8,0 -3.4,-1.5 -3.4,-3.4 z"
+       id="path562" /><path
+       d="m 382.45,235.72 v -2.3 h -5.3 c 0.3,-1 0.5,-2.1 0.5,-3.2 0,-1.1 -0.2,-2.1 -0.4,-3.1 h 5.3 v -2.1 c 0,-0.2 0.2,-0.4 0.4,-0.4 h 1.1 c 0.2,0 0.4,0.2 0.4,0.4 v 10.7 c 0,0.2 -0.2,0.4 -0.4,0.4 h -1.1 c -0.3,0 -0.5,-0.2 -0.5,-0.4 z"
+       id="path563" /><path
+       d="m 376.05,235.92 c -0.1,0.8 -0.3,1.5 -0.5,2.3 -0.1,0.5 -0.3,0.8 -1,1 -0.8,0.2 -1.6,0.4 -2.4,0.5 1.6,-0.9 2.9,-2.2 3.9,-3.8 z"
+       id="path564" /><path
+       d="m 361.35,239.72 c -0.8,-0.1 -1.6,-0.3 -2.4,-0.5 -0.6,-0.2 -0.8,-0.4 -1,-1 -0.2,-0.8 -0.4,-1.5 -0.5,-2.3 1,1.5 2.3,2.8 3.9,3.8 z"
+       id="path565" /><path
+       d="m 351.55,224.92 v 2.1 h 4.8 c -0.3,1 -0.4,2 -0.4,3.1 0,1.1 0.2,2.2 0.5,3.2 h -4.9 v 2.3 c 0,0.2 -0.2,0.4 -0.4,0.4 h -1.1 c -0.2,0 -0.4,-0.2 -0.4,-0.4 v -10.8 c 0,-0.2 0.2,-0.4 0.4,-0.4 h 1.1 c 0.2,0.1 0.4,0.3 0.4,0.5 z"
+       id="path566" /><path
+       d="m 366.75,219.12 c -3.8,0 -7.2,2 -9.1,5 0.1,-0.5 0.2,-1 0.4,-1.6 0,-0.5 0.4,-0.8 1,-1 v -4.9 c 0,-0.2 0.2,-0.4 0.4,-0.4 h 14.9 c 0,0 0.2,0 0.3,0.1 0.1,0.1 0.1,0.2 0.1,0.2 v 5 c 0.5,0.2 0.7,0.5 0.8,1 l 0.3,1.5 c -1.9,-2.9 -5.3,-4.9 -9.1,-4.9 z"
+       id="path567" /><path
+       d="m 366.75,240.12 c 5.4,0 9.8,-4.5 9.8,-10 0,-5.5 -4.4,-10 -9.8,-10 -5.4,0 -9.8,4.5 -9.8,10 0,5.5 4.4,10 9.8,10 z m 0,-2.6 c -4.1,0 -7.4,-3.3 -7.4,-7.4 0,-4.1 3.3,-7.4 7.4,-7.4 4.1,0 7.4,3.3 7.4,7.4 0,4.1 -3.3,7.4 -7.4,7.4 z"
+       id="path568" /></g></g><g
+   transform="matrix(-1,0,0,1,1128,-51.858)"
+   clip-rule="evenodd"
+   fill="#ff3232"
+   fill-rule="evenodd"
+   id="g572"><path
+     d="m 549.85,199.92 c 0.2,0.3 0.5,0.6 0.6,0.7 0.7,1 1.2,1.9 0.8,3 -0.3,1.1 -1.3,2.4 -1.7,2.9 -0.6,0.7 -0.5,1.8 0.2,2.4 0.3,0.3 0.7,0.4 1.1,0.4 0.5,0 1,-0.2 1.3,-0.6 0.2,-0.2 1.7,-2.1 2.3,-4 0.8,-2.6 -0.5,-4.7 -1.2,-5.8 -0.2,-0.4 -0.6,-0.7 -0.9,-1.2 -0.9,-1 -1.9,-2.1 -2.3,-3.8 -0.4,-1.8 1.4,-3.3 1.5,-3.3 0.7,-0.6 0.8,-1.6 0.2,-2.4 -0.6,-0.7 -1.6,-0.8 -2.4,-0.3 -0.1,0.1 -3.4,2.8 -2.6,6.6 0.5,2.6 2.1,4.3 3.1,5.4 z"
+     id="path569" /><path
+     d="m 557.85,199.92 c 0.2,0.3 0.5,0.6 0.6,0.7 0.7,1 1.2,1.9 0.8,3 -0.3,1.1 -1.3,2.4 -1.7,2.9 -0.6,0.7 -0.5,1.8 0.2,2.4 0.3,0.3 0.7,0.4 1.1,0.4 0.5,0 1,-0.2 1.3,-0.6 0.2,-0.2 1.7,-2.1 2.3,-4 0.8,-2.6 -0.5,-4.7 -1.2,-5.8 -0.2,-0.4 -0.6,-0.7 -0.9,-1.2 -0.9,-1 -1.9,-2.1 -2.3,-3.8 -0.4,-1.8 1.4,-3.3 1.5,-3.3 0.7,-0.6 0.8,-1.6 0.2,-2.4 -0.6,-0.7 -1.6,-0.8 -2.4,-0.3 -0.1,0.1 -3.4,2.8 -2.6,6.6 0.6,2.6 2.1,4.3 3.1,5.4 z"
+     id="path570" /><path
+     d="m 565.95,199.92 c 0.2,0.3 0.5,0.6 0.6,0.7 0.7,1 1.2,1.9 0.8,3 -0.3,1.1 -1.3,2.4 -1.7,2.9 -0.6,0.7 -0.5,1.8 0.2,2.4 0.3,0.3 0.7,0.4 1.1,0.4 0.5,0 1,-0.2 1.3,-0.6 0.2,-0.2 1.7,-2.1 2.3,-4 0.8,-2.6 -0.5,-4.7 -1.2,-5.8 -0.2,-0.4 -0.6,-0.7 -0.9,-1.2 -0.9,-1 -1.9,-2.1 -2.3,-3.8 -0.4,-1.8 1.4,-3.3 1.5,-3.3 0.7,-0.6 0.8,-1.6 0.2,-2.4 -0.6,-0.7 -1.6,-0.8 -2.4,-0.3 -0.1,0.1 -3.4,2.8 -2.6,6.6 0.5,2.6 2.1,4.3 3.1,5.4 z"
+     id="path571" /><path
+     d="m 575.25,210.52 h -31.8 c -0.9,0 -1.7,0.8 -1.7,1.7 0,0.9 0.8,1.7 1.7,1.7 h 31.8 c 0.9,0 1.7,-0.8 1.7,-1.7 -0.1,-1 -0.8,-1.7 -1.7,-1.7 z"
+     id="path572" /></g>
+
+
+<path
+   class="st3"
+   transform="translate(0,-100)"
+   d="M 219.3,0 H 0 V 6.4 H 219.3 Z M 22.9,5.4 18.1,3.2 22.9,1 Z m 128.3,0 -4.8,-2.2 4.8,-2.2 z"
+   clip-path="url(#SVGID_2_)"
+   stroke="#cccccc"
+   id="path573" /><path
+   class="st3"
+   transform="translate(0,-100)"
+   d="M 219.3,0 H 0 V 6.4 H 219.3 Z M 22.9,5.4 18.1,3.2 22.9,1 Z m 128.3,0 -4.8,-2.2 4.8,-2.2 z"
+   clip-path="url(#SVGID_2_)"
+   stroke="#cccccc"
+   id="path574" />
+
+
+<text
+   id="sensor.froeling_aussentemperatur"
+   class="st9 st10 st11"
+   transform="scale(1.0600984,0.94330865)"
+   x="453.11484"
+   y="52.179359"><tspan
+     id="tspan574">0°C</tspan></text>
+
+
+<g
+   id="label_flow-temp"
+   transform="matrix(1.0003,0,0,0.95101,443.34147,95.582576)"><title
+     id="title574">Vorlauftemperatur</title><path
+     class="st12"
+     d="m 229.9,56.8 h -59.8 c -1.6,0 -3,-1.3 -3,-3 V 29.2 c 0,-1.6 1.4,-3 3,-3 h 59.8 c 1.6,0 3,1.4 3,3 v 24.5 c 0,1.7 -1.3,3.1 -3,3.1 z"
+     fill="#fff"
+     stroke="#c8c8c8"
+     stroke-miterlimit="10"
+     stroke-width=".9237"
+     id="path575" /><path
+     class="st7"
+     d="m 180.7,56.8 h -10.6 c -1.6,0 -3,-1.3 -3,-3 V 29.2 c 0,-1.6 1.4,-3 3,-3 h 10.6 c 1.6,0 3,1.4 3,3 v 24.5 c 0,1.7 -1.4,3.1 -3,3.1 z"
+     fill="#c8c8c8"
+     id="path576" /><g
+     fill="#646464"
+     id="g578"><rect
+       class="st2"
+       x="170.60001"
+       y="37.299999"
+       width="3"
+       height="2.0999999"
+       id="rect576" /><rect
+       class="st2"
+       x="170.60001"
+       y="33.5"
+       width="3"
+       height="2.0999999"
+       id="rect577" /><path
+       class="st2"
+       d="M 177.8,44 V 33.3 c 0,-2.3 -3.4,-2.3 -3.4,0 V 44 c -1.5,0.7 -2.5,2.2 -2.5,3.9 0,2.3 1.9,4.2 4.2,4.2 2.3,0 4.2,-1.9 4.2,-4.2 0,-1.8 -1,-3.3 -2.5,-3.9 z"
+       id="path577" /><rect
+       class="st2"
+       x="170.60001"
+       y="41"
+       width="3"
+       height="2.0999999"
+       id="rect578" /></g></g><text
+   class="st9 st10 st11"
+   transform="matrix(1.0646,0,0,0.94731,652.61988,139.89604)"
+   id="sensor.froeling_hk1_vorlauf_isttemperatur"><tspan
+     id="tspan1">0°C</tspan></text><g
+   id="label_raum-temperatrur"><title
+     id="title649">Raumtemperatur</title><path
+     class="st12"
+     d="M 605.053,101.178 H 537.96 c -1.7951,0 -3.3658,-1.2363 -3.3658,-2.853 V 74.93 c 0,-1.5216 1.5707,-2.853 3.3658,-2.853 h 67.093 c 1.7951,0 3.3658,1.3314 3.3658,2.853 v 23.3 c 0,1.6167 -1.4586,2.9481 -3.3658,2.9481 z"
+     fill="#fff"
+     stroke="#c8c8c8"
+     stroke-miterlimit="10"
+     stroke-width=".9237"
+     id="path578" /><path
+     class="st12"
+     d="M 605.053,101.178 H 537.96 c -1.7951,0 -3.3658,-1.2363 -3.3658,-2.853 V 74.93 c 0,-1.5216 1.5707,-2.853 3.3658,-2.853 h 67.093 c 1.7951,0 3.3658,1.3314 3.3658,2.853 v 23.3 c 0,1.6167 -1.4586,2.9481 -3.3658,2.9481 z"
+     fill="#fff"
+     stroke="#c8c8c8"
+     stroke-miterlimit="10"
+     stroke-width=".9237"
+     id="path579" /><path
+     class="st7"
+     d="M 563.943,101.128 H 537.94 c -1.7002,0 -3.0003,-1.278 -3.0003,-2.9493 v -23.103 c 0,-1.573 1.3001,-2.9493 3.0003,-2.9493 h 26.003 c 1.7002,0 3.0003,1.3764 3.0003,2.9493 v 23.103 c 0,1.573 -1.3001,2.9493 -3.0003,2.9493 z"
+     fill="#c8c8c8"
+     stroke-width="0.99157"
+     id="path580" /><g
+     transform="translate(307.673,-41.6503)"
+     fill="#646464"
+     id="g582"
+     style="fill:#646464;fill-opacity:1"><polygon
+       class="st9"
+       points="233.5,128.5 233.5,140.2 235.8,140.2 235.8,126.1 242.7,119.2 250,126.1 250,140.2 252.2,140.2 252.2,128.5 256.4,128.5 242.7,115.7 229.7,128.5 "
+       id="polygon580"
+       style="fill:#646464;fill-opacity:1" /><rect
+       class="st9"
+       x="244.3"
+       y="131.39999"
+       width="2.4000001"
+       height="1.7"
+       id="rect580"
+       style="fill:#646464;fill-opacity:1" /><rect
+       class="st9"
+       x="244.3"
+       y="128.39999"
+       width="2.4000001"
+       height="1.7"
+       id="rect581"
+       style="fill:#646464;fill-opacity:1" /><rect
+       class="st9"
+       x="244.3"
+       y="125.4"
+       width="2.4000001"
+       height="1.7"
+       id="rect582"
+       style="fill:#646464;fill-opacity:1" /><path
+       class="st9"
+       d="m 243.7,133.7 v -8.4 c 0,-1.8 -2.7,-1.8 -2.7,0 v 8.4 c -1.2,0.5 -2,1.7 -2,3.1 0,1.9 1.5,3.4 3.4,3.4 1.9,0 3.4,-1.5 3.4,-3.4 -0.1,-1.4 -0.9,-2.6 -2.1,-3.1 z"
+       id="path582"
+       style="fill:#646464;fill-opacity:1" /></g></g><path
+   d="m 79.575,451.39 c 0,80 120,-15 120,-15"
+   fill="none"
+   stroke="#646464"
+   stroke-width="9.258"
+   id="path583" />
+
+<g
+   id="label_consumption"
+   transform="translate(-0.63906,-58.895)"><title
+     id="title583">Pelletverbrauch-Zähler</title><path
+     class="st6"
+     d="M 116.51,444.34 H 45.403 c -1.7002,0 -3.0003,-1.278 -3.0003,-2.9493 v -23.103 c 0,-1.573 1.3001,-2.9493 3.0003,-2.9493 h 71.007 c 1.7002,0 3.0003,1.3764 3.0003,2.9493 v 23.103 c 0.10001,1.573 -1.3001,2.9493 -2.9003,2.9493 z"
+     fill="#fff"
+     stroke="#c8c8c8"
+     stroke-miterlimit="10"
+     stroke-width="1.0555"
+     id="path584" /><path
+     class="st7"
+     d="M 71.401,444.34 H 45.398 c -1.7002,0 -3.0003,-1.278 -3.0003,-2.9493 v -23.103 c 0,-1.573 1.3001,-2.9493 3.0003,-2.9493 h 26.003 c 1.7002,0 3.0003,1.3764 3.0003,2.9493 v 23.103 c 0,1.573 -1.3001,2.9493 -3.0003,2.9493 z"
+     fill="#c8c8c8"
+     stroke-width="0.99157"
+     id="path585" /><path
+     class="st1"
+     d="m 67.396,421.65 h -19.3 c -0.5,0 -0.9,0.4 -0.9,1 v 15.3 c 0,0.5 0.4,1 0.9,1 h 19.3 c 0.5,0 0.9,-0.4 0.9,-1 v -15.3 c 0.1,-0.6 -0.3,-1 -0.9,-1 z m -9.5,0.4 h 0.9 v 1.7 h -0.9 z m -8.7,0 0.3,0.6 c 0.3,0.4 0.7,0.6 1.1,0.6 0.4,0 0.8,-0.2 1.1,-0.6 0.1,-0.1 0.2,-0.3 0.3,-0.6 h 0.9 c 0,0.1 -0.1,0.2 -0.1,0.3 -0.2,0.5 -0.5,0.9 -0.8,1.2 -0.4,0.3 -0.8,0.4 -1.4,0.4 -0.7,0 -1.3,-0.2 -1.7,-0.7 -0.2,-0.3 -0.4,-0.7 -0.6,-1.1 h 0.9 z m 0.5,6.8 c -0.4,0.2 -0.7,0.3 -1,0.4 v -0.8 c 0.5,-0.2 1,-0.5 1.4,-0.8 0.4,-0.3 0.7,-0.6 0.8,-0.9 h 0.6 v 7 h -0.9 v -5.4 c -0.2,0.1 -0.5,0.3 -0.9,0.5 z m 2.3,9.6 c 0,-0.3 -0.1,-0.6 -0.4,-0.8 -0.3,-0.2 -0.6,-0.3 -1,-0.3 -0.4,0 -0.8,0.1 -1.1,0.4 -0.2,0.2 -0.3,0.5 -0.4,0.8 h -1 c 0.1,-0.6 0.3,-1 0.7,-1.3 0.4,-0.3 1,-0.5 1.7,-0.5 0.7,0 1.3,0.2 1.7,0.6 0.4,0.4 0.6,0.8 0.6,1.3 h -0.8 z m 2.6,0.2 h -0.9 v -16.7 h 0.9 z m 5.3,-0.2 h -1 v -0.1 c 0,-0.3 -0.1,-0.6 -0.3,-0.8 -0.2,-0.2 -0.5,-0.3 -0.9,-0.3 -0.4,0 -0.7,0.1 -0.9,0.3 -0.2,0.2 -0.4,0.5 -0.4,0.8 h -0.6 l -0.3,-0.1 c 0.1,-0.6 0.4,-1 0.8,-1.3 0.4,-0.3 0.9,-0.5 1.5,-0.5 0.4,0 0.8,0.1 1.1,0.2 0.3,0.2 0.6,0.4 0.8,0.7 0.1,0.5 0.2,0.8 0.2,1.1 z m 0.3,-4.7 h -5 c 0,-0.2 0,-0.4 0.1,-0.6 0.1,-0.3 0.3,-0.6 0.6,-0.9 0.3,-0.3 0.7,-0.7 1.2,-1.1 0.8,-0.6 1.4,-1.1 1.7,-1.5 0.3,-0.4 0.4,-0.7 0.4,-1 0,-0.3 -0.1,-0.6 -0.4,-0.9 -0.3,-0.2 -0.6,-0.3 -1,-0.3 -0.4,0 -0.8,0.1 -1.1,0.4 -0.3,0.2 -0.4,0.6 -0.4,1 l -1,-0.1 c 0.1,-0.7 0.3,-1.2 0.7,-1.5 0.4,-0.3 1,-0.5 1.7,-0.5 0.7,0 1.3,0.2 1.7,0.6 0.4,0.4 0.6,0.8 0.6,1.4 0,0.3 -0.1,0.6 -0.2,0.8 -0.1,0.3 -0.3,0.6 -0.6,0.8 -0.3,0.3 -0.8,0.7 -1.4,1.2 -0.6,0.4 -0.9,0.7 -1.1,0.9 -0.2,0.2 -0.3,0.3 -0.4,0.5 h 3.7 v 0.8 z m 1.7,4.9 h -0.9 v -16.7 h 0.9 z m 0.7,-15.4 c 0.1,-0.3 0.3,-0.6 0.6,-0.9 l 0.2,-0.2 h 1.3 c -0.3,0.2 -0.4,0.4 -0.5,0.5 -0.2,0.2 -0.3,0.3 -0.4,0.5 h 3.7 v 0.8 h -5 c 0,-0.3 0.1,-0.5 0.1,-0.7 z m 4,15.2 h -0.9 v -0.5 l -0.3,0.5 h -0.9 l 1.4,-1.8 h 0.8 v 1.8 z m 0.3,-5.3 c -0.5,0.4 -1.1,0.6 -1.8,0.6 -0.7,0 -1.2,-0.2 -1.7,-0.5 -0.4,-0.4 -0.7,-0.8 -0.8,-1.4 l 0.9,-0.1 c 0.1,0.5 0.3,0.8 0.5,1 0.3,0.2 0.6,0.3 0.9,0.3 0.4,0 0.8,-0.1 1.1,-0.4 0.3,-0.3 0.5,-0.6 0.5,-1 0,-0.4 -0.1,-0.7 -0.4,-1 -0.3,-0.3 -0.6,-0.4 -1.1,-0.4 -0.2,0 -0.4,0 -0.7,0.1 l 0.1,-0.7 h 0.2 c 0.4,0 0.8,-0.1 1.1,-0.3 0.3,-0.2 0.5,-0.5 0.5,-0.9 0,-0.3 -0.1,-0.6 -0.3,-0.8 -0.2,-0.2 -0.5,-0.3 -0.9,-0.3 -0.4,0 -0.7,0.1 -0.9,0.3 -0.2,0.2 -0.4,0.5 -0.5,0.9 l -0.9,-0.2 c 0.1,-0.6 0.4,-1 0.8,-1.3 0.4,-0.3 0.9,-0.5 1.5,-0.5 0.4,0 0.8,0.1 1.1,0.2 0.3,0.2 0.6,0.4 0.8,0.7 0.2,0.3 0.3,0.6 0.3,0.9 0,0.3 -0.1,0.6 -0.3,0.8 -0.2,0.2 -0.4,0.4 -0.8,0.6 0.4,0.1 0.8,0.3 1,0.6 0.2,0.3 0.4,0.7 0.4,1.1 0.1,0.8 -0.1,1.3 -0.6,1.7 z"
+     fill="#c86464"
+     id="path586" /></g>
+
+<g
+   id="label_storage-counter"
+   transform="matrix(1.0001,0,0,0.98311,16.455,280.2)"><title
+     id="title586">Restbestand im Brennstofflagerraum</title><path
+     class="st6"
+     d="M 100.1,56.2 H 29 c -1.7,0 -3,-1.3 -3,-3 V 29.7 c 0,-1.6 1.3,-3 3,-3 h 71 c 1.7,0 3,1.4 3,3 v 23.5 c 0.1,1.6 -1.3,3 -2.9,3 z"
+     fill="#fff"
+     stroke="#c8c8c8"
+     stroke-miterlimit="10"
+     stroke-width="1.0555"
+     id="path587" /><path
+     class="st7"
+     d="M 55,56.2 H 29 c -1.7,0 -3,-1.3 -3,-3 V 29.7 c 0,-1.6 1.3,-3 3,-3 h 26 c 1.7,0 3,1.4 3,3 v 23.5 c 0,1.6 -1.3,3 -3,3 z"
+     fill="#c8c8c8"
+     id="path588" /><g
+     fill="#646464"
+     id="g591"><path
+       class="st2"
+       d="m 54.6,40.3 c -1.3,-3.2 -3.7,-5.7 -6.7,-7.2 l -1.4,3.1 c 2.3,1.1 4.1,3 5,5.4 z m -7.1,-7.4 c -1.7,-0.7 -3.5,-1.1 -5.4,-1.1 -1.6,0 -3.1,0.3 -4.5,0.8 l 1.2,3.2 c 1,-0.4 2.1,-0.5 3.3,-0.5 1.4,0 2.8,0.3 4,0.8 z M 37.1,32.7 c -2.1,0.8 -3.9,2.1 -5.4,3.8 l 2.6,2.2 c 1.1,-1.2 2.4,-2.2 3.9,-2.8 z m -5.6,4.2 c -0.8,1 -1.5,2.2 -2,3.5 l 3.1,1.3 c 0.4,-0.9 0.9,-1.8 1.5,-2.6 z"
+       id="path589" /><g
+       clip-rule="evenodd"
+       fill-rule="evenodd"
+       id="g590"><polygon
+         class="st8"
+         points="32.2,46.7 29.4,46.7 29.4,43 32.1,43 32.1,43.7 30.2,43.7 30.2,44.5 32,44.5 32,45.1 30.2,45.1 30.2,46.1 32.2,46.1 "
+         id="polygon589" /><polygon
+         class="st8"
+         points="54.4,45.1 52.9,45.1 52.9,46.7 52.1,46.7 52.1,43 54.6,43 54.6,43.7 52.9,43.7 52.9,44.5 54.4,44.5 "
+         id="polygon590" /><path
+         class="st8"
+         d="m 48.6,38 -1.1,0.8 -4.9,7.9 c -0.2,0 -0.4,-0.1 -0.5,-0.1 -1.1,0 -2,0.9 -2,2 0,1.1 0.9,2 2,2 1.1,0 2,-0.9 2,-2 0,-0.5 -0.2,-0.9 -0.4,-1.2 l 4.7,-8.1 z"
+         id="path590" /></g></g></g><text
+   id="sensor.froeling_pelletlager_restbestand"
+   class="st9 st10 st11"
+   transform="scale(1.0086017,0.99147166)"
+   x="97.46769"
+   y="328.77866"
+   style="stroke-width:0.999998"><tspan
+     id="tspan591"
+     style="stroke-width:0.999998">0.0t</tspan></text>
+
+
+<text
+   id="sensor.froeling_resetierbarer_t_zaehler"
+   class="st9 st10 st11"
+   transform="scale(1.0086017,0.99147166)"
+   x="96.920288"
+   y="379.3306"
+   style="stroke-width:0.999998"><tspan
+     id="tspan592"
+     style="stroke-width:0.999998">0.0t</tspan></text>
+
+
+<g
+   id="buffer-upper-sensor"><title
+     id="title1">Temperatur Pufferspeicher oben</title><path
+     class="st12"
+     d="m 601.97897,387.95737 h -59.81794 c -1.60048,0 -3.0009,-1.23632 -3.0009,-2.85303 v -23.39485 c 0,-1.52161 1.40042,-2.85303 3.0009,-2.85303 h 59.81794 c 1.60048,0 3.0009,1.33142 3.0009,2.85303 v 23.29975 c 0,1.61671 -1.30039,2.94813 -3.0009,2.94813 z"
+     fill="#fff"
+     stroke="#c8c8c8"
+     stroke-miterlimit="10"
+     stroke-width=".9237"
+     id="path592"
+     style="stroke-width:0.901;stroke-dasharray:none" /><path
+     class="st7"
+     d="m 552.76421,387.95737 h -10.60318 c -1.60048,0 -3.0009,-1.23632 -3.0009,-2.85303 v -23.39485 c 0,-1.52161 1.40042,-2.85303 3.0009,-2.85303 h 10.60318 c 1.60048,0 3.0009,1.33142 3.0009,2.85303 v 23.29975 c 0,1.61671 -1.40042,2.94813 -3.0009,2.94813 z"
+     fill="#c8c8c8"
+     id="path593"
+     style="stroke-width:0.975344" /><g
+     fill="#646464"
+     id="g595"
+     transform="matrix(1.0003,0,0,0.95101,372.01,333.94)"><rect
+       class="st2"
+       x="170.60001"
+       y="37.299999"
+       width="3"
+       height="2.0999999"
+       id="rect593" /><rect
+       class="st2"
+       x="170.60001"
+       y="33.5"
+       width="3"
+       height="2.0999999"
+       id="rect594" /><path
+       class="st2"
+       d="M 177.8,44 V 33.3 c 0,-2.3 -3.4,-2.3 -3.4,0 V 44 c -1.5,0.7 -2.5,2.2 -2.5,3.9 0,2.3 1.9,4.2 4.2,4.2 2.3,0 4.2,-1.9 4.2,-4.2 0,-1.8 -1,-3.3 -2.5,-3.9 z"
+       id="path594" /><rect
+       class="st2"
+       x="170.60001"
+       y="41"
+       width="3"
+       height="2.0999999"
+       id="rect595" /></g></g><g
+   id="sensor.froeling_puffer_1_temperatur_oben"
+   transform="matrix(1.0646,0,0,0.94731,-245.98658,174.73076)"><text
+   class="st9 st10 st11"
+   transform="translate(777.22,215.44)"
+   id="text595"><tspan
+     id="tspan595">0°C</tspan></text>
+
+
+</g><g
+   id="buffer-lower-sensor"
+   transform="matrix(1.0003,0,0,0.95101,372.01,431.79)"><title
+     id="title595">Temperatur Pufferspeicher unten</title><path
+     class="st12"
+     d="m 229.9,56.8 h -59.8 c -1.6,0 -3,-1.3 -3,-3 V 29.2 c 0,-1.6 1.4,-3 3,-3 h 59.8 c 1.6,0 3,1.4 3,3 v 24.5 c 0,1.7 -1.3,3.1 -3,3.1 z"
+     fill="#fff"
+     stroke="#c8c8c8"
+     stroke-miterlimit="10"
+     stroke-width=".9237"
+     id="path595" /><path
+     class="st7"
+     d="m 180.7,56.8 h -10.6 c -1.6,0 -3,-1.3 -3,-3 V 29.2 c 0,-1.6 1.4,-3 3,-3 h 10.6 c 1.6,0 3,1.4 3,3 v 24.5 c 0,1.7 -1.4,3.1 -3,3.1 z"
+     fill="#c8c8c8"
+     id="path596" /><g
+     fill="#646464"
+     id="g598"><rect
+       class="st2"
+       x="170.60001"
+       y="37.299999"
+       width="3"
+       height="2.0999999"
+       id="rect596" /><rect
+       class="st2"
+       x="170.60001"
+       y="33.5"
+       width="3"
+       height="2.0999999"
+       id="rect597" /><path
+       class="st2"
+       d="M 177.8,44 V 33.3 c 0,-2.3 -3.4,-2.3 -3.4,0 V 44 c -1.5,0.7 -2.5,2.2 -2.5,3.9 0,2.3 1.9,4.2 4.2,4.2 2.3,0 4.2,-1.9 4.2,-4.2 0,-1.8 -1,-3.3 -2.5,-3.9 z"
+       id="path597" /><rect
+       class="st2"
+       x="170.60001"
+       y="41"
+       width="3"
+       height="2.0999999"
+       id="rect598" /></g></g><g
+   id="sensor.froeling_puffer_1_temperatur_unten"
+   transform="matrix(1.0646,0,0,0.94731,-244.58,272.05)"><text
+   class="st9 st10 st11"
+   transform="translate(777.22,215.44)"
+   id="text598"><tspan
+     id="tspan598">0°C</tspan></text>
+</g>
+
+<g
+   id="label_circulation-pump-rpm"
+   transform="matrix(1.0022,0,0,0.97887,126.34848,34.181519)"><title
+   id="title632">Ansteuerung der Zirkulationspumpe</title>
+	<path
+   class="st6"
+   d="m 378.3,229.7 h -71 c -1.6,0 -3,-1.4 -3,-3 v -23.5 c 0,-1.7 1.4,-3 3,-3 h 71 c 1.6,0 3,1.3 3,3 v 23.5 c 0,1.7 -1.4,3 -3,3 z"
+   fill="#fff"
+   stroke="#c8c8c8"
+   stroke-miterlimit="10"
+   stroke-width="1.0555"
+   id="path633" />
+	
+		<path
+   class="st7"
+   d="m 333.2,229.7 h -26 c -1.6,0 -3,-1.4 -3,-3 v -23.5 c 0,-1.7 1.4,-3 3,-3 h 26 c 1.6,0 3,1.3 3,3 v 23.5 c 0,1.7 -1.3,3 -3,3 z"
+   fill="#c8c8c8"
+   id="path634" />
+		<g
+   fill="#646464"
+   id="g636">
+			<path
+   class="st2"
+   d="m 319.6,205.6 c -7.4,0 -13.5,6.1 -13.5,13.5 v 0.5 h 3.5 v -1 h -2.5 c 0.1,-3.1 1.4,-5.9 3.3,-8 l 1.8,1.8 0.7,-0.7 -1.8,-1.8 c 2.1,-2 4.9,-3.2 8,-3.3 v 2.5 h 1 v -2.5 c 3.1,0.1 5.9,1.3 8,3.3 l -1.7,1.7 0.7,0.7 1.7,-1.7 c 2,2.1 3.2,4.9 3.3,8 h -2.5 v 1 h 3.5 v -0.5 c 0,-7.4 -6,-13.5 -13.5,-13.5 z"
+   id="path635" />
+			<path
+   class="st2"
+   d="m 317.6,220.7 c 1.7,1.7 3,0.8 3,0.8 l 4.2,-8 -8,4.2 c 0,0 -0.9,1.3 0.8,3 z"
+   id="path636" />
+		</g>
+	
+</g><text
+   id="sensor.froeling_drehzahl_der_zirkulations_pumpe"
+   class="st9 st10 st11"
+   x="485.4628"
+   y="249.93008">0%</text>
+
+
+<g
+   id="label_br-wasser"
+   transform="matrix(1.0003,0,0,0.95101,303.91497,95.240622)"><title
+   id="title541-7">Brauchwasser Temperatur</title>
+	<path
+   id="frame-2"
+   class="st12"
+   d="m 229.9,56.8 h -59.8 c -1.6,0 -3,-1.3 -3,-3 V 29.2 c 0,-1.6 1.4,-3 3,-3 h 59.8 c 1.6,0 3,1.4 3,3 v 24.5 c 0,1.7 -1.3,3.1 -3,3.1 z"
+   fill="#fff"
+   stroke="#c8c8c8"
+   stroke-miterlimit="10"
+   stroke-width=".9237"
+   style="fill:#ffffff;stroke:#c8c8c8;stroke-width:0.9237;stroke-miterlimit:10" />
+	<g
+   id="symb_thermometer-9">
+		<path
+   class="st7"
+   d="m 180.7,56.8 h -10.6 c -1.6,0 -3,-1.3 -3,-3 V 29.2 c 0,-1.6 1.4,-3 3,-3 h 10.6 c 1.6,0 3,1.4 3,3 v 24.5 c 0,1.7 -1.4,3.1 -3,3.1 z"
+   fill="#c8c8c8"
+   id="path541-5"
+   style="fill:#c8c8c8" />
+		<g
+   id="_x3C_Zusammengesetzter_Pfad_x3E_-8"
+   fill="#646464">
+			<rect
+   class="st2"
+   x="170.60001"
+   y="37.299999"
+   width="3"
+   height="2.0999999"
+   id="rect542-0"
+   style="fill:#646464" />
+			<rect
+   class="st2"
+   x="170.60001"
+   y="33.5"
+   width="3"
+   height="2.0999999"
+   id="rect543-8"
+   style="fill:#646464" />
+			<path
+   class="st2"
+   d="M 177.8,44 V 33.3 c 0,-2.3 -3.4,-2.3 -3.4,0 V 44 c -1.5,0.7 -2.5,2.2 -2.5,3.9 0,2.3 1.9,4.2 4.2,4.2 2.3,0 4.2,-1.9 4.2,-4.2 0,-1.8 -1,-3.3 -2.5,-3.9 z"
+   id="path543-2"
+   style="fill:#646464" />
+			<rect
+   class="st2"
+   x="170.60001"
+   y="41"
+   width="3"
+   height="2.0999999"
+   id="rect544-0"
+   style="fill:#646464" />
+		</g>
+	</g>
+</g><text
+   id="sensor.froeling_ruecklauftemperatur_an_der_zirkulations_leitung"
+   class="st9 st10 st11"
+   transform="scale(1.0256047,0.97503453)"
+   x="500.91583"
+   y="143.68571"><tspan
+     id="tspan544-7"
+     style="stroke-width:0.975355">0°C</tspan></text>
+
+
+<path
+   class="st1"
+   d="m 654.76,201.37 5.4589,0.0184 -0.59211,247.94 -5.4589,-0.0202 z m 4.6235,45.054 -4.0032,-0.0174 1.9848,7.0026 z m -0.35577,148.97 -4.0032,-0.0199 1.9848,7.0028 z"
+   fill="#6e8ca0"
+   stroke-width="0"
+   id="path598"
+   style="fill:#6e8ca0;fill-opacity:1" /><path
+   class="st1"
+   d="m 687.96,336.46 v -6 h -55 v 6 z m -9.991,-5.2 v 4.4 l -1.552,-2.2 z m -33.045,0 v 4.4 l -1.552,-2.2 z"
+   stroke-width="0.56862"
+   id="path599" /><path
+   class="st1"
+   d="m 531.96,179.54 v -6 h -22.818 v 6 z m -4.145,-5.2 v 4.4 l -0.64389,-2.2 z m -13.71,0 v 4.4 l -0.64386,-2.2 z"
+   stroke-width="0.36625"
+   id="path600" /><path
+   class="st1"
+   d="m 688.06,176.69 h -6 v 159.7 h 6 z m -5.2,29.009 h 4.4 l -2.2,4.5064 z m 0,95.949 h 4.4 l -2.2,4.5064 z"
+   stroke-width="0.96891"
+   id="path601" /><path
+   class="st1"
+   d="m 682.32,388.78 h 6 v -42.776 h -6 z m 5.2,-7.7705 h -4.4 l 2.2,-1.2071 z m 0,-25.701 h -4.4 l 2.2,-1.207 z"
+   stroke-width="0.50146"
+   id="path602" /><path
+   class="st1"
+   d="m 688.29,463.75 -5.9652,0.21461 -0.0968,-43.488 5.9652,-0.21461 z m -5.1874,-7.713 4.3745,-0.15549 -2.1899,-1.1482 z m -0.0581,-26.129 4.3746,-0.15585 -2.1899,-1.1482 z"
+   fill="#6e8ca0"
+   stroke-width="0"
+   id="path603"
+   style="fill:#6e8ca0;fill-opacity:1" /><g
+   id="binary_sensor.froeling_puffer_1_mischpumpen_ansteuerung_an_aus"
+   class="stPumpInActive"
+   transform="rotate(90,377.35,492.7)"
+   fill="#87ad27"><title
+     id="title603">Mischpumpe</title><g
+     fill="#87ad27"
+     id="g610">
+	<path
+   d="m 293.6,184.5 c 0,-1.8 -1.5,-3.3 -3.3,-3.3 -1.8,0 -3.3,1.5 -3.3,3.3 0,1.8 1.5,3.3 3.3,3.3 1.8,0 3.3,-1.5 3.3,-3.3 z"
+   id="path604" />
+	<path
+   d="m 275,190 v -2.3 h 5.2 c -0.3,-1 -0.5,-2.1 -0.5,-3.2 0,-1.1 0.2,-2.1 0.4,-3 H 275 v -2.1 c 0,-0.2 -0.2,-0.4 -0.4,-0.4 h -1.1 c -0.2,0 -0.4,0.2 -0.4,0.4 V 190 c 0,0.2 0.2,0.4 0.4,0.4 h 1.1 c 0.2,-0.1 0.4,-0.2 0.4,-0.4 z"
+   id="path605" />
+	<path
+   d="m 281.3,190.1 c 0.1,0.7 0.3,1.5 0.5,2.2 0.1,0.5 0.3,0.8 1,1 0.8,0.2 1.6,0.4 2.3,0.5 -1.6,-0.9 -2.9,-2.2 -3.8,-3.7 z"
+   id="path606" />
+	<path
+   d="m 295.5,193.8 c 0.8,-0.1 1.5,-0.3 2.3,-0.5 0.6,-0.2 0.8,-0.4 1,-1 0.2,-0.8 0.4,-1.5 0.5,-2.3 -0.9,1.6 -2.2,2.9 -3.8,3.8 z"
+   id="path607" />
+	<path
+   d="m 305.1,179.4 v 2.1 h -4.7 c 0.3,1 0.4,2 0.4,3 0,1.1 -0.2,2.2 -0.5,3.2 h 4.8 v 2.3 c 0,0.2 0.2,0.4 0.4,0.4 h 1.1 c 0.2,0 0.4,-0.2 0.4,-0.4 v -10.5 c 0,-0.2 -0.2,-0.4 -0.4,-0.4 h -1.1 c -0.2,-0.1 -0.4,0.1 -0.4,0.3 z"
+   id="path608" />
+	<path
+   d="m 290.3,173.8 c 3.7,0 7,2 8.9,4.9 l -0.3,-1.5 c 0,-0.5 -0.4,-0.8 -0.9,-1 v -4.8 c 0,-0.2 -0.2,-0.4 -0.4,-0.4 H 283 c 0,0 -0.2,0 -0.3,0.1 -0.1,0.1 -0.1,0.2 -0.1,0.2 v 4.8 c -0.5,0.2 -0.7,0.4 -0.8,0.9 l -0.3,1.5 c 1.8,-2.8 5.1,-4.7 8.8,-4.7 z"
+   id="path609" />
+	<path
+   d="m 299.9,184.5 c 0,-5.4 -4.3,-9.7 -9.6,-9.7 -5.3,0 -9.6,4.3 -9.6,9.7 0,5.4 4.3,9.7 9.6,9.7 5.3,0 9.6,-4.3 9.6,-9.7 z m -16.8,0 c 0,-4 3.2,-7.2 7.2,-7.2 4,0 7.2,3.2 7.2,7.2 0,4 -3.2,7.2 -7.2,7.2 -4,0 -7.2,-3.2 -7.2,-7.2 z"
+   id="path610" />
+</g></g><path
+   class="st1"
+   d="m 525.94,229.21 h 6 v -55.484 h -6 z m 5.2,-10.079 h -4.4 l 2.2,-1.5657 z m 0,-33.336 h -4.4 l 2.2,-1.5656 z"
+   fill="#c86464"
+   stroke-width="0.57111"
+   id="path611" /><g
+   id="binary_sensor.froeling_zirkulationspumpe_an_aus"
+   class="stPumpInActive"
+   transform="rotate(90,379.72,333.95)"
+   fill="#87ad27"><title
+     id="title611">Zirkulationspumpe</title><g
+     fill="#87ad27"
+     id="g618">
+	<path
+   d="m 293.6,184.5 c 0,-1.8 -1.5,-3.3 -3.3,-3.3 -1.8,0 -3.3,1.5 -3.3,3.3 0,1.8 1.5,3.3 3.3,3.3 1.8,0 3.3,-1.5 3.3,-3.3 z"
+   id="path612" />
+	<path
+   d="m 275,190 v -2.3 h 5.2 c -0.3,-1 -0.5,-2.1 -0.5,-3.2 0,-1.1 0.2,-2.1 0.4,-3 H 275 v -2.1 c 0,-0.2 -0.2,-0.4 -0.4,-0.4 h -1.1 c -0.2,0 -0.4,0.2 -0.4,0.4 V 190 c 0,0.2 0.2,0.4 0.4,0.4 h 1.1 c 0.2,-0.1 0.4,-0.2 0.4,-0.4 z"
+   id="path613" />
+	<path
+   d="m 281.3,190.1 c 0.1,0.7 0.3,1.5 0.5,2.2 0.1,0.5 0.3,0.8 1,1 0.8,0.2 1.6,0.4 2.3,0.5 -1.6,-0.9 -2.9,-2.2 -3.8,-3.7 z"
+   id="path614" />
+	<path
+   d="m 295.5,193.8 c 0.8,-0.1 1.5,-0.3 2.3,-0.5 0.6,-0.2 0.8,-0.4 1,-1 0.2,-0.8 0.4,-1.5 0.5,-2.3 -0.9,1.6 -2.2,2.9 -3.8,3.8 z"
+   id="path615" />
+	<path
+   d="m 305.1,179.4 v 2.1 h -4.7 c 0.3,1 0.4,2 0.4,3 0,1.1 -0.2,2.2 -0.5,3.2 h 4.8 v 2.3 c 0,0.2 0.2,0.4 0.4,0.4 h 1.1 c 0.2,0 0.4,-0.2 0.4,-0.4 v -10.5 c 0,-0.2 -0.2,-0.4 -0.4,-0.4 h -1.1 c -0.2,-0.1 -0.4,0.1 -0.4,0.3 z"
+   id="path616" />
+	<path
+   d="m 290.3,173.8 c 3.7,0 7,2 8.9,4.9 l -0.3,-1.5 c 0,-0.5 -0.4,-0.8 -0.9,-1 v -4.8 c 0,-0.2 -0.2,-0.4 -0.4,-0.4 H 283 c 0,0 -0.2,0 -0.3,0.1 -0.1,0.1 -0.1,0.2 -0.1,0.2 v 4.8 c -0.5,0.2 -0.7,0.4 -0.8,0.9 l -0.3,1.5 c 1.8,-2.8 5.1,-4.7 8.8,-4.7 z"
+   id="path617" />
+	<path
+   d="m 299.9,184.5 c 0,-5.4 -4.3,-9.7 -9.6,-9.7 -5.3,0 -9.6,4.3 -9.6,9.7 0,5.4 4.3,9.7 9.6,9.7 5.3,0 9.6,-4.3 9.6,-9.7 z m -16.8,0 c 0,-4 3.2,-7.2 7.2,-7.2 4,0 7.2,3.2 7.2,7.2 0,4 -3.2,7.2 -7.2,7.2 -4,0 -7.2,-3.2 -7.2,-7.2 z"
+   id="path618" />
+</g></g><path
+   class="st1"
+   d="m 688.15,351.91 v -6 h -55 v 6 z m -9.991,-5.2 v 4.4 l -1.552,-2.2 z m -33.045,0 v 4.4 l -1.552,-2.2 z"
+   fill="#c86464"
+   stroke-width="0.56862"
+   id="path619" /><path
+   class="st1"
+   d="m 687.97,458.07 0.27129,5.9652 -54.974,0.0968 -0.2713,-5.9652 z m -9.7502,5.1874 -0.19657,-4.3745 -1.4515,2.1899 z m -33.03,0.0581 -0.19699,-4.3746 -1.4514,2.1899 z"
+   fill="#6e8ca0"
+   stroke-width="0"
+   id="path620"
+   style="fill:#6e8ca0;fill-opacity:1" /><g
+   id="label_pump-02-rpm"
+   transform="matrix(1.0022,0,0,0.97887,336.51,275.79)"><title
+   id="title620">Mischpumpen Ansteuerung</title>
+	<path
+   class="st6"
+   d="m 378.3,229.7 h -71 c -1.6,0 -3,-1.4 -3,-3 v -23.5 c 0,-1.7 1.4,-3 3,-3 h 71 c 1.6,0 3,1.3 3,3 v 23.5 c 0,1.7 -1.4,3 -3,3 z"
+   fill="#fff"
+   stroke="#c8c8c8"
+   stroke-miterlimit="10"
+   stroke-width="1.0555"
+   id="path621" />
+	
+		<path
+   class="st7"
+   d="m 333.2,229.7 h -26 c -1.6,0 -3,-1.4 -3,-3 v -23.5 c 0,-1.7 1.4,-3 3,-3 h 26 c 1.6,0 3,1.3 3,3 v 23.5 c 0,1.7 -1.3,3 -3,3 z"
+   fill="#c8c8c8"
+   id="path622" />
+		<g
+   fill="#646464"
+   id="g624">
+			<path
+   class="st2"
+   d="m 319.6,205.6 c -7.4,0 -13.5,6.1 -13.5,13.5 v 0.5 h 3.5 v -1 h -2.5 c 0.1,-3.1 1.4,-5.9 3.3,-8 l 1.8,1.8 0.7,-0.7 -1.8,-1.8 c 2.1,-2 4.9,-3.2 8,-3.3 v 2.5 h 1 v -2.5 c 3.1,0.1 5.9,1.3 8,3.3 l -1.7,1.7 0.7,0.7 1.7,-1.7 c 2,2.1 3.2,4.9 3.3,8 h -2.5 v 1 h 3.5 v -0.5 c 0,-7.4 -6,-13.5 -13.5,-13.5 z"
+   id="path623" />
+			<path
+   class="st2"
+   d="m 317.6,220.7 c 1.7,1.7 3,0.8 3,0.8 l 4.2,-8 -8,4.2 c 0,0 -0.9,1.3 0.8,3 z"
+   id="path624" />
+		</g>
+	
+</g><text
+   id="sensor.froeling_puffer_1_mischpumpen_ansteuerung"
+   class="st9 st10 st11"
+   transform="scale(1.0119,0.98824)"
+   x="687.22101"
+   y="497.20294">0%</text><g
+   id="binary_sensor.froeling_heizstab"
+   transform="translate(-20.425,-58.611)"><title
+     id="title624">Heizstab</title><g
+     clip-rule="evenodd"
+     fill="#646464"
+     fill-rule="evenodd"
+     id="g629"><polygon
+       transform="matrix(0,0.7664,0.41447,0,497.12,198.35)"
+       points="240.1,242.7 230.5,242.7 230.5,236.3 240.7,236.3 "
+       id="polygon624" /><polygon
+       transform="matrix(0,0.68605,0.41447,0,500.68,216.8)"
+       points="230.5,215.7 230.5,209.3 243.1,209.3 242.4,215.7 "
+       id="polygon625" /><g
+       stroke-width="0.38827"
+       id="g628"><path
+         d="m 585.35,400.28 14.589,-1.2367 c 2.1967,-0.18187 1.9066,-3.2008 -0.29013,-3.019 l -14.589,1.2367 c -2.2381,0.18186 -1.9066,3.2008 0.29012,3.019 z"
+         id="path625" /><path
+         d="m 585.35,395.99 14.589,-1.2367 c 2.1967,-0.18187 1.9066,-3.2008 -0.29013,-3.019 l -14.589,1.2367 c -2.2381,0.18186 -1.9066,3.2008 0.29012,3.019 z"
+         id="path626" /><path
+         d="m 585.35,391.66 14.589,-1.2367 c 2.1967,-0.18187 1.9066,-3.2008 -0.29013,-3.019 l -14.589,1.2367 c -2.2381,0.18186 -1.9066,3.2372 0.29012,3.019 z"
+         id="path627" /><path
+         d="m 585.35,387.37 14.589,-1.2367 c 2.1967,-0.18187 1.9066,-3.2008 -0.29013,-3.019 l -14.589,1.2367 c -2.2381,0.18186 -1.9066,3.2008 0.29012,3.019 z"
+         id="path628" /></g></g></g><g
+   id="label_heizstab_leistung"
+   transform="matrix(1.0022,0,0,0.97887,245.31,66.068)"><title
+   id="title629">Heizstab Leistung</title>
+	<path
+   class="st6"
+   d="m 378.3,229.7 h -71 c -1.6,0 -3,-1.4 -3,-3 v -23.5 c 0,-1.7 1.4,-3 3,-3 h 71 c 1.6,0 3,1.3 3,3 v 23.5 c 0,1.7 -1.4,3 -3,3 z"
+   fill="#fff"
+   stroke="#c8c8c8"
+   stroke-miterlimit="10"
+   stroke-width="1.0555"
+   id="path629" />
+	
+		<path
+   class="st7"
+   d="m 333.2,229.7 h -26 c -1.6,0 -3,-1.4 -3,-3 v -23.5 c 0,-1.7 1.4,-3 3,-3 h 26 c 1.6,0 3,1.3 3,3 v 23.5 c 0,1.7 -1.3,3 -3,3 z"
+   fill="#c8c8c8"
+   id="path630" />
+		<g
+   fill="#646464"
+   id="g632">
+			<path
+   class="st2"
+   d="m 319.6,205.6 c -7.4,0 -13.5,6.1 -13.5,13.5 v 0.5 h 3.5 v -1 h -2.5 c 0.1,-3.1 1.4,-5.9 3.3,-8 l 1.8,1.8 0.7,-0.7 -1.8,-1.8 c 2.1,-2 4.9,-3.2 8,-3.3 v 2.5 h 1 v -2.5 c 3.1,0.1 5.9,1.3 8,3.3 l -1.7,1.7 0.7,0.7 1.7,-1.7 c 2,2.1 3.2,4.9 3.3,8 h -2.5 v 1 h 3.5 v -0.5 c 0,-7.4 -6,-13.5 -13.5,-13.5 z"
+   id="path631" />
+			<path
+   class="st2"
+   d="m 317.6,220.7 c 1.7,1.7 3,0.8 3,0.8 l 4.2,-8 -8,4.2 c 0,0 -0.9,1.3 0.8,3 z"
+   id="path632" />
+		</g>
+	
+</g><text
+   id="sensor.froeling_heizstab_leistung"
+   class="st9 st10 st11"
+   transform="scale(1.0119,0.98824)"
+   x="598.60999"
+   y="284.0972">0%</text><g
+   transform="translate(217.9,96.9)"
+   fill="#646464"
+   id="g638"
+   style="fill:#646464;fill-opacity:1">
+			<path
+   class="st7"
+   d="m 266.5,91.2 c 0.6,-1.6 1.5,-4.1 2.3,-4.1 0.6,0 1.7,2.6 2.3,4.1 0.7,1.8 -1,2 -2.3,2 -1.3,0 -2.9,-0.2 -2.3,-2 z"
+   id="path637"
+   style="fill:#646464;fill-opacity:1" />
+			<path
+   class="st7"
+   d="m 266.5,81.9 c 0,-2.6 2.1,-4.7 4.7,-4.7 h 8 v -1.8 h -3.9 c -1,0 -1.9,-0.5 -1.9,-1.2 0,-0.7 0.8,-1.2 1.9,-1.2 h 10.2 c 1,0 1.9,0.5 1.9,1.2 0,0.7 -0.8,1.2 -1.9,1.2 h -3.9 v 1.8 h 9.9 v 5 h -17.7 c -1.5,0 -2.8,1.3 -2.8,2.8 v 1 h -4.5 z"
+   id="path638"
+   style="fill:#646464;fill-opacity:1" />
+		</g><g
+   id="buffer-load"
+   transform="translate(-0.03873039,0.25312381)"><title
+     id="title647">Ladezustand des Pufferspeichers</title><path
+     class="st6"
+     d="m 607.7759,430.52409 h -71.1562 c -1.60352,0 -3.0066,-1.37042 -3.0066,-2.93661 v -23.00345 c 0,-1.66407 1.40308,-2.93661 3.0066,-2.93661 h 71.1562 c 1.60352,0 3.0066,1.27254 3.0066,2.93661 v 23.00345 c 0,1.66408 -1.40308,2.93661 -3.0066,2.93661 z"
+     fill="#fff"
+     stroke="#c8c8c8"
+     stroke-miterlimit="10"
+     stroke-width="1.0555"
+     id="path629-3"
+     style="fill:#ffffff;stroke:#c8c8c8;stroke-width:1.04544;stroke-miterlimit:10" /><path
+     class="st7"
+     d="m 562.57668,430.52409 h -26.0572 c -1.60352,0 -3.0066,-1.37042 -3.0066,-2.93661 v -23.00345 c 0,-1.66407 1.40308,-2.93661 3.0066,-2.93661 h 26.0572 c 1.60352,0 3.0066,1.27254 3.0066,2.93661 v 23.00345 c 0,1.66408 -1.30286,2.93661 -3.0066,2.93661 z"
+     fill="#c8c8c8"
+     id="path630-2"
+     style="fill:#c8c8c8;stroke-width:0.990466" /><g
+     fill="#646464"
+     id="g644"
+     transform="translate(-82.898126,281.79185)"
+     style="fill:#646464;fill-opacity:1">
+			<path
+   class="st7"
+   d="m 639,122.9 c -2.9,0 -5.2,2.4 -5.2,5.2 0,2.9 2.4,5.3 5.2,5.3 2.9,0 5.3,-2.4 5.3,-5.3 0,-2.8 -2.4,-5.2 -5.3,-5.2 z m 1.1,8.6 h -1.3 v -4.8 c -0.5,0.4 -1,0.8 -1.7,1 v -1.2 c 0.3,-0.1 0.7,-0.3 1.1,-0.6 0.4,-0.3 0.7,-0.7 0.8,-1.1 h 1 v 6.7 z"
+   id="path643"
+   style="fill:#646464;fill-opacity:1" />
+                <path
+   class="st7"
+   d="m 640,134.7 c -0.3,0 -0.7,0.1 -1,0.1 -1.1,0 -2.1,-0.3 -3.1,-0.7 h -0.2 l -9.4,-1 c -1.7,-0.2 -1.5,-2.7 0.2,-2.5 l 6.4,0.7 c -0.3,-0.6 -0.5,-1.3 -0.7,-2 l -6,-0.7 c -1.7,-0.2 -1.5,-2.7 0.2,-2.5 l 5.8,0.6 c 0.3,-1.5 1.1,-2.7 2.2,-3.7 -1,-0.1 -2.1,-0.2 -3.2,-0.2 h -0.4 c -4.8,0 -8.6,1.2 -8.6,2.7 v 17.7 c 0,0.4 0.3,0.8 0.9,1.2 l -0.9,1.5 h 2.5 l 0.4,-0.7 c 1.5,0.4 3.5,0.7 5.7,0.7 h 0.4 c 2.2,0 4.2,-0.3 5.7,-0.7 l 0.4,0.7 h 2.5 l -0.9,-1.5 c 0.6,-0.4 0.9,-0.8 0.9,-1.2 v -1.1 h 3 v -1.9 h -3 v -5.5 z m -4.2,8.1 -9.4,-1 c -1.7,-0.2 -1.5,-2.7 0.2,-2.5 l 9.4,1 c 1.8,0.2 1.5,2.7 -0.2,2.5 z m 0,-4.4 -9.4,-1 c -1.7,-0.2 -1.5,-2.7 0.2,-2.5 l 9.4,1 c 1.8,0.2 1.5,2.7 -0.2,2.5 z"
+   id="path644"
+   style="fill:#646464;fill-opacity:1" />
+		</g></g><g
+   transform="matrix(1.0646,0,0,0.94731,-238.39408,216.66782)"
+   id="sensor.froeling_puffer_1_ladezustand"><text
+   class="st9 st10 st11"
+   transform="translate(777.22,215.44)"
+   id="text646"><tspan
+     id="tspan646">0°C</tspan></text>
+
+
+</g>
+   <text
+   id="sensor.heizkorperthermostat_holzranke_temperature"
+   class="st9 st10 st11"
+   transform="scale(1.0256047,0.97503453)"
+   x="575.76221"
+   y="93.967514">0°C</text></svg>
