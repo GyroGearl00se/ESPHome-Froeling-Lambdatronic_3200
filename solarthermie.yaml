@@ -39,7 +39,7 @@ sensor:
     register_type: read
     address: 2610
     unit_of_measurement: "kw"
-    value_type: u_WORD
+    value_type: U_WORD
     filters:
       - multiply: 0.5
 
