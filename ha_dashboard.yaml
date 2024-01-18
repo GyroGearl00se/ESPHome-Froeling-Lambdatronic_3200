@@ -172,8 +172,8 @@ views:
           - entity: number.froeling_kessel_solltemperatur
             name: Kessel-Solltemperatur
         title: Einstellungen
-  - title: Heizkörper
-    path: heizkorper
+  - title: Heizkreis01
+    path: heizkreis01
     badges: []
     cards:
       - type: horizontal-stack
@@ -181,7 +181,7 @@ views:
           - type: custom:floorplan-card
             full_height: false
             config:
-              image: /local/froeling/froeling_heizkoerper.svg
+              image: /local/froeling/froeling_heizkreis01.svg
               cache: false
               stylesheet: /local/froeling/home.css
               defaults:
