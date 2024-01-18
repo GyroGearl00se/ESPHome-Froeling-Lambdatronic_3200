@@ -1,1 +1,43 @@
+sensor:  
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Solar - Kollektor Rücklauftemperatur"
+    id: ${name}_kollektor_rueklauftemperatur
+    register_type: read
+    address: 2611
+    unit_of_measurement: "°C"
+    value_type: U_WORD
+    filters:
+      - multiply: 0.5
 
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Solar - Kollektor Vorlauftemperatur"
+    id: ${name}_kollektor_vorlauftemperatur
+    register_type: read
+    address: 2612
+    unit_of_measurement: "°C"
+    value_type: U_WORD
+    filters:
+      - multiply: 0.5
+#########################
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Aktuelle Leistung des Solar WMZ [kW]"
+    id: ${name}_solar_wmz
+    register_type: read
+    address: 2610
+    unit_of_measurement: "kwh"
+    value_type: u_WORD
+    filters:
+      - multiply: 0.5
+########################
+    
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Aktuelle Ansteuerung der Kollektor - Boiler Pumpe"
+    id: ${name}_kollektor_pumpe
+    register_type: read
+    address: 2622
+    unit_of_measurement: "%"
+    value_type: U_WORD
