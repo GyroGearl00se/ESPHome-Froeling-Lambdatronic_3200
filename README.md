@@ -1,5 +1,6 @@
 # ESPHome-Froeling-Lambdatronic_3200
 
+![Dashboard - AllInOne](docs/ha_dashboard_aio.png)
 ![Dashboard - Kessel](docs/ha_dashboard_kessel.png)
 ![Dashboard - Heizkörper](docs/ha_dashboard_heizkoerper.png)
 ![Dashboard - Boiler 01](docs/ha_dashboard_boiler01.png)
