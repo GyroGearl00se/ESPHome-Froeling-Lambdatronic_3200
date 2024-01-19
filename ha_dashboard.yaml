@@ -243,6 +243,77 @@ views:
               number.froeling_hk1_temp_am_puffer_oben_ab_der_der_uberhitzungsschutz_aktiv_wird
             name: Temp. am Puffer oben ab der der Überhitzungsschutz aktiv wird
         title: Einstellungen
+  - title: Heizkreis02
+    path: heizkreis02
+    badges: []
+    cards:
+      - type: horizontal-stack
+        cards:
+          - type: custom:floorplan-card
+            full_height: false
+            config:
+              image: /local/froeling/froeling_heizkreis02.svg
+              cache: false
+              stylesheet: /local/froeling/home.css
+              defaults:
+                hover_action: hover-info
+                tap_action: more-info
+              rules:
+                - entities:
+                    - sensor.froeling_aussentemperatur
+                    - sensor.froeling_hk2_vorlauf_isttemperatur
+                  tap_action: false
+                  state_action:
+                    action: call-service
+                    service: floorplan.text_set
+                    service_data: ${entity.state + "°C"}
+                - entities:
+                    - binary_sensor.froeling_hk2_pumpe_an_aus
+                  tap_action: false
+                  state_action:
+                    action: call-service
+                    service: floorplan.class_set
+                    service_data:
+                      class: '${(entity.state == "on") ? "fill-green" : "fill-grey"}'
+      - type: entities
+        entities:
+          - entity: sensor.froeling_hk2_vorlauf_isttemperatur
+            name: Vorlauf-Isttempratur
+          - entity: sensor.froeling_hk2_vorlauf_solltemperatur
+            name: Vorlauf-Solltemperatur
+          - entity: sensor.froeling_aussentemperatur
+            name: Außentemperatur
+        title: Zustand
+      - type: entities
+        entities:
+          - entity: >-
+              number.froeling_hk2_gewunschte_vorlauf_temperatur_bei_10degc_aussentemperatur
+            name: Gewünschte Vorlauf-temperatur bei -10°C Außentemperatur
+          - entity: >-
+              number.froeling_hk2_gewunschte_vorlauf_temperatur_bei_10degc_aussentemperatur_2
+            name: Gewünschte Vorlauf-temperatur bei +10°C Außentemperatur
+          - entity: >-
+              number.froeling_hk2_heizkreispumpe_ausschalten_wenn_vorlauf_soll_kleiner_ist_als
+            name: Heizkreispumpe ausschalten wenn Vorlauf Soll kleiner ist als
+          - entity: >-
+              number.froeling_hk2_absenkung_der_vorlauftemperatur_im_absenkbetrieb
+            name: Absenkung der Vorlauftemperatur im Absenkbetrieb
+          - entity: >-
+              number.froeling_hk2_aussentemperatur_unter_der_die_heizkreispumpe_im_heizbetrieb_einschaltet
+            name: >-
+              Außentemperatur, unter der die Heizkreispumpe im Heizbetrieb
+              einschaltet
+          - entity: >-
+              number.froeling_hk2_aussentemperatur_unter_der_die_heizkreispumpe_im_absenkbetrieb_einschaltet
+            name: >-
+              Außentemperatur, unter der die Heizkreispumpe im Absenkbetrieb
+              einschaltet
+          - entity: number.froeling_hk2_frostschutztemperatur
+            name: Frostschutztemperatur
+          - entity: >-
+              number.froeling_hk2_temp_am_puffer_oben_ab_der_der_uberhitzungsschutz_aktiv_wird
+            name: Temp. am Puffer oben ab der der Überhitzungsschutz aktiv wird
+        title: Einstellungen
   - title: Boiler 01
     path: boiler-01
     badges: []
@@ -450,4 +521,49 @@ views:
             name: >-
               Bei welcher RL Temperatur an der Zirkulationsleitung soll die
               Pumpe ausschalten
+        title: Einstellungen
+  - title: Solarthermie
+    path: solarthermie
+    badges: []
+    cards:
+      - type: custom:floorplan-card
+        full_height: false
+        config:
+          image: /local/froeling/froeling_solarthermie.svg
+          cache: false
+          stylesheet: /local/froeling/home.css
+          defaults:
+            hover_action: hover-info
+            tap_action: more-info
+          rules:
+            - entities:
+                - sensor.froeling_laufzeit_kollektorpumpe
+              tap_action: false
+              state_action:
+                action: call-service
+                service: floorplan.text_set
+                service_data: ${entity.state + "°C"}
+            - entities:
+                - sensor.froeling_laufzeit_kollektorpumpe
+              tap_action: false
+              state_action:
+                action: call-service
+                service: floorplan.text_set
+                service_data: ${entity.state + "%"}
+            - entities:
+                - binary_sensor.froeling_kollektorpumpe_an_aus
+              tap_action: false
+              state_action:
+                action: call-service
+                service: floorplan.class_set
+                service_data:
+                  class: '${(entity.state == "on") ? "fill-green" : "fill-grey"}'
+      - type: entities
+        entities:
+          - entity: sensor.froeling_laufzeit_kollektorpumpe
+            name: Rücklauftemperatur an der Zirkulations Leitung
+          - entity: sensor.froeling_laufzeit_kollektorpumpe
+            name: Strömungsschalter an der Brauchwasser Leitung
+          - entity: sensor.froeling_laufzeit_kollektorpumpe
+            name: Drehzahl der Zirkulations Pumpe
         title: Einstellungen
