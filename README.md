@@ -11,7 +11,7 @@
 ## ESHome RS232 to TTL - ESP32 - Read data from Froeling / Lambdatronic 3200
 
 I'm testing this with my Fröling SP Dual 20 (V 50.04 B 05.19). But I assume it could also work for other models that have the Lambdatronic 3200 control unit. Feedback appreciated.
-I requested and received from Fröling support the ModBus communication protocl for V 50.04 B 05.19 (see pdf file).
+I requested and received from Fröling support the ModBus communication protocol for V 50.04 B 05.19 (see pdf file).
 
 ### Parts
   
@@ -33,22 +33,44 @@ Connect a RS232 (DB9) cable between "MAX3232 DB9 RS232 TTL converter" and you bo
 
 - Click on the user icon
 - Enter code "-7"
-- Boiler > Modbus Protokoll RTU(1)
-- Boiler > use Modbus Protokoll 2014
+- Settings > General Settings > MODBUS Settings > Modbus Protokoll RTU (1)
+- Settings > General Settings > MODBUS Settings > use Modbus Protokoll 2014 -> yes
+- Settings > General Settings > MODBUS Settings > Use COM2 as MODBUS Interface -> yes
 
 ### Home Assistant Dashboard
 
 - required: <https://experiencelovelace.github.io/ha-floorplan/>
-- copy all files from /ha_dashboard/*to your Home assistant instance /config/www/froeling/*
+- copy all files from /ha_dashboard/ *to your Home Assistant instance /config/www/froeling/*
 - create a new Dashboard and add the content of "ha_dashboard.yaml"
-- The SVG files contains for image and text objects "ID's" which has to match the entity. Therefore I recommend not to change the device name of your ESP32.
+- The SVG files contain image and text objects (ID's) which have to match the entity name. Therefore I recommend not changing the device name of your ESP32.
+- As the setup of the heating unit can vary a lot for everyone just remove the panels that won't fit your needs.
 
 ### ESPHome
 
-For an better overview I split the yaml file into multiple pieces and included them in the main file as a remote package.
+For a better overview, I split the yaml file into multiple pieces and included them in the main file as a remote package.
   
-Just use the example from "froeling.yaml" and flash it to your ESP32.
+Just just have to flash the "froeling.yaml" and flash it to your ESP32.
+
+As the setup of the heating unit can vary a lot for everyone remove the *.yaml files for the components you don't need before flashing.
+
+```
+packages:
+  remote_package:
+    url: https://github.com/GyroGearl00se/ESPHome-Froeling-Lambdatronic_3200
+    ref: main
+    files: [
+      austragung.yaml,
+      boiler_01.yaml,
+      heizkreis01.yaml,
+      heizkreis02.yaml,
+      kessel.yaml,
+      puffer_01.yaml,
+      zirkulationspumpe.yaml,
+      solarthermie.yaml,
+      ]
+
+```
 
 ### Contribution
   
-I'm aware that currently not all entities are available. And also some available ones are not displaying the correct values. Feel free to let me know if you've found the correct Modbus register to retrieve the correct data.
+I'm aware that currently, not all entities are available. And also some available ones might not display the correct values. Feel free to let me know if you've found the correct Modbus register to retrieve the correct data.
