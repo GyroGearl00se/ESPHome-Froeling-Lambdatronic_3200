@@ -70,7 +70,19 @@ packages:
       ]
 
     refresh: 1d
-    
+
+sensor:
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Aussentemperatur"
+    id: ${name}_Aussentemperatur
+    register_type: read
+    address: 1000
+    unit_of_measurement: "°C"
+    value_type: S_WORD
+    filters:
+      - multiply: 0.5
+
 number:
   - platform: modbus_controller
     modbus_controller_id: ${modbus_controller_id}
