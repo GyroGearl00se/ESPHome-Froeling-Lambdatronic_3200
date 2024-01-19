@@ -56,7 +56,7 @@ switch:
 
 packages:
   remote_package:
-    url: https://github.com/Matze5593/ESPHome-Froeling-Lambdatronic_3200
+    url: https://github.com/GyroGearl00se/ESPHome-Froeling-Lambdatronic_3200
     ref: main
     files: [austragung.yaml, boiler_01.yaml, heizkreis01.yaml, heizkreis02.yaml, kessel.yaml, puffer_01.yaml, zirkulationspumpe.yaml, solarthermie.yaml]
     refresh: 1d
