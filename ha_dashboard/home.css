@@ -5,13 +5,23 @@
 }
 
 #floorplan > svg {
-  max-width: 700px;
+  max-width: 90%;
 }
 
 /* SVG elements */
 
 svg * {
   vector-effect: non-scaling-stroke !important;
+}
+
+/* Font color */
+.st9 {
+  fill:#323232;
+}
+
+/* Font size */
+.st11  {
+  font-size:12px !important;
 }
 
 /* Hover over */
@@ -23,9 +33,11 @@ g.floorplan-long-click > :not(text):hover,
 :not(text).floorplan-hover:hover,
 :not(text).floorplan-click:hover, 
 :not(text).floorplan-long-click:hover {
-  stroke: #03A9F4 !important;
+/*   
+  stroke: #03A9F4 !important; 
   stroke-width: 1px !important;
   stroke-opacity: 1 !important;
+*/
 }
 
 /* Animation */
