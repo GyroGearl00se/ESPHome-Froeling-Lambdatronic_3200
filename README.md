@@ -27,7 +27,7 @@ MAX3232 DB9 RS232 TTL converter:
 |---|---|---|---|---|
 | MAX3232  | RX  |  TX |  VCC | GND  |
 
-Connect a RS232 (DB9) cable between "MAX3232 DB9 RS232 TTL converter" and you boiler's mainboard (COM2).
+Connect an RS232 (DB9) cable between the "MAX3232 DB9 RS232 TTL converter" and your boiler's mainboard (COM2).
 
 ### Boiler Settings
 
@@ -42,16 +42,15 @@ Connect a RS232 (DB9) cable between "MAX3232 DB9 RS232 TTL converter" and you bo
 - required: <https://experiencelovelace.github.io/ha-floorplan/>
 - copy all files from /ha_dashboard/ *to your Home Assistant instance /config/www/froeling/*
 - create a new Dashboard and add the content of "ha_dashboard.yaml"
-- The SVG files contain image and text objects (ID's) which have to match the entity name. Therefore I recommend not changing the device name of your ESP32.
+- The SVG files contain image and text objects (IDs) which have to match the entity name. Therefore I recommend not changing the device name of your ESP32.
 - As the setup of the heating unit can vary a lot for everyone just remove the panels that won't fit your needs.
 
 ### ESPHome
 
-For a better overview, I split the yaml file into multiple pieces and included them in the main file as a remote package.
-  
-Just just have to flash the "froeling.yaml" and flash it to your ESP32.
+I divided the yaml file into several sections and added them to the main file as a remote package to provide a better overview.  
+Just flash the "froeling.yaml" to your ESP32. (Edit API, OTA & WiFi according to your device/environment)
 
-As the setup of the heating unit can vary a lot for everyone remove the *.yaml files for the components you don't need before flashing.
+As the setup of the heating unit can vary a lot for everyone remove the reference to the *.yaml files for the components you don't need before flashing.
 
 ```
 packages:
@@ -73,4 +72,4 @@ packages:
 
 ### Contribution
   
-I'm aware that currently, not all entities are available. And also some available ones might not display the correct values. Feel free to let me know if you've found the correct Modbus register to retrieve the correct data.
+Wrong/Missing data? Feel free to create an issue or fork this repository and create a pull request with your fix.
