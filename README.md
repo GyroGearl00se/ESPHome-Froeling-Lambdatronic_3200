@@ -23,9 +23,9 @@ MAX3232 DB9 RS232 TTL converter:
 
 ![wiring diagram](docs/wemos-rs3232-ttl.png)
   
-|  Wemos | TX  | RX  | 5V  | G  |
+|  Wemos | GPIO17  | GPIO16  | GND  | 5V  |
 |---|---|---|---|---|
-| MAX3232  | RX  |  TX |  VCC | GND  |
+| MAX3232  | TX  |  RX |  GND | VCC  |
 
 Connect an RS232 (DB9) cable between the "MAX3232 DB9 RS232 TTL converter" and your boiler's mainboard (COM2).
 
