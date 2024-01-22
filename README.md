@@ -74,7 +74,8 @@ packages:
 
 I've designed a housing for a Wemos ESP32 & RS232 Adapter. The front section is a bit fragile - But other than that. It works quite well. At the bottom, you'll find round inlays where you could fit in some 3x10mm magnets to attach the case easily to the housing of your heating unit.
 
-I'll take some pictures soon.
+![3D_Print_Case_mounted.jpg](docs/3D_Print_Case_mounted.jpg)
+(Picture without lid to give you a better idea)
 
 ![3D_Print_Case.gif animation](docs/3D_Print_Case.gif)
 ![3D_Print_Case.png](docs/3D_Print_Case.png)
