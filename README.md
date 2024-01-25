@@ -23,7 +23,7 @@ MAX3232 DB9 RS232 TTL converter:
 
 ![wiring diagram](docs/wemos-rs3232-ttl.png)
   
-|  Wemos | GPIO17  | GPIO16  | GND  | 5V  |
+|  Wemos | GPIO17  | GPIO16  | GND  | 3V3 (3,3V)  |
 |---|---|---|---|---|
 | MAX3232  | TX  |  RX |  GND | VCC  |
 
