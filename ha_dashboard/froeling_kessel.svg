@@ -2638,7 +2638,7 @@
    id="sensor.froeling_verbleibende_heizstunden_bis_zur_asche_entleeren_warnung"
    transform="matrix(1 0 0 1 80 231.4438)"
    class="st9 st10 st11"
-   inkscape:label="sensor.froeling_verbleibende_heizstunden_bis_zur_asche_entleeren_warnung">17h</text>&#10;<g
+   inkscape:label="sensor.froeling_verbleibende_heizstunden_bis_zur_asche_entleeren_warnung">0h</text>&#10;<g
    id="label_fuel-level"><title
    id="title519">Restbestand im Brennstofflagerraum</title>&#10;	<path
    id="frame_1_"
@@ -2664,7 +2664,7 @@
    id="sensor.froeling_fuellstand_im_pelletsbehaelter"
    transform="matrix(1 0 0 1 80 47.6704)"
    class="st9 st10 st11"
-   inkscape:label="sensor.froeling_fuellstand_im_pelletsbehaelter">32%</text>&#10;<g
+   inkscape:label="sensor.froeling_fuellstand_im_pelletsbehaelter">0%</text>&#10;<g
    id="Saugzug_Ansteuerung"><title
    id="title522">Drehzahl des Saugzuggebläses</title>&#10;	<path
    id="frame_2_"
@@ -2715,7 +2715,7 @@
    id="sensor.froeling_kesseltemperatur"
    transform="matrix(1 0 0 1 165.5 107.2566)"
    class="st9 st10 st11"
-   inkscape:label="sensor.froeling_kesseltemperatur">71°C</text>&#10;<g
+   inkscape:label="sensor.froeling_kesseltemperatur">0°C</text>&#10;<g
    id="label_flue-gas"><title
    id="title527">Abgastemperatur</title>&#10;	<path
    id="frame"
@@ -2750,7 +2750,7 @@
    id="sensor.froeling_abgastemperatur"
    transform="matrix(1 0 0 1 207.5 47.2747)"
    class="st9 st10 st11"
-   inkscape:label="sensor.froeling_abgastemperatur">57°C</text>&#10;<g
+   inkscape:label="sensor.froeling_abgastemperatur">0°C</text>&#10;<g
    id="label_lambda"><title
    id="title530">Restsauerstoffgehalt</title>&#10;	<path
    id="frame_3_"
@@ -2773,7 +2773,7 @@
    id="sensor.froeling_restsauerstoffgehalt"
    transform="matrix(1 0 0 1 312.5 81.7897)"
    class="st9 st10 st11"
-   inkscape:label="sensor.froeling_restsauerstoffgehalt">1.9%</text>&#10;<g
+   inkscape:label="sensor.froeling_restsauerstoffgehalt">0%</text>&#10;<g
    id="label_pump-01-rpm"><title
    id="title532">Pufferpumpen Ansteuerung</title>&#10;	<path
    class="st6"

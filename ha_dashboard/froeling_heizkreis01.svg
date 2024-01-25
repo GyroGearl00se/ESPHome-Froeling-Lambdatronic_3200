@@ -169,7 +169,7 @@
    id="path26" />&#10;		</g>&#10;	</g>&#10;</g>&#10;<text
    id="sensor.froeling_aussentemperatur"
    transform="matrix(1 0 0 1 180 62.6916)"
-   class="st1 st10 st11">4°C</text>&#10;<g
+   class="st1 st10 st11">0°C</text>&#10;<g
    id="label_flow-temp"><title
    id="title26">Vorlauftemperatur</title>&#10;	<path
    id="frame"
@@ -203,7 +203,7 @@
    id="rect29" />&#10;		</g>&#10;	</g>&#10;</g>&#10;<text
    id="sensor.froeling_hk1_vorlauf_isttemperatur"
    transform="matrix(1 0 0 1 165 191.5317)"
-   class="st1 st10 st11">49°C</text>&#10;<g
+   class="st1 st10 st11">0°C</text>&#10;<g
    id="label_room-temp"
    class="stNotAvailable"><title
    id="title29">Raumtemperatur</title>&#10;	<path

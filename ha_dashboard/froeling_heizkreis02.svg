@@ -245,7 +245,7 @@
 <text
    id="sensor.froeling_aussentemperatur"
    transform="matrix(1 0 0 1 180 62.6916)"
-   class="st1 st10 st11">4°C</text>
+   class="st1 st10 st11">0°C</text>
 <g
    id="label_flow-temp"><title
    id="title26">Vorlauftemperatur</title>
@@ -292,7 +292,7 @@
 <text
    id="sensor.froeling_hk2_vorlauf_isttemperatur"
    transform="matrix(1 0 0 1 165 191.5317)"
-   class="st1 st10 st11">49°C</text>
+   class="st1 st10 st11">0°C</text>
 <g
    id="label_room-temp"
    class="stNotAvailable"><title

@@ -8679,7 +8679,7 @@
    id="path2310" />&#10;		</g>&#10;	</g>&#10;</g>&#10;<text
    id="sensor.froeling_fuellstand_im_pelletsbehaelter"
    transform="matrix(1 0 0 1 247 202.9876)"
-   class="st11 st12 st13">32%</text>&#10;<g
+   class="st11 st12 st13">0%</text>&#10;<g
    id="label_consumption"><title
    id="title2310">Pelletverbrauch-Zähler</title>&#10;	<path
    id="frame_1_"
@@ -8698,7 +8698,7 @@
    id="path2313" />&#10;		</g>&#10;	</g>&#10;</g>&#10;<text
    id="sensor.froeling_resetierbarer_t_zaehler"
    transform="matrix(1 0 0 1 263.5 104.238)"
-   class="st11 st12 st13">4.8t</text>&#10;<g
+   class="st11 st12 st13">0t</text>&#10;<g
    id="label_storage-counter"><title
    id="title2313">Restbestand im Brennstofflagerraum</title>&#10;	<path
    id="frame"
@@ -8723,4 +8723,4 @@
    id="path2316" />&#10;		</g>&#10;	</g>&#10;</g>&#10;<text
    id="sensor.froeling_pelletlager_restbestand"
    transform="matrix(1 0 0 1 97 73.1372)"
-   class="st11 st12 st13">3.2t</text>&#10;</svg>
+   class="st11 st12 st13">0t</text>&#10;</svg>

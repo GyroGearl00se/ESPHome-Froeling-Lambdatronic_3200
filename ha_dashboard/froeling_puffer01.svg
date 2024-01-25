@@ -113,7 +113,7 @@
    id="txt_boiler-temp">&#10;		<text
    transform="translate(308.6099,147.3701)"
    class="st8 st9 st10"
-   id="sensor.froeling_kesseltemperatur">70°C</text>&#10;	</g>&#10;</g>&#10;    <g
+   id="sensor.froeling_kesseltemperatur">0°C</text>&#10;	</g>&#10;</g>&#10;    <g
    id="pump-01-rpm"
    transform="translate(-254)">&#10;	<title
    id="title13">Pufferpumpen Ansteuerung</title>&#10;        <g
@@ -176,7 +176,7 @@
    id="txt_buffer-load">&#10;		<text
    transform="translate(653.5208,139.5522)"
    class="st8 st9 st10"
-   id="sensor.froeling_puffer_1_ladezustand">68%</text>&#10;	</g>&#10;</g>&#10;    <g
+   id="sensor.froeling_puffer_1_ladezustand">0%</text>&#10;	</g>&#10;</g>&#10;    <g
    id="buffer-lower-sensor"
    transform="translate(-254)">&#10;	<title
    id="title16">Aktuelle Tempertaur am unteren Fühler im Pufferspeicher</title>&#10;        <g
@@ -212,7 +212,7 @@
    id="txt_buffer-lower-sensor">&#10;		<text
    transform="translate(777.2209,215.4353)"
    class="st8 st9 st10"
-   id="sensor.froeling_puffer_1_temperatur_unten">50°C</text>&#10;	</g>&#10;</g>&#10;    <g
+   id="sensor.froeling_puffer_1_temperatur_unten">0°C</text>&#10;	</g>&#10;</g>&#10;    <g
    id="buffer-upper-sensor"
    transform="translate(-254)">&#10;	<title
    id="title18">Aktuelle Tempertaur am oberen Fühler im Pufferspeicher</title>&#10;        <g
@@ -249,4 +249,4 @@
    inkscape:label="txt_buffer-upper-sensor">&#10;		<text
    transform="translate(773.2424,63.5206)"
    class="st8 st9 st10"
-   id="sensor.froeling_puffer_1_temperatur_oben">74°C</text>&#10;	</g>&#10;	</g>&#10;	</svg>
+   id="sensor.froeling_puffer_1_temperatur_oben">0°C</text>&#10;	</g>&#10;	</g>&#10;	</svg>
