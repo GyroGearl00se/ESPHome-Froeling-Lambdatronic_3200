@@ -6,6 +6,8 @@ sensor:
     register_type: read
     address: 2000
     unit_of_measurement: "°C"
+    device_class: "temperature"
+    state_class: "measurement"
     value_type: U_WORD  
     filters:
       - multiply: 0.5
@@ -17,6 +19,8 @@ sensor:
     register_type: read
     address: 2001
     unit_of_measurement: "°C"
+    device_class: "temperature"
+    state_class: "measurement"
     value_type: U_WORD  
     filters:
       - multiply: 0.5
@@ -28,6 +32,8 @@ sensor:
     register_type: read
     address: 2002
     unit_of_measurement: "°C"
+    device_class: "temperature"
+    state_class: "measurement"
     value_type: U_WORD  
     filters:
       - multiply: 0.5
