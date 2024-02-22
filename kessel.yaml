@@ -6,6 +6,8 @@ sensor:
     register_type: read
     address: 0
     unit_of_measurement: "°C"
+    device_class: "temperature"
+    state_class: "measurement"
     value_type: U_WORD 
     filters:
       - multiply: 0.5
@@ -17,6 +19,8 @@ sensor:
     register_type: read
     address: 1
     unit_of_measurement: "°C"
+    device_class: "temperature"
+    state_class: "measurement"
     value_type: U_WORD 
  
   - platform: modbus_controller
@@ -74,6 +78,8 @@ sensor:
     register_type: read
     address: 9
     unit_of_measurement: "°C"
+    device_class: "temperature"
+    state_class: "measurement"
     value_type: U_WORD
     filters:
       - multiply: 0.5
