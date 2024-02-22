@@ -6,6 +6,8 @@ sensor:
     register_type: read
     address: 2611
     unit_of_measurement: "°C"
+    device_class: "temperature"
+    state_class: "measurement"
     value_type: U_WORD
     filters:
       - multiply: 0.5
@@ -17,6 +19,8 @@ sensor:
     register_type: read
     address: 2612
     unit_of_measurement: "°C"
+    device_class: "temperature"
+    state_class: "measurement"
     value_type: U_WORD
     filters:
       - multiply: 0.5
@@ -28,6 +32,8 @@ sensor:
     register_type: read
     address: 2601
     unit_of_measurement: "°C"
+    device_class: "temperature"
+    state_class: "measurement"
     value_type: U_WORD
     filters:
       - multiply: 0.5
@@ -39,6 +45,8 @@ sensor:
     register_type: read
     address: 2610
     unit_of_measurement: "kw"
+    device_class: "power"
+    state_class: "measurement"
     value_type: U_WORD
     filters:
       - multiply: 0.5
@@ -68,6 +76,8 @@ sensor:
     register_type: read
     address: 2609
     unit_of_measurement: "l/h"
+    device_class: "volume_flow_rate"
+    state_class: "measurement"
     value_type: U_WORD
 
   - platform: modbus_controller
@@ -77,6 +87,8 @@ sensor:
     register_type: read
     address: 32619
     unit_of_measurement: "kwh"
+    device_class: "energy"
+    state_class: "measurement"
     value_type: U_WORD
 
   - platform: modbus_controller
@@ -86,6 +98,8 @@ sensor:
     register_type: read
     address: 2621
     unit_of_measurement: "kwh"
+    device_class: "energy"
+    state_class: "measurement"
     value_type: U_WORD
 
   - platform: modbus_controller
