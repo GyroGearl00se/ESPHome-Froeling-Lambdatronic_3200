@@ -6,6 +6,8 @@ sensor:
     register_type: read
     address: 1030
     unit_of_measurement: "°C"
+    device_class: "temperature"
+    state_class: "measurement"
     value_type: U_WORD
     filters:
       - multiply: 0.5
@@ -17,6 +19,8 @@ sensor:
     register_type: read
     address: 1031
     unit_of_measurement: "°C"
+    device_class: "temperature"
+    state_class: "measurement"
     value_type: U_WORD
     filters:
       - multiply: 0.5
@@ -89,8 +93,7 @@ einschaltet"
 
   - platform: modbus_controller
     modbus_controller_id: ${modbus_controller_id}
-    name: "${name} HK1 - Außentemperatur, unter der die Heizkreispumpe im Absenkbetrieb
-einschaltet"
+    name: "${name} HK1 - Außentemperatur, unter der die Heizkreispumpe im Absenkbetrieb einschaltet"
     id: ${name}_HK1_Aussentemperatur_unter_der_die_Heizkreispumpe_im_Absenkbetrieb_einschaltet
     address: 1037
     unit_of_measurement: "°C"
