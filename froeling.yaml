@@ -78,6 +78,8 @@ sensor:
     register_type: read
     address: 1000
     unit_of_measurement: "°C"
+    device_class: "temperature"
+    state_class: "measurement"
     value_type: S_WORD
     filters:
       - multiply: 0.5
