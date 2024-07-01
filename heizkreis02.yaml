@@ -120,3 +120,18 @@ number:
     value_type: U_WORD
     min_value: 60
     max_value: 120
+
+select:
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} HK2 - Betriebsart"
+    id: ${name}_HK2_Betriebsart
+    address: 8047
+    value_type: U_WORD
+    optionsmap:
+      "Aus": 0
+      "Automatik": 1
+      "Extraheizen": 2
+      "Absenken": 3
+      "Dauerabsenken": 4
+      "Partybetrieb": 5
