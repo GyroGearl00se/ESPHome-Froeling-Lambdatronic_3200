@@ -85,7 +85,7 @@ sensor:
     name: "${name} Solar - Tagesertrag"
     id: ${name}_solarkollektor_ertrag
     register_type: read
-    address: 32619
+    address: 2619
     unit_of_measurement: "kwh"
     device_class: "energy"
     state_class: "measurement"
