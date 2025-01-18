@@ -19,6 +19,8 @@ sensor:
     register_type: read
     address: 1061
     unit_of_measurement: "°C"
+    device_class: "temperature"
+    state_class: "measurement"
     value_type: U_WORD
     filters:
       - multiply: 0.5
