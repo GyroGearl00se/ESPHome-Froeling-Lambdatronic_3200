@@ -71,7 +71,7 @@ sensor:
 
   - platform: modbus_controller
     modbus_controller_id: ${modbus_controller_id}
-    name: "${name} Solar - DFL Sensor [l/h]"
+    name: "${name} Solar - DFL Sensor [l_h]"
     id: ${name}_solar_durchfluss_liter
     register_type: read
     address: 2609
