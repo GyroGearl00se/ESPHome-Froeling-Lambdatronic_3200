@@ -41,7 +41,7 @@ sensor:
     address: 83
     unit_of_measurement: "t"
     device_class: "weight"
-    state_class: "measurement"
+    state_class: "total_increasing"
     accuracy_decimals: 1
     value_type: U_WORD
     filters:
@@ -55,7 +55,7 @@ sensor:
     address: 319
     unit_of_measurement: "t"
     device_class: "weight"
-    state_class: "measurement"
+    state_class: "total_increasing"
     accuracy_decimals: 1
     value_type: U_WORD
     filters:
