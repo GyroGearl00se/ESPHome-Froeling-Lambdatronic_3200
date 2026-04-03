@@ -88,7 +88,7 @@ sensor:
     address: 2619
     unit_of_measurement: "kwh"
     device_class: "energy"
-    state_class: "measurement"
+    state_class: "total_increasing"
     value_type: U_WORD
 
   - platform: modbus_controller
@@ -99,7 +99,7 @@ sensor:
     address: 2621
     unit_of_measurement: "kwh"
     device_class: "energy"
-    state_class: "measurement"
+    state_class: "total_increasing"
     value_type: U_WORD
 
   - platform: modbus_controller
