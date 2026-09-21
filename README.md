@@ -39,11 +39,7 @@ Connect an RS232 (DB9) cable between the "MAX3232 DB9 RS232 TTL converter" and y
 
 ### Home Assistant Dashboard
 
-- required: <https://experiencelovelace.github.io/ha-floorplan/>
-- copy all files from /ha_dashboard/ *to your Home Assistant instance /config/www/froeling/*
-- create a new Dashboard and add the content of "ha_dashboard.yaml"
-- The SVG files contain image and text objects (IDs) which have to match the entity name. Therefore I recommend not changing the device name of your ESP32.
-- As the setup of the heating unit can vary a lot for everyone just remove the panels that won't fit your needs.
+I've created dedicated cards for the heating system. Feel free to checkout them out: https://github.com/GyroGearl00se/lovelace-froeling-card
 
 ### ESPHome
 
