@@ -41,6 +41,7 @@ uart:
 modbus:
   id: modbus1
   uart_id: uartfroeling
+  turnaround_time: 50ms # Ersetzt command_throttle ab ESPHome 2026.10.0
 
 modbus_controller:
   - id: froeling
@@ -48,7 +49,6 @@ modbus_controller:
     modbus_id: modbus1
     setup_priority: -10
     update_interval: "60s"
-    command_throttle: "50ms"
 
 switch:
   - platform: restart
@@ -68,7 +68,6 @@ packages:
       zirkulationspumpe.yaml,
       solarthermie.yaml,
       ]
-
     refresh: 1d
 
 sensor:
@@ -117,7 +116,7 @@ text_sensor:
     address: 4000
     raw_encode: HEXBYTES
     lambda: |-
-      uint16_t value = modbus_controller::word_from_hex_str(x, 0);
+      uint16_t value = modbus::helpers::word_from_hex_str(x, 0);
       switch (value) {
         case 0: return std::string("Dauerlast");
         case 1: return std::string("Brauchwasser");
@@ -140,7 +139,7 @@ text_sensor:
     address: 4001
     raw_encode: HEXBYTES
     lambda: |-
-      uint16_t value = modbus_controller::word_from_hex_str(x, 0);
+      uint16_t value = modbus::helpers::word_from_hex_str(x, 0);
       switch (value) {
         case 0: return std::string("STÖRUNG");
         case 1: return std::string("Kessel Aus");
