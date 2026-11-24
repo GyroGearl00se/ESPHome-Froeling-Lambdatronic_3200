@@ -1,14 +1,14 @@
-sensor:  
+sensor:
   - platform: modbus_controller
     modbus_controller_id: ${modbus_controller_id}
     name: "${name} Solar - Kollektor Rücklauftemperatur"
     id: ${name}_kollektor_rueklauftemperatur
     register_type: read
-    address: 2611
+    address: 2611 # Register 32612 (mit Solar-WMZ); ohne WMZ: address 2603 (Register 32604)
     unit_of_measurement: "°C"
     device_class: "temperature"
     state_class: "measurement"
-    value_type: U_WORD
+    value_type: S_WORD
     filters:
       - multiply: 0.5
 
@@ -21,7 +21,7 @@ sensor:
     unit_of_measurement: "°C"
     device_class: "temperature"
     state_class: "measurement"
-    value_type: U_WORD
+    value_type: S_WORD
     filters:
       - multiply: 0.5
 
@@ -34,22 +34,23 @@ sensor:
     unit_of_measurement: "°C"
     device_class: "temperature"
     state_class: "measurement"
-    value_type: U_WORD
+    value_type: S_WORD
     filters:
       - multiply: 0.5
-      
+
   - platform: modbus_controller
     modbus_controller_id: ${modbus_controller_id}
     name: "${name} Aktuelle Leistung Solar WMZ"
     id: ${name}_solar_wmz
     register_type: read
     address: 2610
-    unit_of_measurement: "kw"
+    unit_of_measurement: "kW"
     device_class: "power"
     state_class: "measurement"
+    accuracy_decimals: 2
     value_type: U_WORD
     filters:
-      - multiply: 0.5
+      - multiply: 0.01
 
   - platform: modbus_controller
     modbus_controller_id: ${modbus_controller_id}
@@ -59,14 +60,23 @@ sensor:
     address: 2600
     unit_of_measurement: "%"
     value_type: U_WORD
-    
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Laufzeit Kollektorpumpe"
+    id: ${name}_kollektor_pumpe_laufzeit
+    register_type: read
+    address: 2602
+    unit_of_measurement: "h"
+    value_type: U_WORD
+
   - platform: modbus_controller
     modbus_controller_id: ${modbus_controller_id}
     name: "${name} Aktuelle Ansteuerung der Kollektor - Boiler Pumpe"
-    id: ${name}_kollektor_pumpe_laufzeit
+    id: ${name}_kollektor_boiler_pumpe
     register_type: read
     address: 2622
-    unit_of_measurement: "h"
+    unit_of_measurement: "%"
     value_type: U_WORD
 
   - platform: modbus_controller
@@ -86,7 +96,18 @@ sensor:
     id: ${name}_solarkollektor_ertrag
     register_type: read
     address: 2619
-    unit_of_measurement: "kwh"
+    unit_of_measurement: "kWh"
+    device_class: "energy"
+    state_class: "total_increasing"
+    value_type: U_WORD
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Solar - Gesamtertrag MWh"
+    id: ${name}_gesamtertrag_mwh
+    register_type: read
+    address: 2620
+    unit_of_measurement: "MWh"
     device_class: "energy"
     state_class: "total_increasing"
     value_type: U_WORD
@@ -97,7 +118,7 @@ sensor:
     id: ${name}_gesamtertrag_kwh
     register_type: read
     address: 2621
-    unit_of_measurement: "kwh"
+    unit_of_measurement: "kWh"
     device_class: "energy"
     state_class: "total_increasing"
     value_type: U_WORD
@@ -110,3 +131,14 @@ sensor:
     address: 2607
     unit_of_measurement: "%"
     value_type: U_WORD
+
+binary_sensor:
+  - platform: template
+    name: "${name} Kollektorpumpe AN AUS"
+    id: ${name}_kollektorpumpe_an_aus
+    lambda: |-
+      if (id(${name}_kollektor_pumpe).state > 0) {
+        return true;
+      } else {
+        return false;
+      }
