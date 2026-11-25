@@ -1,4 +1,4 @@
-sensor:  
+sensor:
   - platform: modbus_controller
     modbus_controller_id: ${modbus_controller_id}
     name: "${name} Puffer 1 Temperatur oben"
@@ -8,7 +8,7 @@ sensor:
     unit_of_measurement: "°C"
     device_class: "temperature"
     state_class: "measurement"
-    value_type: U_WORD  
+    value_type: S_WORD
     filters:
       - multiply: 0.5
 
@@ -21,7 +21,7 @@ sensor:
     unit_of_measurement: "°C"
     device_class: "temperature"
     state_class: "measurement"
-    value_type: U_WORD  
+    value_type: S_WORD
     filters:
       - multiply: 0.5
 
@@ -34,7 +34,7 @@ sensor:
     unit_of_measurement: "°C"
     device_class: "temperature"
     state_class: "measurement"
-    value_type: U_WORD  
+    value_type: S_WORD
     filters:
       - multiply: 0.5
 
@@ -45,7 +45,42 @@ sensor:
     register_type: read
     address: 2006
     unit_of_measurement: "%"
-    value_type: U_WORD  
+    state_class: "measurement"
+    value_type: U_WORD
+
+  - platform: template
+    name: "${name} Puffer 1 Ladezustand berechnet"
+    id: ${name}_Puffer_1_Ladezustand_berechnet
+    unit_of_measurement: "%"
+    state_class: "measurement"
+    accuracy_decimals: 0
+    update_interval: 30s
+    lambda: |-
+      float temps[3] = {
+        id(${name}_Puffer_1_Temperatur_oben).state,
+        id(${name}_Puffer_1_Temperatur_mitte).state,
+        id(${name}_Puffer_1_Temperatur_unten).state
+      };
+      float sum = 0.0f;
+      int count = 0;
+      for (int i = 0; i < 3; i++) {
+        if (!isnan(temps[i]) && temps[i] > 0.0f && temps[i] < 120.0f) {
+          sum += temps[i];
+          count++;
+        }
+      }
+      if (count == 0) return NAN;
+
+      float t_soll = id(${name}_Kessel_Solltemperatur).state;
+      const float t_min = 30.0f;                                          // 0 % bei 30 °C (Fröling-Standard)
+      float t_max = (isnan(t_soll) || t_soll < 40.0f) ? 75.0f : (t_soll - 3.0f); // 100 % bei Kesselsoll - 3 °C
+      if (t_max <= t_min) return 0.0f;
+
+      float t_avg = sum / count;
+      float pct = (t_avg - t_min) / (t_max - t_min) * 100.0f;
+      if (pct < 0.0f) pct = 0.0f;
+      if (pct > 100.0f) pct = 100.0f;
+      return roundf(pct);
 
   - platform: modbus_controller
     modbus_controller_id: ${modbus_controller_id}
@@ -54,6 +89,7 @@ sensor:
     register_type: read
     address: 2003
     unit_of_measurement: "%"
+    state_class: "measurement"
     value_type: U_WORD
 
 binary_sensor:
