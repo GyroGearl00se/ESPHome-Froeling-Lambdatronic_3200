@@ -1,0 +1,188 @@
+# =============================================================================
+# Fröling Wartungs- & Reinigungsbuch (Home Assistant Package)
+# Ablageort: /config/packages/froeling_wartungsbuch.yaml
+# =============================================================================
+
+input_datetime:
+  froeling_wartung_datum:
+    name: "Fröling Wartung Datum"
+    has_date: true
+    has_time: false
+    icon: mdi:calendar-check
+
+input_select:
+  froeling_wartung_art:
+    name: "Fröling Wartung Art"
+    icon: mdi:wrench-outline
+    options:
+      - "Komplettreinigung / Wartung"
+      - "Zyklonabscheider geleert"
+      - "Pelletlager gereinigt"
+      - "Kaminkehrer"
+      - "Aschebox geleert"
+      - "Sonstiges / Reparatur"
+
+input_number:
+  froeling_wartung_kosten_eur:
+    name: "Fröling Wartung Kosten"
+    min: 0
+    max: 10000
+    step: 1
+    initial: 0
+    unit_of_measurement: "€"
+    mode: box
+    icon: mdi:currency-eur
+
+input_text:
+  froeling_wartung_notiz:
+    name: "Fröling Wartung Notiz"
+    max: 120
+    icon: mdi:note-text-outline
+
+script:
+  froeling_wartung_speichern:
+    alias: "Fröling: Wartungseintrag speichern"
+    icon: mdi:content-save-plus
+    mode: single
+    sequence:
+      - event: froeling_wartung_hinzufuegen
+        event_data:
+          datum: >-
+            {% set d = states('input_datetime.froeling_wartung_datum') %}
+            {{ d if d not in ['unknown', 'unavailable', ''] else now().strftime('%Y-%m-%d') }}
+          art: "{{ states('input_select.froeling_wartung_art') }}"
+          kosten: "{{ states('input_number.froeling_wartung_kosten_eur') | float(0) }}"
+          bh: "{{ states('sensor.froeling_betriebsstunden') | float(0) | round(0) | int }}"
+          notiz: "{{ states('input_text.froeling_wartung_notiz') | trim }}"
+      - service: input_number.set_value
+        target:
+          entity_id: input_number.froeling_wartung_kosten_eur
+        data:
+          value: 0
+      - service: input_text.set_value
+        target:
+          entity_id: input_text.froeling_wartung_notiz
+        data:
+          value: ""
+
+  froeling_wartung_letzten_loeschen:
+    alias: "Fröling: Letzten Wartungseintrag löschen"
+    icon: mdi:undo
+    mode: single
+    sequence:
+      - event: froeling_wartung_loeschen
+
+template:
+  # Dauerhafter Verlaufsspeicher (überlebt HA-Neustarts)
+  - trigger:
+      - platform: event
+        event_type: froeling_wartung_hinzufuegen
+      - platform: event
+        event_type: froeling_wartung_loeschen
+    sensor:
+      - name: "Fröling Wartungsbuch"
+        unique_id: froeling_wartungsbuch
+        icon: mdi:clipboard-text-clock-outline
+        state: >
+          {% set alt = this.attributes.get('eintraege', []) if this is defined and this.attributes is defined else [] %}
+          {% if trigger.event.event_type == 'froeling_wartung_hinzufuegen' %}
+            {{ (alt | length) + 1 }}
+          {% elif trigger.event.event_type == 'froeling_wartung_loeschen' %}
+            {{ [0, (alt | length) - 1] | max }}
+          {% else %}
+            {{ alt | length }}
+          {% endif %}
+        attributes:
+          eintraege: >
+            {% set alt = this.attributes.get('eintraege', []) if this is defined and this.attributes is defined else [] %}
+            {% if trigger.event.event_type == 'froeling_wartung_hinzufuegen' %}
+              {% set neu = {
+                'datum': trigger.event.data.datum,
+                'art': trigger.event.data.art,
+                'kosten': trigger.event.data.kosten | float(0) | round(2),
+                'bh': trigger.event.data.bh | float(0) | round(0) | int,
+                'notiz': trigger.event.data.notiz | default('', true)
+              } %}
+              {{ alt + [neu] }}
+            {% elif trigger.event.event_type == 'froeling_wartung_loeschen' %}
+              {{ alt[:-1] if (alt | length) > 0 else [] }}
+            {% else %}
+              {{ alt }}
+            {% endif %}
+
+  # 4 "Letztes Mal"-Sensoren + Gesamtkosten
+  - sensor:
+      - name: "Fröling Letzte Komplettreinigung"
+        unique_id: froeling_letzte_komplettreinigung
+        icon: mdi:broom
+        state: >
+          {% set l = (state_attr('sensor.froling_wartungsbuch', 'eintraege') or [])
+             | selectattr('art', 'equalto', 'Komplettreinigung / Wartung')
+             | sort(attribute='datum', reverse=true) | list %}
+          {{ l[0].datum[8:10] ~ '.' ~ l[0].datum[5:7] ~ '.' ~ l[0].datum[0:4] if l | length > 0 else 'Noch kein Eintrag' }}
+        attributes:
+          tage_her: >
+            {% set l = (state_attr('sensor.froling_wartungsbuch', 'eintraege') or [])
+               | selectattr('art', 'equalto', 'Komplettreinigung / Wartung')
+               | sort(attribute='datum', reverse=true) | list %}
+            {{ (now().date() - as_datetime(l[0].datum).date()).days if l | length > 0 else none }}
+          bh_damals: >
+            {% set l = (state_attr('sensor.froling_wartungsbuch', 'eintraege') or [])
+               | selectattr('art', 'equalto', 'Komplettreinigung / Wartung')
+               | sort(attribute='datum', reverse=true) | list %}
+            {{ l[0].bh if l | length > 0 else none }}
+
+      - name: "Fröling Letzter Zyklonabscheider"
+        unique_id: froeling_letzter_zyklonabscheider
+        icon: mdi:weather-hurricane
+        state: >
+          {% set l = (state_attr('sensor.froling_wartungsbuch', 'eintraege') or [])
+             | selectattr('art', 'equalto', 'Zyklonabscheider geleert')
+             | sort(attribute='datum', reverse=true) | list %}
+          {{ l[0].datum[8:10] ~ '.' ~ l[0].datum[5:7] ~ '.' ~ l[0].datum[0:4] if l | length > 0 else 'Noch kein Eintrag' }}
+        attributes:
+          tage_her: >
+            {% set l = (state_attr('sensor.froling_wartungsbuch', 'eintraege') or [])
+               | selectattr('art', 'equalto', 'Zyklonabscheider geleert')
+               | sort(attribute='datum', reverse=true) | list %}
+            {{ (now().date() - as_datetime(l[0].datum).date()).days if l | length > 0 else none }}
+
+      - name: "Fröling Letzte Pelletlager-Reinigung"
+        unique_id: froeling_letzte_pelletlager_reinigung
+        icon: mdi:silo
+        state: >
+          {% set l = (state_attr('sensor.froling_wartungsbuch', 'eintraege') or [])
+             | selectattr('art', 'equalto', 'Pelletlager gereinigt')
+             | sort(attribute='datum', reverse=true) | list %}
+          {{ l[0].datum[8:10] ~ '.' ~ l[0].datum[5:7] ~ '.' ~ l[0].datum[0:4] if l | length > 0 else 'Noch kein Eintrag' }}
+        attributes:
+          tage_her: >
+            {% set l = (state_attr('sensor.froling_wartungsbuch', 'eintraege') or [])
+               | selectattr('art', 'equalto', 'Pelletlager gereinigt')
+               | sort(attribute='datum', reverse=true) | list %}
+            {{ (now().date() - as_datetime(l[0].datum).date()).days if l | length > 0 else none }}
+
+      - name: "Fröling Letzter Kaminkehrer"
+        unique_id: froeling_letzter_kaminkehrer
+        icon: mdi:account-hard-hat
+        state: >
+          {% set l = (state_attr('sensor.froling_wartungsbuch', 'eintraege') or [])
+             | selectattr('art', 'equalto', 'Kaminkehrer')
+             | sort(attribute='datum', reverse=true) | list %}
+          {{ l[0].datum[8:10] ~ '.' ~ l[0].datum[5:7] ~ '.' ~ l[0].datum[0:4] if l | length > 0 else 'Noch kein Eintrag' }}
+        attributes:
+          tage_her: >
+            {% set l = (state_attr('sensor.froling_wartungsbuch', 'eintraege') or [])
+               | selectattr('art', 'equalto', 'Kaminkehrer')
+               | sort(attribute='datum', reverse=true) | list %}
+            {{ (now().date() - as_datetime(l[0].datum).date()).days if l | length > 0 else none }}
+
+      - name: "Fröling Wartungskosten gesamt"
+        unique_id: froeling_wartungskosten_gesamt
+        unit_of_measurement: "€"
+        device_class: monetary
+        state_class: total
+        icon: mdi:cash-multiple
+        state: >
+          {% set l = state_attr('sensor.froling_wartungsbuch', 'eintraege') or [] %}
+          {{ (l | sum(attribute='kosten') | float(0)) | round(2) }}
