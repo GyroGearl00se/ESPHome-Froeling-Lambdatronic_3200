@@ -66,6 +66,7 @@ packages:
       - puffer_01.yaml
       - zirkulationspumpe.yaml
       - solarthermie.yaml
+      - fehlerpuffer.yaml
       - path: heizkreise.yaml
         vars:
           hk: 1
