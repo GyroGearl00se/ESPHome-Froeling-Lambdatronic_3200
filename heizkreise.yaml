@@ -1,4 +1,12 @@
-# templates/heizkreise.yaml  (nutzbar für HK1 bis HK18)
+# heizkreise.yaml - Generisches Template für Heizkreise 1 bis 18 (benötigt ESPHome >= 2025.7.0)
+# Einbindung in froeling.yaml unter packages -> remote_package -> files:
+#   - path: heizkreise.yaml
+#     vars:
+#       hk: 1   # Heizkreisnummer (1..18), Eintrag für jeden weiteren HK wiederholen
+
+esphome:
+  min_version: "2025.7.0"
+
 sensor:
   - platform: modbus_controller
     modbus_controller_id: ${modbus_controller_id}
@@ -9,7 +17,7 @@ sensor:
     unit_of_measurement: "°C"
     device_class: "temperature"
     state_class: "measurement"
-    value_type: U_WORD
+    value_type: S_WORD
     filters:
       - multiply: 0.5
 
@@ -22,7 +30,7 @@ sensor:
     unit_of_measurement: "°C"
     device_class: "temperature"
     state_class: "measurement"
-    value_type: U_WORD
+    value_type: S_WORD
     filters:
       - multiply: 0.5
 
@@ -43,6 +51,7 @@ number:
     unit_of_measurement: "°C"
     value_type: U_WORD
     multiply: 2
+    step: 0.5
     min_value: 10
     max_value: 110
 
@@ -54,6 +63,7 @@ number:
     unit_of_measurement: "°C"
     value_type: U_WORD
     multiply: 2
+    step: 0.5
     min_value: 10
     max_value: 110
 
@@ -65,6 +75,7 @@ number:
     unit_of_measurement: "°C"
     value_type: U_WORD
     multiply: 2
+    step: 0.5
     min_value: 0
     max_value: 70
 
@@ -76,6 +87,7 @@ number:
     unit_of_measurement: "°C"
     value_type: S_WORD
     multiply: 2
+    step: 0.5
     min_value: -20
     max_value: 50
 
@@ -87,6 +99,7 @@ number:
     unit_of_measurement: "°C"
     value_type: S_WORD
     multiply: 2
+    step: 0.5
     min_value: -20
     max_value: 50
 
@@ -98,6 +111,7 @@ number:
     unit_of_measurement: "°C"
     value_type: S_WORD
     multiply: 2
+    step: 0.5
     min_value: -10
     max_value: 20
 
@@ -109,6 +123,7 @@ number:
     unit_of_measurement: "°C"
     value_type: U_WORD
     multiply: 2
+    step: 0.5
     min_value: 10
     max_value: 30
 
