@@ -1,4 +1,4 @@
-# Beispiel: Analoger Heizungsdrucksensor (z.B. 0,5-4,5 V / 0-4 bar oder 0-5 bar) direkt am ESP32-ADC
+# Beispiel: Analoger Heizungsdrucksensor (selbst eingebaut) (z.B. 0,5-4,5 V / 0-4 bar oder 0-5 bar) direkt am ESP32-ADC
 # Pin und Kalibrierungspunkte (Spannung -> Druck in bar) an den eigenen Sensor und Spannungsteiler anpassen!
 
 sensor:
