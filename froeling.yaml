@@ -58,18 +58,24 @@ packages:
   remote_package:
     url: https://github.com/GyroGearl00se/ESPHome-Froeling-Lambdatronic_3200
     ref: main
-    files: [
-      austragung.yaml,
-      boiler_01.yaml,
-      heizkreis01.yaml,
-      heizkreis02.yaml,
-      kessel.yaml,
-      puffer_01.yaml,
-      zirkulationspumpe.yaml,
-      solarthermie.yaml,
-      heizkreise.yaml,
-      ]
     refresh: 1d
+    files:
+      - austragung.yaml
+      - boiler_01.yaml
+      - kessel.yaml
+      - puffer_01.yaml
+      - zirkulationspumpe.yaml
+      - solarthermie.yaml
+      - path: heizkreise.yaml
+        vars:
+          hk: 1
+      - path: heizkreise.yaml
+        vars:
+          hk: 2
+      # Weitere Heizkreise (HK3 bis HK18) bei Bedarf einfach ergänzen:
+      # - path: heizkreise.yaml
+      #   vars:
+      #     hk: 3
 
 sensor:
   - platform: modbus_controller
