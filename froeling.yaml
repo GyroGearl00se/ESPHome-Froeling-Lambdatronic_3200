@@ -1,3 +1,6 @@
+# ESPHome-Froeling-Lambdatronic_3200
+# Version: 2.0 | Stand: 27.11.2026 | Getestet mit ESPHome 2026.11.1 (min. 2026.10.0)
+
 esphome:
   name: froeling # If you're intending to use the Dashboard provided in this Repo - DO NOT CHANGE THE NAME -> readme.md
 
@@ -60,13 +63,16 @@ packages:
     ref: main
     refresh: 1d
     files:
+      - kessel.yaml
       - austragung.yaml
       - boiler_01.yaml
-      - kessel.yaml
       - puffer_01.yaml
       - zirkulationspumpe.yaml
       - solarthermie.yaml
       - fehlerpuffer.yaml
+      # - path: drucksensor.yaml # Optional (Pin-Hinweise siehe drucksensor.yaml)
+      #   vars:
+      #     drucksensor_pin: GPIO34
       - path: heizkreise.yaml
         vars:
           hk: 1
