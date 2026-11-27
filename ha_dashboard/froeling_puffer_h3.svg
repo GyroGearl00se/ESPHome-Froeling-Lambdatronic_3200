@@ -1,0 +1,243 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+     id="Ebene_1" x="0px" y="0px" viewBox="355 8 505 256"
+     style="enable-background:new 0 0 505 256;" xml:space="preserve">
+  <defs>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i");
+    </style>
+  </defs>
+  <style type="text/css">
+    .stColdWater{fill:#6E8CA0;}
+    .stHotWater{fill:#C86464;}
+    .stPumpActive{fill:#87AD27;}
+    .stPumpInActive{fill:#BBBBBB;}
+    .stHeatingOn{fill-rule:evenodd;clip-rule:evenodd;fill:#FF3232;}
+    .stHeatingOff{fill-rule:evenodd;clip-rule:evenodd;fill:#BBBBBB;}
+    .stTank{fill:#787878;}
+    .stFrame{fill:#C8C8C8;}
+    .stIcon{fill:#646464;}
+    .stText{fill:#323232;font-family:Roboto,Arial,Helvetica,sans-serif;font-size:13.5px;text-anchor:middle;}
+    .stBg{fill:#FFFFFF;}
+    .stSolarCoil{fill:none;stroke:#2B2B2B;stroke-width:4.4;stroke-linecap:round;stroke-linejoin:round;opacity:0.48;}
+    .stDhwOuter{fill:none;stroke:#475569;stroke-width:8.2;stroke-linecap:round;stroke-linejoin:round;opacity:0.88;}
+    .stDhwInner{fill:none;stroke:#E5E9EE;stroke-width:5.4;stroke-linecap:round;stroke-linejoin:round;}
+    .stDhwRibs{fill:none;stroke:#64748B;stroke-width:5.4;stroke-linecap:butt;stroke-dasharray:1.6 2.6;opacity:0.65;}
+    .stPipeHot{fill:none;stroke:#C86464;stroke-width:4.6;stroke-linecap:round;stroke-linejoin:round;}
+    .stPipeCold{fill:none;stroke:#6E8CA0;stroke-width:4.6;stroke-linecap:round;stroke-linejoin:round;}
+    .stPipeSolarHot{fill:none;stroke:#C86464;stroke-width:3.8;stroke-linecap:round;stroke-linejoin:round;}
+    .stPipeSolarCold{fill:none;stroke:#6E8CA0;stroke-width:3.8;stroke-linecap:round;stroke-linejoin:round;}
+    .displayOff{display:none;}
+  </style>
+
+  <!-- Kessel-Leitungen links (Vorlauf oben, Rücklauf unten mit Pufferpumpe) -->
+  <path id="boiler-return-02" class="stColdWater" d="M453.4,200.2h-1.1c-0.2,0-0.4,0.2-0.4,0.4v2.2h-85.1l0,6h85.2v2.4c0,0.2,0.2,0.4,0.4,0.4h1.1c0.2,0,0.4-0.2,0.4-0.4v-10.5C453.8,200.4,453.6,200.2,453.4,200.2z M410.2,208l-4.8-2.2l4.8-2.2V208z"/>
+  <path id="boiler-return-01" class="stColdWater" d="M491.7,203v-2.4c0-0.2-0.2-0.4-0.4-0.4h-1.1c-0.2,0-0.4,0.2-0.4,0.4v10.5c0,0.2,0.2,0.4,0.4,0.4h1.1c0.2,0,0.4-0.2,0.4-0.4V209h84.6v-6H491.7z M533.7,208l-4.8-2.2l4.8-2.2V208z"/>
+  <path id="boiler-flow" class="stHotWater" d="M485.8,64.1v88h-119v6h125v-88h84.5v-6H485.8z M406,157.3v-4.4l4.8,2.2L406,157.3z M529.5,69.3v-4.4l4.8,2.2L529.5,69.3z"/>
+
+  <!-- Solar-Anschlüsse links (für 2 Solar-Glattrohrregister im H3) -->
+  <g id="solar-connections">
+    <title>Solar-Wärmetauscher (oberes und unteres Glattrohrregister)</title>
+    <!-- Oberes Solarregister Vorlauf/Rücklauf -->
+    <line class="stPipeSolarHot" x1="530" y1="98" x2="577" y2="98"/>
+    <polygon class="stHotWater" points="550,95.4 555.5,98 550,100.6"/>
+    <line class="stPipeSolarCold" x1="530" y1="138" x2="577" y2="138"/>
+    <polygon class="stColdWater" points="555.5,135.4 550,138 555.5,140.6"/>
+    <!-- Unteres Solarregister Vorlauf/Rücklauf -->
+    <line class="stPipeSolarHot" x1="530" y1="158" x2="577" y2="158"/>
+    <polygon class="stHotWater" points="550,155.4 555.5,158 550,160.6"/>
+    <line class="stPipeSolarCold" x1="530" y1="190" x2="577" y2="190"/>
+    <polygon class="stColdWater" points="555.5,187.4 550,190 555.5,192.6"/>
+    <!-- Kleines Solar-Symbol -->
+    <g id="symb_solar" transform="translate(514,144)">
+      <circle cx="0" cy="0" r="4.6" class="stIcon"/>
+      <g stroke="#646464" stroke-width="1.6" stroke-linecap="round">
+        <line x1="0" y1="-9.5" x2="0" y2="-7"/>
+        <line x1="0" y1="7" x2="0" y2="9.5"/>
+        <line x1="-9.5" y1="0" x2="-7" y2="0"/>
+        <line x1="7" y1="0" x2="9.5" y2="0"/>
+        <line x1="-6.7" y1="-6.7" x2="-4.9" y2="-4.9"/>
+        <line x1="4.9" y1="4.9" x2="6.7" y2="6.7"/>
+        <line x1="-6.7" y1="6.7" x2="-4.9" y2="4.9"/>
+        <line x1="4.9" y1="-4.9" x2="6.7" y2="-6.7"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Trinkwasser-Anschlüsse (H3 Edelstahl-Wellrohr: Kaltwasser unten rein, Warmwasser oben raus) -->
+  <g id="dhw-connections">
+    <title>Trinkwasser-Durchfluss (Edelstahl-Wellrohr)</title>
+    <!-- Warmwasser-Abgang oben aus dem Dom nach rechts -->
+    <polyline class="stPipeHot" points="698,38 698,20 778,20"/>
+    <polygon class="stHotWater" points="748,16.8 755,20 748,23.2"/>
+    <!-- Kaltwasser-Zulauf unten von rechts (zwischen den Speicherfüßen) in das Wellrohr -->
+    <polyline class="stPipeCold" points="778,250 698,250 698,225"/>
+    <polygon class="stColdWater" points="755,246.8 748,250 755,253.2"/>
+  </g>
+
+  <!-- Pufferladepumpe -->
+  <g id="obj_pump" class="stPumpInActive">
+    <title>Aktueller Status der Pufferpumpe</title>
+    <path d="M475.3,205.7c0-1.8-1.5-3.3-3.3-3.3c-1.8,0-3.3,1.5-3.3,3.3c0,1.8,1.5,3.3,3.3,3.3C473.8,209,475.3,207.5,475.3,205.7z"/>
+    <path d="M456.7,211.1v-2.3h5.2c-0.3-1-0.5-2.1-0.5-3.2c0-1.1,0.2-2.1,0.4-3h-5.2v-2.1c0-0.2-0.2-0.4-0.4-0.4h-1.1c-0.2,0-0.4,0.2-0.4,0.4v10.5c0,0.2,0.2,0.4,0.4,0.4h1.1C456.5,211.5,456.7,211.4,456.7,211.1z"/>
+    <path d="M463,211.3c0.1,0.7,0.3,1.5,0.5,2.2c0.1,0.5,0.3,0.8,1,1c0.8,0.2,1.6,0.4,2.3,0.5C465.2,214.1,463.9,212.8,463,211.3z"/>
+    <path d="M477.3,215c0.8-0.1,1.5-0.3,2.3-0.5c0.6-0.2,0.8-0.4,1-1c0.2-0.8,0.4-1.5,0.5-2.3C480.1,212.8,478.8,214.1,477.3,215z"/>
+    <path d="M486.9,200.6v2.1h-4.7c0.3,1,0.4,2,0.4,3c0,1.1-0.2,2.2-0.5,3.2h4.8v2.3c0,0.2,0.2,0.4,0.4,0.4h1.1c0.2,0,0.4-0.2,0.4-0.4v-10.5c0-0.2-0.2-0.4-0.4-0.4h-1.1C487,200.2,486.9,200.4,486.9,200.6z"/>
+    <path d="M472,195c3.7,0,7,2,8.9,4.9c-0.1-0.5-0.2-1-0.3-1.5c0-0.5-0.4-0.8-0.9-1v-4.8c0-0.2-0.2-0.4-0.4-0.4l-14.6,0c0,0-0.2,0-0.3,0.1c-0.1,0.1-0.1,0.2-0.1,0.2l0,4.8c-0.5,0.2-0.7,0.4-0.8,0.9c-0.1,0.5-0.2,1-0.3,1.5C465,196.9,468.3,195,472,195z"/>
+    <path d="M481.6,205.7c0-5.4-4.3-9.7-9.6-9.7c-5.3,0-9.6,4.3-9.6,9.7c0,5.4,4.3,9.7,9.6,9.7C477.3,215.4,481.6,211.1,481.6,205.7z M464.8,205.7c0-4,3.2-7.2,7.2-7.2c4,0,7.2,3.2,7.2,7.2c0,4-3.2,7.2-7.2,7.2C468,212.9,464.8,209.7,464.8,205.7z"/>
+  </g>
+
+  <!-- Pufferpumpen-Ansteuerung -->
+  <g id="pump-01-rpm">
+    <title>Pufferpumpen Ansteuerung</title>
+    <g id="label_pump-01-rpm">
+      <path id="frame_bg_5" class="stBg" d="M532.6,246.5c0,1.4-1.1,2.5-2.5,2.5h-43.4c0.8-0.5,1.3-1.4,1.3-2.5V223c0-1-0.5-1.9-1.3-2.5h43.4c1.4,0,2.5,1.1,2.5,2.5V246.5z"/>
+      <path id="frame_5" class="stFrame" d="M530.2,219.4h-71c-1.9,0-3.5,1.6-3.5,3.5v23.5c0,1.9,1.6,3.5,3.5,3.5h71c1.9,0,3.5-1.6,3.5-3.5V223C533.7,221,532.1,219.4,530.2,219.4z M532.6,246.5c0,1.4-1.1,2.5-2.5,2.5h-43.4c0.8-0.5,1.3-1.4,1.3-2.5V223c0-1-0.5-1.9-1.3-2.5h43.4c1.4,0,2.5,1.1,2.5,2.5V246.5z"/>
+      <g id="symb_rpm">
+        <path class="stIcon" d="M471.5,225.3c-7.4,0-13.5,6.1-13.5,13.5v0.5h3.5v-1H459c0.1-3.1,1.4-5.9,3.3-8l1.8,1.8l0.7-0.7l-1.8-1.8c2.1-2,4.9-3.2,8-3.3v2.5h1v-2.5c3.1,0.1,5.9,1.3,8,3.3l-1.7,1.7l0.7,0.7l1.7-1.7c2,2.1,3.2,4.9,3.3,8h-2.5v1h3.5v-0.5C485,231.4,479,225.3,471.5,225.3z"/>
+        <path class="stIcon" d="M469.5,240.4c1.7,1.7,3,0.8,3,0.8l4.2-8l-8,4.2C468.7,237.4,467.8,238.7,469.5,240.4z"/>
+      </g>
+    </g>
+    <text id="txt_pump-01-rpm" x="510" y="239.5" class="stText">0 %</text>
+  </g>
+
+  <!-- H3 Hygienespeicher Außenkörper (Original Fröling Puffer-Form) -->
+  <path id="buffer-tank" class="stTank" d="M740.4,53.9c0-17.5-41.7-26.9-80.9-26.9h-3.2c-39.2,0-80.9,9.4-80.9,26.9v161.3c0,4.3,2.5,8.2,7.6,11.8l-9.7,15.1l29,0l3.5-5.6c14.2,3.7,32.1,5.7,50.5,5.7h3.2c18.5,0,36.3-2,50.5-5.7l3.5,5.6l29,0l-9.7-15.1c5-3.6,7.6-7.5,7.6-11.8V53.9z M735.3,215.2c0,3.7-4,6.9-7.3,8.9l-2.2,1.4l7.4,11.6l-16.8,0l-4-6.4l-1.8,0.5c-14.1,3.8-32.2,6-51,6h-3.2c-18.8,0-37-2.1-51-6l-1.8-0.5l-4,6.4l-16.8,0l7.4-11.6l-2.2-1.4c-3.3-2-7.3-5.2-7.3-8.9V53.9c0-10.3,31.1-21.8,75.8-21.8h3.2c44.7,0,75.8,11.5,75.8,21.8V215.2z"/>
+
+  <!-- 4 Temperaturschichten -->
+  <path id="obj_loading-bar-01" class="stHotWater" d="M731.7,82.4V53.9c0-2.2-5-7.1-18.6-11.4c-14.2-4.4-33.3-6.9-53.6-6.9h-3.2c-20.3,0-39.4,2.4-53.6,6.9c-13.7,4.3-18.6,9.1-18.6,11.4v28.5H731.7z"/>
+  <rect id="obj_loading-bar-02" class="stHotWater" x="584" y="86" width="147.7" height="46.8"/>
+  <rect id="obj_loading-bar-03" class="stHotWater" x="584" y="136.3" width="147.7" height="46.8"/>
+  <path id="obj_loading-bar-04" class="stColdWater" d="M584,186.7v28.5c0,2.2,5,7.1,18.6,11.4c14.2,4.4,33.3,6.9,53.6,6.9h3.2c20.3,0,39.4-2.4,53.6-6.9c13.7-4.3,18.6-9.1,18.6-11.4v-28.5H584z"/>
+
+  <!-- H3 Innenleben: 2 Solar-Glattrohrregister (links) -->
+  <g id="h3-solar-coils">
+    <title>2 Solar-Glattrohrwärmetauscher (H3)</title>
+    <!-- Oberes Solar-Glattrohrregister -->
+    <path id="solar-coil-upper" class="stSolarCoil"
+          d="M582,98 H642 L594,108 L642,118 L594,128 L642,138 H582"/>
+    <!-- Unteres Solar-Glattrohrregister -->
+    <path id="solar-coil-lower" class="stSolarCoil"
+          d="M582,158 H642 L594,166 L642,174 L594,182 L642,190 H582"/>
+  </g>
+
+  <!-- H3 Innenleben: Durchgehendes Edelstahl-Wellrohr (Trinkwasser-Hygiene-Wärmetauscher, rechts) -->
+  <g id="h3-dhw-corrugated-coil">
+    <title>Edelstahl-Wellrohr (Trinkwassererwärmung im Durchfluss)</title>
+    <!-- Äußere Edelstahl-Kontur -->
+    <path class="stDhwOuter"
+          d="M698,38 V49 H718 C725,49 725,61 718,61 H678 C671,61 671,73 678,73 H718 C725,73 725,85 718,85 H678 C671,85 671,97 678,97 H718 C725,97 725,109 718,109 H678 C671,109 671,121 678,121 H718 C725,121 725,133 718,133 H678 C671,133 671,145 678,145 H718 C725,145 725,157 718,157 H678 C671,157 671,169 678,169 H718 C725,169 725,181 718,181 H678 C671,181 671,193 678,193 H718 C725,193 725,205 718,205 H678 C671,205 671,217 678,217 H698 V227"/>
+    <!-- Silberner Edelstahl-Kern -->
+    <path class="stDhwInner"
+          d="M698,38 V49 H718 C725,49 725,61 718,61 H678 C671,61 671,73 678,73 H718 C725,73 725,85 718,85 H678 C671,85 671,97 678,97 H718 C725,97 725,109 718,109 H678 C671,109 671,121 678,121 H718 C725,121 725,133 718,133 H678 C671,133 671,145 678,145 H718 C725,145 725,157 718,157 H678 C671,157 671,169 678,169 H718 C725,169 725,181 718,181 H678 C671,181 671,193 678,193 H718 C725,193 725,205 718,205 H678 C671,205 671,217 678,217 H698 V227"/>
+    <!-- Feine Wellrohr-Rippung -->
+    <path class="stDhwRibs"
+          d="M698,38 V49 H718 C725,49 725,61 718,61 H678 C671,61 671,73 678,73 H718 C725,73 725,85 718,85 H678 C671,85 671,97 678,97 H718 C725,97 725,109 718,109 H678 C671,109 671,121 678,121 H718 C725,121 725,133 718,133 H678 C671,133 671,145 678,145 H718 C725,145 725,157 718,157 H678 C671,157 671,169 678,169 H718 C725,169 725,181 718,181 H678 C671,181 671,193 678,193 H718 C725,193 725,205 718,205 H678 C671,205 671,217 678,217 H698 V227"/>
+  </g>
+
+  <!-- Warmwasser-Temperatur (oben im H3, mit originalem Wasserhahn-Symbol) -->
+  <g id="dhw-temp">
+    <title>Warmwassertemperatur (Hygienespeicher oben)</title>
+    <g id="label_dhw-temp">
+      <rect x="615.5" y="53" width="84" height="30.5" rx="3.5" ry="3.5" class="stBg" stroke="#C8C8C8" stroke-width="1.2"/>
+      <path class="stFrame" d="M619,53h25.5c1.7,0,3,1.3,3,3v24.5c0,1.7-1.3,3-3,3H619c-1.9,0-3.5-1.6-3.5-3.5V56.5C615.5,54.6,617.1,53,619,53z"/>
+      <g id="symb_dhw-temp" transform="translate(352.5,-15)">
+        <path class="stIcon" d="M266.5,91.2c0.6-1.6,1.5-4.1,2.3-4.1c0.6,0,1.7,2.6,2.3,4.1c0.7,1.8-1,2-2.3,2S265.9,93,266.5,91.2z"/>
+        <path class="stIcon" d="M266.5,81.9c0-2.6,2.1-4.7,4.7-4.7h8v-1.8h-3.9c-1,0-1.9-0.5-1.9-1.2c0-0.7,0.8-1.2,1.9-1.2h10.2c1,0,1.9,0.5,1.9,1.2c0,0.7-0.8,1.2-1.9,1.2h-3.9v1.8h9.9v5h-17.7c-1.5,0-2.8,1.3-2.8,2.8V86l-4.5,0V81.9z"/>
+      </g>
+    </g>
+    <text id="txt_dhw-temp" x="673" y="73" class="stText">74 °C</text>
+  </g>
+
+  <!-- Puffer-Ladezustand (mittig im H3) -->
+  <g id="buffer-load">
+    <title>Ladezustand des H3 Hygienespeichers</title>
+    <g id="label_buffer-load">
+      <rect x="615.5" y="122" width="84" height="30.5" rx="3.5" ry="3.5" class="stBg" stroke="#C8C8C8" stroke-width="1.2"/>
+      <path class="stFrame" d="M619,122h25.5c1.7,0,3,1.3,3,3v24.5c0,1.7-1.3,3-3,3H619c-1.9,0-3.5-1.6-3.5-3.5v-23.5C615.5,123.6,617.1,122,619,122z"/>
+      <g id="symb_buffer-01" transform="translate(-1,3.1)">
+        <path class="stIcon" d="M639,122.9c-2.9,0-5.2,2.4-5.2,5.2c0,2.9,2.4,5.3,5.2,5.3c2.9,0,5.3-2.4,5.3-5.3C644.3,125.3,641.9,122.9,639,122.9z M640.1,131.5h-1.3v-4.8c-0.5,0.4-1,0.8-1.7,1v-1.2c0.3-0.1,0.7-0.3,1.1-0.6c0.4-0.3,0.7-0.7,0.8-1.1h1V131.5z"/>
+        <path class="stIcon" d="M640,134.7c-0.3,0-0.7,0.1-1,0.1c-1.1,0-2.1-0.3-3.1-0.7c-0.1,0-0.1,0-0.2,0l-9.4-1c-1.7-0.2-1.5-2.7,0.2-2.5l6.4,0.7c-0.3-0.6-0.5-1.3-0.7-2l-6-0.7c-1.7-0.2-1.5-2.7,0.2-2.5l5.8,0.6c0.3-1.5,1.1-2.7,2.2-3.7c-1-0.1-2.1-0.2-3.2-0.2h-0.4c-4.8,0-8.6,1.2-8.6,2.7v17.7c0,0.4,0.3,0.8,0.9,1.2l-0.9,1.5l2.5,0l0.4-0.7c1.5,0.4,3.5,0.7,5.7,0.7h0.4c2.2,0,4.2-0.3,5.7-0.7l0.4,0.7l2.5,0l-0.9-1.5c0.6-0.4,0.9-0.8,0.9-1.2v-1.1h3v-1.9h-3V134.7z M635.8,142.8l-9.4-1c-1.7-0.2-1.5-2.7,0.2-2.5l9.4,1C637.8,140.5,637.5,143,635.8,142.8z M635.8,138.4l-9.4-1c-1.7-0.2-1.5-2.7,0.2-2.5l9.4,1C637.8,136.1,637.5,138.6,635.8,138.4z"/>
+      </g>
+    </g>
+    <text id="txt_buffer-load" x="673" y="142" class="stText">39 %</text>
+  </g>
+
+  <!-- Fühler rechts: Oben -->
+  <g id="buffer-upper-sensor">
+    <title>Aktuelle Temperatur am oberen Fühler im H3 Hygienespeicher</title>
+    <g id="label_buffer-upper-sensor">
+      <rect x="762" y="43" width="84" height="30.5" rx="3.5" ry="3.5" class="stBg" stroke="#C8C8C8" stroke-width="1.2"/>
+      <path class="stFrame" d="M765.5,43h14c1.7,0,3,1.3,3,3v24.5c0,1.7-1.3,3-3,3h-14c-1.9,0-3.5-1.6-3.5-3.5V46.5C762,44.6,763.6,43,765.5,43z"/>
+      <g id="symb_thermometer_3" transform="translate(8,0.3)">
+        <rect x="759.2" y="53.9" class="stIcon" width="2.9" height="2"/>
+        <rect x="759.2" y="50.3" class="stIcon" width="2.9" height="2"/>
+        <path class="stIcon" d="M766.1,60.3V50.1c0-2.2-3.3-2.2-3.3,0v10.3c-1.4,0.6-2.5,2.1-2.5,3.8c0,2.3,1.8,4.1,4.1,4.1c2.3,0,4.1-1.8,4.1-4.1C768.6,62.4,767.6,61,766.1,60.3z"/>
+        <rect x="759.2" y="57.5" class="stIcon" width="2.9" height="2"/>
+      </g>
+    </g>
+    <text id="txt_buffer-upper-sensor" x="814" y="63" class="stText">67 °C</text>
+  </g>
+
+  <!-- Fühler rechts: Mitte -->
+  <g id="buffer-middle-sensor">
+    <title>Aktuelle Temperatur am mittleren Fühler im H3 Hygienespeicher</title>
+    <g id="label_buffer-middle-sensor">
+      <rect x="762" y="122" width="84" height="30.5" rx="3.5" ry="3.5" class="stBg" stroke="#C8C8C8" stroke-width="1.2"/>
+      <path class="stFrame" d="M765.5,122h14c1.7,0,3,1.3,3,3v24.5c0,1.7-1.3,3-3,3h-14c-1.9,0-3.5-1.6-3.5-3.5v-23.5C762,123.6,763.6,122,765.5,122z"/>
+      <g id="symb_thermometer_2" transform="translate(8,79.3)">
+        <rect x="759.2" y="53.9" class="stIcon" width="2.9" height="2"/>
+        <rect x="759.2" y="50.3" class="stIcon" width="2.9" height="2"/>
+        <path class="stIcon" d="M766.1,60.3V50.1c0-2.2-3.3-2.2-3.3,0v10.3c-1.4,0.6-2.5,2.1-2.5,3.8c0,2.3,1.8,4.1,4.1,4.1c2.3,0,4.1-1.8,4.1-4.1C768.6,62.4,767.6,61,766.1,60.3z"/>
+        <rect x="759.2" y="57.5" class="stIcon" width="2.9" height="2"/>
+      </g>
+    </g>
+    <text id="txt_buffer-middle-sensor" x="814" y="142" class="stText">39 °C</text>
+  </g>
+
+  <!-- Optionale Zusatzfühler (standardmäßig ausgeblendet für FroelingPufferCard-Kompatibilität) -->
+  <g id="buffer-middle-2-sensor" class="displayOff" transform="translate(0,36)">
+    <title>Aktuelle Temperatur am Fühler 2 im H3 Hygienespeicher</title>
+    <g id="label_buffer-middle-2-sensor">
+      <rect x="762" y="122" width="84" height="30.5" rx="3.5" ry="3.5" class="stBg" stroke="#C8C8C8" stroke-width="1.2"/>
+      <path class="stFrame" d="M765.5,122h14c1.7,0,3,1.3,3,3v24.5c0,1.7-1.3,3-3,3h-14c-1.9,0-3.5-1.6-3.5-3.5v-23.5C762,123.6,763.6,122,765.5,122z"/>
+      <g transform="translate(8,79.3)">
+        <rect x="759.2" y="53.9" class="stIcon" width="2.9" height="2"/>
+        <rect x="759.2" y="50.3" class="stIcon" width="2.9" height="2"/>
+        <path class="stIcon" d="M766.1,60.3V50.1c0-2.2-3.3-2.2-3.3,0v10.3c-1.4,0.6-2.5,2.1-2.5,3.8c0,2.3,1.8,4.1,4.1,4.1c2.3,0,4.1-1.8,4.1-4.1C768.6,62.4,767.6,61,766.1,60.3z"/>
+        <rect x="759.2" y="57.5" class="stIcon" width="2.9" height="2"/>
+      </g>
+    </g>
+    <text id="txt_buffer-middle-2-sensor" x="814" y="142" class="stText">°C</text>
+  </g>
+
+  <g id="buffer-middle-3-sensor" class="displayOff" transform="translate(0,-36)">
+    <title>Aktuelle Temperatur am Fühler 3 im H3 Hygienespeicher</title>
+    <g id="label_buffer-middle-3-sensor">
+      <rect x="762" y="122" width="84" height="30.5" rx="3.5" ry="3.5" class="stBg" stroke="#C8C8C8" stroke-width="1.2"/>
+      <path class="stFrame" d="M765.5,122h14c1.7,0,3,1.3,3,3v24.5c0,1.7-1.3,3-3,3h-14c-1.9,0-3.5-1.6-3.5-3.5v-23.5C762,123.6,763.6,122,765.5,122z"/>
+      <g transform="translate(8,79.3)">
+        <rect x="759.2" y="53.9" class="stIcon" width="2.9" height="2"/>
+        <rect x="759.2" y="50.3" class="stIcon" width="2.9" height="2"/>
+        <path class="stIcon" d="M766.1,60.3V50.1c0-2.2-3.3-2.2-3.3,0v10.3c-1.4,0.6-2.5,2.1-2.5,3.8c0,2.3,1.8,4.1,4.1,4.1c2.3,0,4.1-1.8,4.1-4.1C768.6,62.4,767.6,61,766.1,60.3z"/>
+        <rect x="759.2" y="57.5" class="stIcon" width="2.9" height="2"/>
+      </g>
+    </g>
+    <text id="txt_buffer-middle-3-sensor" x="814" y="142" class="stText">°C</text>
+  </g>
+
+  <!-- Fühler rechts: Unten -->
+  <g id="buffer-lower-sensor">
+    <title>Aktuelle Temperatur am unteren Fühler im H3 Hygienespeicher</title>
+    <g id="label_buffer-lower-sensor">
+      <rect x="762" y="195" width="84" height="30.5" rx="3.5" ry="3.5" class="stBg" stroke="#C8C8C8" stroke-width="1.2"/>
+      <path class="stFrame" d="M765.5,195h14c1.7,0,3,1.3,3,3v24.5c0,1.7-1.3,3-3,3h-14c-1.9,0-3.5-1.6-3.5-3.5V198.5C762,196.6,763.6,195,765.5,195z"/>
+      <g id="symb_thermometer" transform="translate(8,152.3)">
+        <rect x="759.2" y="53.9" class="stIcon" width="2.9" height="2"/>
+        <rect x="759.2" y="50.3" class="stIcon" width="2.9" height="2"/>
+        <path class="stIcon" d="M766.1,60.3V50.1c0-2.2-3.3-2.2-3.3,0v10.3c-1.4,0.6-2.5,2.1-2.5,3.8c0,2.3,1.8,4.1,4.1,4.1c2.3,0,4.1-1.8,4.1-4.1C768.6,62.4,767.6,61,766.1,60.3z"/>
+        <rect x="759.2" y="57.5" class="stIcon" width="2.9" height="2"/>
+      </g>
+    </g>
+    <text id="txt_buffer-lower-sensor" x="814" y="215" class="stText">38 °C</text>
+  </g>
+</svg>
