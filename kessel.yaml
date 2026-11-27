@@ -74,7 +74,7 @@ sensor:
     name: "${name} Saugzug - Ansteuerung"
     id: ${name}_Saugzug_Ansteuerung
     register_type: read
-    address: 12 # Register 30013 laut Fröling-Doku
+    address: 13
     unit_of_measurement: "%"
     state_class: "measurement"
     value_type: U_WORD
@@ -140,7 +140,7 @@ sensor:
     name: "${name} Sekundärluft"
     id: ${name}_Sekundaerluft
     register_type: read
-    address: 13 # Register 30014 laut Fröling-Doku
+    address: 12
     unit_of_measurement: "%"
     state_class: "measurement"
     value_type: U_WORD
