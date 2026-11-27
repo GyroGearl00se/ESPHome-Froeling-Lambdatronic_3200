@@ -1,6 +1,6 @@
 # =============================================================================
 # Fröling Pellet-Tankbuch (Home Assistant Package)
-# Ablageort: /config/packages/froeling_pellet_tankbuch.yaml
+# Ablageort: /config/integrations/froeling_pellet_tankbuch.yaml
 # Funktionen: Betankungs-Logbuch, €/t, €/kWh, Ø-Preis, Lagerwert & Zähler-Reset
 # =============================================================================
 
@@ -47,15 +47,15 @@ automation:
   - id: froeling_zaehler_reset_merken
     alias: "Fröling: Zähler-Reset-Datum automatisch merken"
     mode: single
-    trigger:
-      - platform: numeric_state
+    triggers:
+      - trigger: numeric_state
         # Ggf. an eigene Entity-ID anpassen (Standard bei froeling.yaml: sensor.froeling_pelletverbrauch_resetierbar_gesamt)
         entity_id: sensor.heizung_froeling_froeling_pelletverbrauch_resetierbar_gesamt
         below: 50
-    condition:
+    conditions:
       - condition: template
         value_template: "{{ trigger.from_state.state | float(0) > 200 }}"
-    action:
+    actions:
       - action: input_datetime.set_datetime
         target:
           entity_id: input_datetime.froeling_zaehler_letzter_reset
