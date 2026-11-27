@@ -1,4 +1,4 @@
-sensor:  
+sensor:
   - platform: modbus_controller
     modbus_controller_id: ${modbus_controller_id}
     name: "${name} HK2 - Vorlauf-Isttemperatur"
@@ -8,7 +8,7 @@ sensor:
     unit_of_measurement: "°C"
     device_class: "temperature"
     state_class: "measurement"
-    value_type: U_WORD
+    value_type: S_WORD
     filters:
       - multiply: 0.5
 
@@ -21,10 +21,9 @@ sensor:
     unit_of_measurement: "°C"
     device_class: "temperature"
     state_class: "measurement"
-    value_type: U_WORD
+    value_type: S_WORD
     filters:
       - multiply: 0.5
-
 
 binary_sensor:
   - platform: modbus_controller
@@ -32,8 +31,7 @@ binary_sensor:
     name: "${name} HK2 - Pumpe AN AUS"
     id: ${name}_HK2_Pumpe_AN_AUS
     register_type: coil
-    #address: 1029 # Heizkreispumpe 1
-    address: 1059 # Heizkreispumpe 2 - wrong ?
+    address: 1059
 
 number:
   - platform: modbus_controller
@@ -68,7 +66,7 @@ number:
     multiply: 2
     min_value: 10
     max_value: 30
-    
+
   - platform: modbus_controller
     modbus_controller_id: ${modbus_controller_id}
     name: "${name} HK2 - Absenkung der Vorlauftemperatur im Absenkbetrieb"
@@ -79,14 +77,14 @@ number:
     multiply: 2
     min_value: 0
     max_value: 70
-    
+
   - platform: modbus_controller
     modbus_controller_id: ${modbus_controller_id}
     name: "${name} HK2 - Außentemperatur, unter der die Heizkreispumpe im Heizbetrieb einschaltet"
     id: ${name}_HK2_Aussentemperatur_unter_der_die_Heizkreispumpe_im_Heizbetrieb_einschaltet
     address: 1066
     unit_of_measurement: "°C"
-    value_type: U_WORD
+    value_type: S_WORD
     multiply: 2
     min_value: -20
     max_value: 50
@@ -97,7 +95,7 @@ number:
     id: ${name}_HK2_Aussentemperatur_unter_der_die_Heizkreispumpe_im_Absenkbetrieb_einschaltet
     address: 1067
     unit_of_measurement: "°C"
-    value_type: U_WORD
+    value_type: S_WORD
     multiply: 2
     min_value: -20
     max_value: 50
@@ -108,7 +106,7 @@ number:
     id: ${name}_HK2_Frostschutztemperatur
     address: 1068
     unit_of_measurement: "°C"
-    value_type: U_WORD
+    value_type: S_WORD
     multiply: 2
     min_value: -10
     max_value: 20
@@ -137,3 +135,10 @@ select:
       "Absenken": 3
       "Dauerabsenken": 4
       "Partybetrieb": 5
+    lambda: |-
+      switch (x) {
+        case 6:  return std::string("Partybetrieb");
+        case 11: return std::string("Aus");
+        case 12: return std::string("Dauerabsenken");
+        default: return {};
+      }
