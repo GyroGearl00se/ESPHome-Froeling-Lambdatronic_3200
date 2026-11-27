@@ -51,7 +51,6 @@ number:
     unit_of_measurement: "°C"
     value_type: U_WORD
     multiply: 2
-    step: 0.5
     min_value: 10
     max_value: 110
 
@@ -63,7 +62,6 @@ number:
     unit_of_measurement: "°C"
     value_type: U_WORD
     multiply: 2
-    step: 0.5
     min_value: 10
     max_value: 110
 
@@ -75,7 +73,6 @@ number:
     unit_of_measurement: "°C"
     value_type: U_WORD
     multiply: 2
-    step: 0.5
     min_value: 0
     max_value: 70
 
@@ -87,7 +84,6 @@ number:
     unit_of_measurement: "°C"
     value_type: S_WORD
     multiply: 2
-    step: 0.5
     min_value: -20
     max_value: 50
 
@@ -99,7 +95,6 @@ number:
     unit_of_measurement: "°C"
     value_type: S_WORD
     multiply: 2
-    step: 0.5
     min_value: -20
     max_value: 50
 
@@ -111,7 +106,6 @@ number:
     unit_of_measurement: "°C"
     value_type: S_WORD
     multiply: 2
-    step: 0.5
     min_value: -10
     max_value: 20
 
@@ -123,7 +117,6 @@ number:
     unit_of_measurement: "°C"
     value_type: U_WORD
     multiply: 2
-    step: 0.5
     min_value: 10
     max_value: 30
 
