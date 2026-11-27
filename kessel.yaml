@@ -74,7 +74,7 @@ sensor:
     name: "${name} Saugzug - Ansteuerung"
     id: ${name}_Saugzug_Ansteuerung
     register_type: read
-    address: 13
+    address: 13 # Register 30014 (in Fröling-PDF mit 30013 vertauscht)
     unit_of_measurement: "%"
     state_class: "measurement"
     value_type: U_WORD
@@ -140,7 +140,7 @@ sensor:
     name: "${name} Sekundärluft"
     id: ${name}_Sekundaerluft
     register_type: read
-    address: 12
+    address: 12 # Register 30013 (in Fröling-PDF mit 30014 vertauscht)
     unit_of_measurement: "%"
     state_class: "measurement"
     value_type: U_WORD
@@ -224,6 +224,28 @@ sensor:
     state_class: "total_increasing"
     value_type: U_WORD
 
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Zustandslaufzeit aktuell"
+    id: ${name}_Zustandslaufzeit_aktuell
+    register_type: read
+    address: 2300 # Register 32301 (Sekunden im aktuellen Kesselzustand)
+    unit_of_measurement: "s"
+    device_class: "duration"
+    state_class: "measurement"
+    value_type: U_WORD
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Zustandslaufzeit maximal"
+    id: ${name}_Zustandslaufzeit_maximal
+    register_type: read
+    address: 2301 # Register 32302 (maximale Dauer der aktuellen Phase in Sekunden)
+    unit_of_measurement: "s"
+    device_class: "duration"
+    state_class: "measurement"
+    value_type: U_WORD
+
 switch:
   - platform: modbus_controller
     modbus_controller_id: ${modbus_controller_id}
@@ -260,3 +282,45 @@ binary_sensor:
     lambda: |-
       const auto &s = id(${name}_Kesselzustand).state;
       return (s == "Heizen" || s == "SH Heizen" || s == "Saugen / Heizen" || s == "Heizen - Reinigen");
+
+  - platform: template
+    name: "${name} Kessel Störung"
+    id: ${name}_Kesselzustand_Stoerung
+    device_class: "problem"
+    lambda: |-
+      const auto &s = id(${name}_Kesselzustand).state;
+      return (s == "STÖRUNG" || s == "Fehlzündung" || s == "SH Störung" ||
+              s == "Fehlerbeh. 20min" ||
+              s.rfind("STÖRUNG", 0) == 0 || s.rfind("FEHLER", 0) == 0);
+
+text_sensor:
+  - platform: template
+    name: "${name} Kessel Statusgruppe"
+    id: ${name}_Kessel_Statusgruppe
+    update_interval: 30s
+    lambda: |-
+      const auto &s = id(${name}_Kesselzustand).state;
+      if (s.empty()) return std::string("Unbekannt");
+      if (s == "STÖRUNG" || s == "Fehlzündung" || s == "SH Störung" ||
+          s == "Fehlerbeh. 20min" ||
+          s.rfind("STÖRUNG", 0) == 0 || s.rfind("FEHLER", 0) == 0)
+        return std::string("Störung");
+      if (s == "Tür offen" || s == "NB: Tür offen")
+        return std::string("Tür offen");
+      if (s == "Heizen" || s == "SH Heizen" || s == "Saugen / Heizen" ||
+          s == "Heizen - Reinigen" || s == "NB: Heizen" || s == "Feuererhaltung")
+        return std::string("Heizen");
+      if (s == "Anheizen" || s == "Vorbereitung" || s == "Vorwärmen" ||
+          s == "Zünden" || s == "Vorheizen" || s == "Vorwärmen-Zünden" ||
+          s == "Nachzünden" || s == "Zünden Warten" || s == "Vorbelüften" ||
+          s == "SH Anheizen" || s == "SH Zünden" || s == "NB: Anheizen" ||
+          s == "Lambdasonde aufheizen" || s == "Anheizassistent" ||
+          s == "Stoker auffüllen" || s == "Saugen")
+        return std::string("Start / Zünden");
+      if (s == "Abreinigen" || s == "Rost schließen" || s == "Rost kippen" ||
+          s == "Stoker leeren" || s == "Resteinschub" || s == "AGR Nachlauf" ||
+          s == "AGR reinigen" || s == "Filter reinigen" || s == "Gebläsenachlauf I" ||
+          s == "Gebläsenachlauf II" || s == "SH Heiz/Abstell" ||
+          s.rfind("Abstellen", 0) == 0 || s.rfind("RSE ", 0) == 0 || s.rfind("FB: ", 0) == 0)
+        return std::string("Abreinigen / Abstellen");
+      return std::string("Bereit / Aus");
