@@ -1,6 +1,6 @@
 # =============================================================================
 # Fröling Wartungs- & Reinigungsbuch (Home Assistant Package)
-# Ablageort: /config/packages/froeling_wartungsbuch.yaml
+# Ablageort: /config/integrations/froeling_wartungsbuch.yaml
 # =============================================================================
 
 input_datetime:
@@ -54,12 +54,12 @@ script:
           kosten: "{{ states('input_number.froeling_wartung_kosten_eur') | float(0) }}"
           bh: "{{ states('sensor.froeling_betriebsstunden') | float(0) | round(0) | int }}"
           notiz: "{{ states('input_text.froeling_wartung_notiz') | trim }}"
-      - service: input_number.set_value
+      - action: input_number.set_value
         target:
           entity_id: input_number.froeling_wartung_kosten_eur
         data:
           value: 0
-      - service: input_text.set_value
+      - action: input_text.set_value
         target:
           entity_id: input_text.froeling_wartung_notiz
         data:
@@ -75,9 +75,9 @@ script:
 template:
   # Dauerhafter Verlaufsspeicher (überlebt HA-Neustarts)
   - trigger:
-      - platform: event
+      - trigger: event
         event_type: froeling_wartung_hinzufuegen
-      - platform: event
+      - trigger: event
         event_type: froeling_wartung_loeschen
     sensor:
       - name: "Fröling Wartungsbuch"
