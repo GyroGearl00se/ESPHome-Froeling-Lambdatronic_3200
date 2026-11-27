@@ -1,1 +1,131 @@
+# Optionale Sicherheits-Eingänge & Fehlerpuffer (Register 10001-10004 & 33001-33005)
+#   - fehlerpuffer.yaml
 
+binary_sensor:
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Türkontaktschalter"
+    id: ${name}_Tuerkontaktschalter
+    register_type: discrete_input
+    address: 0 # Register 10001
+    device_class: "door"
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} STB Eingang"
+    id: ${name}_STB_Eingang
+    register_type: discrete_input
+    address: 1 # Register 10002
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} NOT-AUS Eingang"
+    id: ${name}_NOT_AUS_Eingang
+    register_type: discrete_input
+    address: 2 # Register 10003
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Kesselfreigabe"
+    id: ${name}_Kesselfreigabe
+    register_type: discrete_input
+    address: 3 # Register 10004
+
+  - platform: template
+    name: "${name} Fehler aktiv"
+    id: ${name}_Fehler_aktiv
+    device_class: "problem"
+    lambda: |-
+      const auto &s = id(${name}_Aktuelle_Fehler).state;
+      return (!s.empty() && s != "Kein Fehler");
+
+text_sensor:
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Aktuelle Fehler"
+    id: ${name}_Aktuelle_Fehler
+    register_type: read
+    address: 3000 # Register 33001-33005 (erste 5 Plätze des Fehlerpuffers in einem Request)
+    response_size: 10 # 5 Register * 2 Bytes
+    raw_encode: HEXBYTES
+    lambda: |-
+      auto decode_err = [](uint16_t code) -> std::string {
+        switch (code) {
+          case 0:   return "STB gefallen oder NOT-AUS betätigt";
+          case 1:   return "Kesseltemperaturfühler fehlerhaft";
+          case 2:   return "Primärluftklappe blockiert";
+          case 3:   return "Sekundärluftklappe blockiert";
+          case 4:   return "Kessel zieht zu viel Falschluft";
+          case 5:   return "Feuerraum-Überdruckwächter prüfen";
+          case 6:   return "Rückbrandschieber schließt nicht";
+          case 7:   return "Rückbrandschieber öffnet nicht";
+          case 8:   return "Rostantrieb defekt";
+          case 9:   return "Rost Fehler";
+          case 10:  return "Rostreinigung fehlerhaft";
+          case 11:  return "Zündversuch nicht gelungen";
+          case 12:  return "Sicherheitszeit abgelaufen (O2 zu hoch)";
+          case 13:  return "Sicherheitszeit abgelaufen (Abgas zu niedrig)";
+          case 14:  return "Kesseltür zu lange offen";
+          case 15:  return "Stopfsensor > 5 min belegt";
+          case 16:  return "Raumaustragung kontrollieren";
+          case 17:  return "Lagerraum kontrollieren";
+          case 18:  return "Rücklauftemperaturfühler fehlerhaft";
+          case 19:  return "Rücklauftemperatur > 30 min zu niedrig";
+          case 21:  return "Vorlauftemperaturfühler HK1 fehlerhaft";
+          case 23:  return "Vorlauftemperaturfühler HK2 fehlerhaft";
+          case 24:  return "Außentemperaturfühler fehlerhaft";
+          case 25:  return "NOT-AUS Kontakt betätigt";
+          case 59:  return "Saugzug dreht nicht trotz voller Ansteuerung";
+          case 60:  return "Fühler Boiler 01 fehlerhaft";
+          case 61:  return "Kommunikation Pelletsmodul fehlerhaft";
+          case 88:  return "Fühler oben Puffer 1 fehlerhaft";
+          case 92:  return "Fühler Mitte Puffer 1 fehlerhaft";
+          case 96:  return "Fühler unten Puffer 1 fehlerhaft";
+          case 101: return "Kollektor-Überhitzung oder Fühler unterbrochen";
+          case 106: return "Laufzeit zum Füllen überschritten";
+          case 107: return "Austragsschnecke stopft an Saugstelle";
+          case 109: return "Zündversuch nicht gelungen - von Hand anheizen";
+          case 110: return "Motorschutzschalter Saugzug gefallen";
+          case 111: return "Motorschutzschalter Stoker gefallen";
+          case 112: return "Motorschutzschalter Förderschnecke gefallen";
+          case 117: return "Lambdasonde defekt";
+          case 118: return "Abgastemperaturfühler defekt";
+          case 119: return "Feuerraumtemperaturfühler defekt";
+          case 121: return "Fallschachtdeckel offen";
+          case 122: return "Kesseltür zu lange offen / Unterdruckmessdose defekt";
+          case 124: return "Sicherheitszeit Füllstandsensor Saugzyklon abgelaufen";
+          case 126: return "Stoker hat zu wenig Material";
+          case 127: return "Austragsschnecke Fehler";
+          case 139: return "Brenner reinigen und kontrollieren";
+          case 146: return "Steuerung neu gestartet";
+          case 154: return "Absperrschieber blockiert";
+          case 162: return "Lambdasonde defekt";
+          case 167: return "Sondenumschaltung wegen Pelletsmangel/Stopfsensor";
+          case 168: return "Vorratsbehälter leer - Pellets nachfüllen";
+          case 169: return "Aschebox voll - bitte entleeren";
+          case 173: return "Aschebox voll - bitte entleeren";
+          case 179: return "Aschebox zu lange offen / entfernt";
+          case 180: return "Unterdruck im Vorbereiten zu gering";
+          case 181: return "Luftklappe blockiert";
+          case 194: return "Luftzufuhr fehlerhaft oder verschlossen";
+          case 195: return "Sicherheitszeit Minsensor Saugzyklon abgelaufen";
+          case 203: return "WOS Antrieb blockiert / nicht angeschlossen";
+          case 213: return "Austragung kontrollieren";
+          case 217: return "Mindestbestand Pelletlager unterschritten";
+          case 373: return "STB, min./max. Druck oder Wassermangelsicherung ausgelöst";
+          case 376: return "Kesseltür offen oder Unterdruckmessdose defekt";
+          case 384: return "Aschebehälter voll oder WOS blockiert (noch 20h)";
+          case 421: return "Zündversuch nicht gelungen (ACHTUNG!)";
+          default:  return "Fehlercode " + std::to_string(code);
+        }
+      };
+
+      std::string result;
+      size_t byte_len = x.length() / 2;
+      for (size_t pos = 0; pos + 1 < byte_len; pos += 2) {
+        uint16_t code = modbus::helpers::word_from_hex_str(x, pos);
+        if (code == 0xFFFF) continue; // 65535 = kein Fehler auf diesem Platz
+        if (!result.empty()) result += " | ";
+        result += decode_err(code);
+      }
+      return result.empty() ? std::string("Kein Fehler") : result;
