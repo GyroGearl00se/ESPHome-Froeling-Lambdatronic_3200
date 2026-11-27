@@ -100,6 +100,7 @@ number:
     unit_of_measurement: "°C"
     value_type: U_WORD
     multiply: 2
+    step: 0.5
     min_value: 20
     max_value: 120
 
@@ -111,6 +112,7 @@ number:
     unit_of_measurement: "°C"
     value_type: U_WORD
     multiply: 2
+    step: 0.5
     min_value: 70
     max_value: 90
 
@@ -134,9 +136,8 @@ text_sensor:
         case 6: return std::string("Extraheizen");
         case 7: return std::string("Kaminkehrer");
         case 8: return std::string("Reinigen");
-        default: return std::string("----");
+        default: return "Unbekannt (" + std::to_string(value) + ")";
       }
-      return x;
 
   - platform: modbus_controller
     modbus_controller_id: ${modbus_controller_id}
@@ -231,6 +232,6 @@ text_sensor:
         case 80: return std::string("SH Zünden");
         case 81: return std::string("SH Störung");
         case 82: return std::string("Sensorcheck");
-        default: return std::string("----");
+        case 89: return std::string("Abstellen Warten (SH)");
+        default: return "Unbekannt (" + std::to_string(value) + ")";
       }
-      return x;
