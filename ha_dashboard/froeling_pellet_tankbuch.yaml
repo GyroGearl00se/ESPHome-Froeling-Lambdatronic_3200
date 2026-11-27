@@ -1,0 +1,185 @@
+# /config/packages/froeling_pellet_tankbuch.yaml
+# Pellet-Tankbuch mit Statistik, €/kWh-Berechnung & Historientabelle
+
+input_datetime:
+  froeling_betankung_datum:
+    name: "Pellet-Betankung Datum"
+    has_date: true
+    has_time: false
+    icon: mdi:calendar
+
+input_number:
+  froeling_betankung_menge_kg:
+    name: "Pellet-Betankung Menge"
+    min: 0
+    max: 50000
+    step: 10
+    mode: box
+    unit_of_measurement: "kg"
+    icon: mdi:weight-kilogram
+
+  froeling_betankung_preis_eur:
+    name: "Pellet-Betankung Gesamtpreis"
+    min: 0
+    max: 25000
+    step: 0.01
+    mode: box
+    unit_of_measurement: "€"
+    icon: mdi:currency-eur
+
+input_text:
+  froeling_betankung_lieferant:
+    name: "Pellet-Betankung Lieferant / Notiz"
+    max: 100
+    icon: mdi:truck-delivery
+
+script:
+  froeling_pellet_betankung_speichern:
+    alias: "Pellets: Betankung speichern"
+    icon: mdi:content-save-plus
+    sequence:
+      - condition: template
+        value_template: >
+          {{ states('input_number.froeling_betankung_menge_kg') | float(0) > 0
+             and states('input_number.froeling_betankung_preis_eur') | float(0) > 0 }}
+      - event: froeling_pellet_tankbuch_add
+        event_data:
+          datum: >
+            {% set d = states('input_datetime.froeling_betankung_datum') %}
+            {{ d if d not in ['unknown', 'unavailable', ''] else now().strftime('%Y-%m-%d') }}
+          kg: "{{ states('input_number.froeling_betankung_menge_kg') | float(0) }}"
+          preis: "{{ states('input_number.froeling_betankung_preis_eur') | float(0) }}"
+          notiz: "{{ states('input_text.froeling_betankung_lieferant') | trim }}"
+      # Eingabefelder zurücksetzen (verhindert versehentliches Doppelt-Speichern)
+      - action: input_number.set_value
+        target:
+          entity_id:
+            - input_number.froeling_betankung_menge_kg
+            - input_number.froeling_betankung_preis_eur
+        data:
+          value: 0
+      - action: input_text.set_value
+        target:
+          entity_id: input_text.froeling_betankung_lieferant
+        data:
+          value: ""
+
+  froeling_pellet_letzte_betankung_loeschen:
+    alias: "Pellets: Letzten Eintrag rückgängig machen"
+    icon: mdi:undo
+    sequence:
+      - event: froeling_pellet_tankbuch_undo
+
+template:
+  # 1) Persistenter Datenspeicher (überlebt HA-Neustarts automatisch)
+  - trigger:
+      - trigger: event
+        event_type: froeling_pellet_tankbuch_add
+        id: add
+      - trigger: event
+        event_type: froeling_pellet_tankbuch_undo
+        id: undo
+    sensor:
+      - name: "Fröling Pellet-Tankbuch"
+        unique_id: froeling_pellet_tankbuch
+        icon: mdi:notebook-outline
+        state: >
+          {% set prev = this.attributes.get('eintraege', []) %}
+          {% set prev = prev if prev is list else [] %}
+          {% if trigger.id == 'add' %}
+            {{ (prev | length) + 1 }}
+          {% elif trigger.id == 'undo' %}
+            {{ [0, (prev | length) - 1] | max }}
+          {% else %}
+            {{ prev | length }}
+          {% endif %}
+        attributes:
+          eintraege: >
+            {% set prev = this.attributes.get('eintraege', []) %}
+            {% set prev = prev if prev is list else [] %}
+            {% if trigger.id == 'add' %}
+              {% set kg = trigger.event.data.kg | float(0) %}
+              {% set preis = trigger.event.data.preis | float(0) %}
+              {% set eur_t = (preis / (kg / 1000.0)) | round(2) if kg > 0 else 0 %}
+              {% set ct_kwh = ((preis / (kg * 4.8)) * 100.0) | round(2) if kg > 0 else 0 %}
+              {% set neu = {
+                'datum': trigger.event.data.datum | string,
+                'kg': kg | round(0) | int,
+                'preis': preis | round(2),
+                'eur_pro_t': eur_t,
+                'ct_pro_kwh': ct_kwh,
+                'notiz': trigger.event.data.notiz | default('') | string
+              } %}
+              {{ prev + [neu] }}
+            {% elif trigger.id == 'undo' %}
+              {{ prev[:-1] if prev | length > 0 else [] }}
+            {% else %}
+              {{ prev }}
+            {% endif %}
+
+  # 2) Statistik-Sensoren (mit Langzeitstatistik für Diagramme & Energie-Dashboard)
+  - sensor:
+      - name: "Fröling Pelletpreis aktuell (€/t)"
+        unique_id: froeling_pellet_preis_pro_tonne
+        unit_of_measurement: "€/t"
+        state_class: measurement
+        icon: mdi:tag-outline
+        availability: "{{ (state_attr('sensor.froling_pellet_tankbuch', 'eintraege') or []) | length > 0 }}"
+        state: >
+          {% set l = (state_attr('sensor.froling_pellet_tankbuch', 'eintraege') or []) | sort(attribute='datum', reverse=true) %}
+          {{ l[0].eur_pro_t | round(2) }}
+
+      - name: "Fröling Pelletpreis aktuell (€/kWh)"
+        unique_id: froeling_pellet_preis_pro_kwh
+        unit_of_measurement: "€/kWh"
+        state_class: measurement
+        icon: mdi:lightning-bolt-circle
+        availability: "{{ (state_attr('sensor.froling_pellet_tankbuch', 'eintraege') or []) | length > 0 }}"
+        state: >
+          {% set l = (state_attr('sensor.froling_pellet_tankbuch', 'eintraege') or []) | sort(attribute='datum', reverse=true) %}
+          {{ (l[0].ct_pro_kwh / 100.0) | round(4) }}
+
+      - name: "Fröling Pelletpreis Durchschnitt (€/t)"
+        unique_id: froeling_pellet_durchschnittspreis_pro_tonne
+        unit_of_measurement: "€/t"
+        state_class: measurement
+        icon: mdi:chart-line
+        availability: "{{ (state_attr('sensor.froling_pellet_tankbuch', 'eintraege') or []) | length > 0 }}"
+        state: >
+          {% set l = state_attr('sensor.froling_pellet_tankbuch', 'eintraege') or [] %}
+          {% set sum_kg = l | sum(attribute='kg') | float(0) %}
+          {% set sum_eur = l | sum(attribute='preis') | float(0) %}
+          {{ (sum_eur / (sum_kg / 1000.0)) | round(2) if sum_kg > 0 else 0 }}
+
+      - name: "Fröling Pellets getankt gesamt"
+        unique_id: froeling_pellet_getankt_gesamt
+        unit_of_measurement: "kg"
+        device_class: weight
+        state_class: total
+        icon: mdi:silo
+        state: >
+          {% set l = state_attr('sensor.froling_pellet_tankbuch', 'eintraege') or [] %}
+          {{ l | sum(attribute='kg') | round(0) | int }}
+
+      - name: "Fröling Pelletkosten gesamt"
+        unique_id: froeling_pellet_kosten_gesamt
+        unit_of_measurement: "€"
+        device_class: monetary
+        state_class: total
+        icon: mdi:cash-multiple
+        state: >
+          {% set l = state_attr('sensor.froling_pellet_tankbuch', 'eintraege') or [] %}
+          {{ l | sum(attribute='preis') | round(2) }}
+
+      - name: "Fröling Pelletlager Wert aktuell"
+        unique_id: froeling_pellet_lagerwert
+        unit_of_measurement: "€"
+        state_class: measurement
+        icon: mdi:piggy-bank-outline
+        availability: >
+          {{ is_number(states('sensor.froeling_pelletlager_restbestand'))
+             and is_number(states('sensor.froling_pelletpreis_aktuell_eur_t')) }}
+        state: >
+          {% set rest_t = states('sensor.froeling_pelletlager_restbestand') | float(0) %}
+          {% set eur_t = states('sensor.froling_pelletpreis_aktuell_eur_t') | float(0) %}
+          {{ (rest_t * eur_t) | round(2) }}
