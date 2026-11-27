@@ -67,6 +67,7 @@ packages:
       puffer_01.yaml,
       zirkulationspumpe.yaml,
       solarthermie.yaml,
+      heizkreise.yaml,
       ]
     refresh: 1d
 
