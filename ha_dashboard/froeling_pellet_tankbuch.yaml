@@ -8,6 +8,32 @@ input_datetime:
     has_time: false
     icon: mdi:calendar
 
+input_datetime:
+  # ... (dein bestehendes froeling_betankung_datum bleibt stehen)
+  froeling_zaehler_letzter_reset:
+    name: "Fröling Zähler letzter Reset"
+    has_date: true
+    has_time: false
+    icon: mdi:calendar-refresh
+
+automation:
+  - id: froeling_zaehler_reset_merken
+    alias: "Fröling: Zähler-Reset-Datum automatisch merken"
+    mode: single
+    trigger:
+      - platform: numeric_state
+        entity_id: sensor.heizung_froeling_froeling_pelletverbrauch_resetierbar_gesamt
+        below: 50
+    condition:
+      - condition: template
+        value_template: "{{ trigger.from_state.state | float(0) > 200 }}"
+    action:
+      - service: input_datetime.set_datetime
+        target:
+          entity_id: input_datetime.froeling_zaehler_letzter_reset
+        data:
+          date: "{{ now().strftime('%Y-%m-%d') }}"
+          
 input_number:
   froeling_betankung_menge_kg:
     name: "Pellet-Betankung Menge"
