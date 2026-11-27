@@ -1,0 +1,23 @@
+# Beispiel: Analoger Heizungsdrucksensor (z.B. 0,5-4,5 V / 0-4 bar oder 0-5 bar) direkt am ESP32-ADC
+# Pin und Kalibrierungspunkte (Spannung -> Druck in bar) an den eigenen Sensor und Spannungsteiler anpassen!
+
+sensor:
+  - platform: adc
+    pin: GPIO17 # Freien ADC1-Pin verwenden (z.B. GPIO34/35 am ESP32, GPIO1-10/17 am ESP32-S3)
+    id: ${name}_heizungsdruck
+    name: "${name} Heizungsdruck"
+    attenuation: 12db
+    unit_of_measurement: "bar"
+    device_class: "pressure"
+    state_class: "measurement"
+    accuracy_decimals: 2
+    update_interval: 10s
+    filters:
+      - calibrate_linear:
+          method: least_squares
+          datapoints:
+            - 0.4 -> 0.0
+            - 2.4 -> 4.0
+      - clamp:
+          min_value: 0.0
+          max_value: 5.0
