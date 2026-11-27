@@ -1,4 +1,4 @@
-sensor:  
+sensor:
   - platform: modbus_controller
     modbus_controller_id: ${modbus_controller_id}
     name: "${name} Kesseltemperatur"
@@ -8,7 +8,7 @@ sensor:
     unit_of_measurement: "°C"
     device_class: "temperature"
     state_class: "measurement"
-    value_type: U_WORD 
+    value_type: S_WORD
     filters:
       - multiply: 0.5
 
@@ -21,8 +21,44 @@ sensor:
     unit_of_measurement: "°C"
     device_class: "temperature"
     state_class: "measurement"
-    value_type: U_WORD 
- 
+    value_type: S_WORD
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Boardtemperatur"
+    id: ${name}_Boardtemperatur
+    register_type: read
+    address: 2
+    unit_of_measurement: "°C"
+    device_class: "temperature"
+    state_class: "measurement"
+    value_type: S_WORD
+    filters:
+      - multiply: 0.5
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Errechnete Kesselsolltemperatur"
+    id: ${name}_Errechnete_Kesselsolltemperatur
+    register_type: read
+    address: 27
+    unit_of_measurement: "°C"
+    device_class: "temperature"
+    state_class: "measurement"
+    value_type: S_WORD
+    filters:
+      - multiply: 0.5
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Kesselstellgröße"
+    id: ${name}_Kesselstellgroesse
+    register_type: read
+    address: 14
+    unit_of_measurement: "%"
+    state_class: "measurement"
+    value_type: U_WORD
+
   - platform: modbus_controller
     modbus_controller_id: ${modbus_controller_id}
     name: "${name} Verbleibende Heizstunden bis zur Asche entleeren Warnung"
@@ -30,6 +66,7 @@ sensor:
     register_type: read
     address: 86
     unit_of_measurement: "h"
+    state_class: "measurement"
     value_type: U_WORD
 
   - platform: modbus_controller
@@ -37,8 +74,9 @@ sensor:
     name: "${name} Saugzug - Ansteuerung"
     id: ${name}_Saugzug_Ansteuerung
     register_type: read
-    address: 13
+    address: 12 # Register 30013 laut Fröling-Doku
     unit_of_measurement: "%"
+    state_class: "measurement"
     value_type: U_WORD
 
   - platform: modbus_controller
@@ -48,6 +86,7 @@ sensor:
     register_type: read
     address: 6
     unit_of_measurement: "rpm"
+    state_class: "measurement"
     value_type: U_WORD
 
   - platform: modbus_controller
@@ -57,6 +96,7 @@ sensor:
     register_type: read
     address: 16
     unit_of_measurement: "%"
+    state_class: "measurement"
     value_type: U_WORD
 
   - platform: modbus_controller
@@ -66,11 +106,12 @@ sensor:
     register_type: read
     address: 3
     unit_of_measurement: "%"
+    state_class: "measurement"
     accuracy_decimals: 1
     value_type: U_WORD
     filters:
       - multiply: 0.1
-  
+
   - platform: modbus_controller
     modbus_controller_id: ${modbus_controller_id}
     name: "${name} Rücklauffühler"
@@ -80,7 +121,7 @@ sensor:
     unit_of_measurement: "°C"
     device_class: "temperature"
     state_class: "measurement"
-    value_type: U_WORD
+    value_type: S_WORD
     filters:
       - multiply: 0.5
 
@@ -91,6 +132,7 @@ sensor:
     register_type: read
     address: 11
     unit_of_measurement: "%"
+    state_class: "measurement"
     value_type: U_WORD
 
   - platform: modbus_controller
@@ -98,8 +140,9 @@ sensor:
     name: "${name} Sekundärluft"
     id: ${name}_Sekundaerluft
     register_type: read
-    address: 12
+    address: 13 # Register 30014 laut Fröling-Doku
     unit_of_measurement: "%"
+    state_class: "measurement"
     value_type: U_WORD
 
   - platform: modbus_controller
@@ -109,6 +152,16 @@ sensor:
     register_type: read
     address: 20
     unit_of_measurement: "h"
+    state_class: "total_increasing"
+    value_type: U_WORD
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Anzahl der Brennerstarts"
+    id: ${name}_Anzahl_der_Brennerstarts
+    register_type: read
+    address: 22
+    state_class: "total_increasing"
     value_type: U_WORD
 
   - platform: modbus_controller
@@ -118,6 +171,7 @@ sensor:
     register_type: read
     address: 55
     unit_of_measurement: "h"
+    state_class: "total_increasing"
     value_type: U_WORD
 
   - platform: modbus_controller
@@ -127,15 +181,82 @@ sensor:
     register_type: read
     address: 24
     unit_of_measurement: "h"
+    state_class: "total_increasing"
     value_type: U_WORD
 
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Stunden im Pelletsbetrieb"
+    id: ${name}_Stunden_im_Pelletsbetrieb
+    register_type: read
+    address: 62
+    unit_of_measurement: "h"
+    state_class: "total_increasing"
+    value_type: U_WORD
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Stunden im Heizen"
+    id: ${name}_Stunden_im_Heizen
+    register_type: read
+    address: 63
+    unit_of_measurement: "h"
+    state_class: "total_increasing"
+    value_type: U_WORD
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Stunden in Teillastbetrieb"
+    id: ${name}_Stunden_in_Teillastbetrieb
+    register_type: read
+    address: 74
+    unit_of_measurement: "h"
+    state_class: "total_increasing"
+    value_type: U_WORD
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Stunden im Scheitholzbetrieb"
+    id: ${name}_Stunden_im_Scheitholzbetrieb
+    register_type: read
+    address: 76
+    unit_of_measurement: "h"
+    state_class: "total_increasing"
+    value_type: U_WORD
+
+switch:
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Automatisch Zünden"
+    id: ${name}_Automatisch_Zuenden
+    register_type: holding
+    address: 135 # Register 40136 (0 = Aus, 1 = Ein, z.B. SP Dual / S4 Zündautomatik)
+
+number:
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Nach Scheitholzbetrieb Pufferladung mit Pellets verzögern"
+    id: ${name}_Pufferladung_Pellets_verzoegern
+    address: 251 # Register 40252 (0..24 h, Skalierung 10)
+    unit_of_measurement: "h"
+    value_type: U_WORD
+    multiply: 10
+    step: 0.5
+    min_value: 0
+    max_value: 24
+
 binary_sensor:
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "${name} Kesselanforderung"
+    id: ${name}_Kesselanforderung
+    register_type: read
+    address: 56 # Register 30057: Kesselanforderung über Heizkreis oder Boiler steht an
+    bitmask: 1
+
   - platform: template
     name: "${name} Kesselzustand Heizen"
     id: ${name}_Kesselzustand_Heizen
     lambda: |-
-      if (id(${name}_Kesselzustand).state == "Heizen") {
-        return true;
-      } else {
-        return false;
-      }
+      const auto &s = id(${name}_Kesselzustand).state;
+      return (s == "Heizen" || s == "SH Heizen" || s == "Saugen / Heizen" || s == "Heizen - Reinigen");
