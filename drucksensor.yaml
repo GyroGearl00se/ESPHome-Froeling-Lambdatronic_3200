@@ -1,9 +1,21 @@
-# Beispiel: Analoger Heizungsdrucksensor (selbst eingebaut) (z.B. 0,5-4,5 V / 0-4 bar oder 0-5 bar) direkt am ESP32-ADC
-# Pin und Kalibrierungspunkte (Spannung -> Druck in bar) an den eigenen Sensor und Spannungsteiler anpassen!
+# Optionaler analoger Heizungsdrucksensor (z.B. 0,5-4,5 V / 0-4 bar) direkt am ESP32-ADC
+#
+# Pin-Hinweise (nur ADC1-Pins verwenden, da ADC2 bei aktivem WiFi nicht funktioniert):
+#   - ESP32-S3 (z.B. ETH-Board, UART auf GPIO43/44): GPIO1-GPIO10 oder GPIO17 (Standard: GPIO17)
+#   - Standard ESP32 / Wemos D1 Mini ESP32 (UART auf GPIO16/17!): GPIO32, GPIO33, GPIO34, GPIO35, GPIO36 oder GPIO39
+#
+# Einbindung in froeling.yaml unter packages -> remote_package -> files:
+#   - drucksensor.yaml                     # nutzt Standard-Pin GPIO17
+# oder mit eigenem Pin:
+#   - path: drucksensor.yaml
+#     vars:
+#       drucksensor_pin: GPIO34
+#
+# Kalibrierungspunkte (Spannung in V -> Druck in bar) ggf. an den eigenen Sensor/Spannungsteiler anpassen.
 
 sensor:
   - platform: adc
-    pin: GPIO17 # Freien ADC1-Pin verwenden (z.B. GPIO34/35 am ESP32, GPIO1-10/17 am ESP32-S3)
+    pin: ${ drucksensor_pin | default('GPIO17') }
     id: ${name}_heizungsdruck
     name: "${name} Heizungsdruck"
     attenuation: 12db
